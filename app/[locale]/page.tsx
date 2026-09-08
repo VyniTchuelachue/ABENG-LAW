@@ -75,7 +75,7 @@ export default async function HomePage({
           sizes="100vw"
           className="object-cover object-[75%_20%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink-black/95 via-ink-black/70 to-ink-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-black via-ink-black/55 to-ink-black/12" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink-black/80 via-transparent to-transparent" />
         <div
           aria-hidden="true"
