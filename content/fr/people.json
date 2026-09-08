@@ -5,62 +5,51 @@
   },
   "title": "Notre Équipe",
   "lead": "Le Cabinet est dirigé par son fondateur, Maître Abeng Roland, appuyé par une équipe croissante de collaborateurs et de conseils.",
-  "founder": {
-    "name": "Maître Abeng Roland",
-    "role": "Associé gérant & Fondateur",
-    "image": "/images/roland-headshot.jpg",
-    "imageAlt": "Portrait de Maître Abeng Roland, Associé gérant de The Abeng Law Firm",
-    "bio": [
-      "Maître Abeng Roland a fondé The Abeng Law Firm en 1998 à Douala, au Cameroun, et dirige le Cabinet en tant qu'Associé gérant depuis sa création.",
-      "Sous sa direction, le Cabinet a construit une pratique centrée sur le droit OHADA et le droit des affaires camerounais, et a représenté le Cabinet au sein de réseaux internationaux tels que TagLaw et TRACE. Le Cabinet est également classé par Chambers Global."
-    ],
-    "qualifications": [
-      "[Détails des qualifications à confirmer avec le Cabinet]"
-    ],
-    "barAdmission": "[Détails d'admission au barreau à confirmer avec le Cabinet]",
-    "practiceAreasNote": "Dirige la pratique du Cabinet dans l'ensemble de ses domaines clés, avec un accent particulier sur le droit des sociétés, le droit commercial et le droit OHADA.",
-    "practiceAreas": [
-      "corporate-ohada",
-      "mergers-acquisitions",
-      "banking-finance",
-      "regulatory-competition"
-    ],
-    "experience": [
-      "A fondé The Abeng Law Firm en 1998 et dirige le Cabinet en tant qu'Associé gérant depuis sa création.",
-      "[Autres points d'expérience à confirmer avec le Cabinet]"
-    ],
-    "memberships": [
-      "TagLaw — alliance internationale de cabinets d'avocats indépendants",
-      "TRACE — réseau international de conformité anti-corruption",
-      "[Autres appartenances professionnelles à confirmer avec le Cabinet]"
-    ],
-    "publications": [
-      "[Liste des publications à confirmer avec le Cabinet]"
-    ],
-    "languages": [
-      "[Langues à confirmer avec le Cabinet]"
-    ]
-  },
   "labels": {
-    "qualifications": "Qualifications",
+    "qualifications": "Qualifications et statut professionnel",
     "barAdmission": "Admission au barreau",
     "practiceAreas": "Domaines de pratique",
-    "experience": "Expérience",
-    "memberships": "Appartenances",
-    "publications": "Publications",
-    "languages": "Langues"
+    "experience": "Expérience pertinente",
+    "memberships": "Appartenances professionnelles",
+    "publications": "Publications et interventions",
+    "languages": "Langues",
+    "linkedinCta": "Voir le profil LinkedIn",
+    "linkedinAria": "Profil LinkedIn",
+    "pendingNote": "Profil à venir — le Cabinet fournira les noms, photographies et biographies."
   },
-  "teamIntro": {
-    "title": "L'équipe élargie",
-    "body": "Les collaborateurs et conseils du Cabinet seront présentés ici au fur et à mesure de la confirmation de leurs profils."
-  },
-  "placeholderNote": "Profil à venir — le Cabinet fournira les noms, photographies et biographies.",
-  "placeholderRoles": [
-    "Collaborateur senior",
-    "Collaborateur",
-    "Conseil juridique",
-    "Collaborateur",
-    "Stagiaire avocat",
-    "Responsable administratif"
+  "members": [
+    {
+      "slug": "abeng-roland",
+      "name": "Maître Abeng Roland",
+      "role": "Associé gérant & Fondateur",
+      "image": "/images/roland-headshot.jpg",
+      "imageAlt": "Portrait de Maître Abeng Roland, Associé gérant de The Abeng Law Firm",
+      "linkedinUrl": null,
+      "bio": [
+        "Maître Abeng Roland a fondé The Abeng Law Firm en 1998 à Douala, au Cameroun, et dirige le Cabinet en tant qu'Associé gérant depuis sa création.",
+        "Sous sa direction, le Cabinet a construit une pratique centrée sur le droit OHADA et le droit des affaires camerounais, et a représenté le Cabinet au sein de réseaux internationaux tels que TagLaw et TRACE. Le Cabinet est également classé par Chambers Global."
+      ],
+      "practiceAreasNote": "Dirige la pratique du Cabinet dans l'ensemble de ses domaines clés, avec un accent particulier sur le droit des sociétés, le droit commercial et le droit OHADA.",
+      "practiceAreas": ["corporate-ohada", "mergers-acquisitions", "banking-finance", "regulatory-competition"],
+      "qualifications": ["[Détails des qualifications à confirmer avec le Cabinet]"],
+      "barAdmission": "[Détails d'admission au barreau à confirmer avec le Cabinet]",
+      "experience": [
+        "A fondé The Abeng Law Firm en 1998 et dirige le Cabinet en tant qu'Associé gérant depuis sa création.",
+        "[Autres points d'expérience à confirmer avec le Cabinet]"
+      ],
+      "memberships": [
+        "TagLaw — alliance internationale de cabinets d'avocats indépendants",
+        "TRACE — réseau international de conformité anti-corruption",
+        "[Autres appartenances professionnelles à confirmer avec le Cabinet]"
+      ],
+      "publications": ["[Liste des publications à confirmer avec le Cabinet]"],
+      "languages": ["[Langues à confirmer avec le Cabinet]"]
+    },
+    { "slug": null, "name": null, "role": "Collaborateur senior", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null },
+    { "slug": null, "name": null, "role": "Collaborateur", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null },
+    { "slug": null, "name": null, "role": "Conseil juridique", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null },
+    { "slug": null, "name": null, "role": "Collaborateur", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null },
+    { "slug": null, "name": null, "role": "Stagiaire avocat", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null },
+    { "slug": null, "name": null, "role": "Responsable administratif", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null }
   ]
 }

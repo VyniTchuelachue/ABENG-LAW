@@ -52,3 +52,35 @@ export function getContent<P extends Page>(
 }
 
 export type CommonContent = ReturnType<typeof getContent<"common">>;
+
+/**
+ * The `people.json` `members` array mixes one fully-populated entry with
+ * several all-`null` placeholder entries. TypeScript infers a JSON array
+ * like that as a union of distinct per-element literal shapes rather than
+ * one shape with per-field unions, which breaks straightforward narrowing
+ * (e.g. `if (member.image) { member.name }` can resolve to `never`). This
+ * explicit type is what every member object actually conforms to, so
+ * consumers get real per-field nullability instead of that literal-union
+ * inference.
+ */
+export interface TeamMember {
+  slug: string | null;
+  name: string | null;
+  role: string;
+  image: string | null;
+  imageAlt: string | null;
+  linkedinUrl: string | null;
+  bio: string[] | null;
+  practiceAreasNote: string | null;
+  practiceAreas: string[] | null;
+  qualifications: string[] | null;
+  barAdmission: string | null;
+  experience: string[] | null;
+  memberships: string[] | null;
+  publications: string[] | null;
+  languages: string[] | null;
+}
+
+export function getTeamMembers(locale: Locale): TeamMember[] {
+  return getContent("people", locale).members as TeamMember[];
+}
