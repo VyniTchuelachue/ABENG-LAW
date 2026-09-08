@@ -115,7 +115,7 @@ export default async function HomePage({
             <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
               <div className="relative aspect-[3/4] border border-gold/30">
                 <Image
-                  src="/images/roland-headshot.png"
+                  src="/images/roland-headshot.jpg"
                   alt={home.hero.founderName}
                   fill
                   sizes="(min-width: 1024px) 32vw, 80vw"
@@ -287,7 +287,7 @@ export default async function HomePage({
       <section className="py-20 md:py-32">
         <Container className="grid gap-10 md:grid-cols-[auto_1fr] items-center">
           <Image
-            src="/images/roland-headshot.png"
+            src="/images/roland-headshot.jpg"
             alt="Portrait of Barrister Abeng Roland, Managing Partner"
             width={160}
             height={179}
