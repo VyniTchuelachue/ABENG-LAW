@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Careers",
+    "description": "Careers at The Abeng Law Firm in Douala, Cameroon."
+  },
+  "eyebrowNumber": 8,
+  "title": "Careers",
+  "lead": "The Abeng Law Firm grows its team as its practice grows. Current opportunities are listed below.",
+  "why": {
+    "title": "Why join the Firm",
+    "points": [
+      "Exposure to OHADA and cross-border matters from an established Douala practice.",
+      "A firm with international relationships through TagLaw and TRACE.",
+      "Direct mentorship from the Firm's Managing Partner and senior team."
+    ]
+  },
+  "openPositions": {
+    "title": "Current opportunities",
+    "emptyState": "No open positions are listed at this time. Prospective candidates are welcome to submit a general enquiry through the contact page.",
+    "placeholderBadge": "Illustrative example",
+    "items": [
+      { "title": "Associate, Corporate & OHADA", "type": "Illustrative example — format only" }
+    ]
+  },
+  "application": {
+    "title": "How to apply",
+    "body": "To apply or make a general enquiry about opportunities at the Firm, please use the contact form or telephone the Firm directly."
+  }
+}

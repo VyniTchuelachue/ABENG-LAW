@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "Rayonnement international",
+    "description": "The Abeng Law Firm est classé par Chambers Global et est membre de TagLaw et TRACE."
+  },
+  "eyebrowNumber": 6,
+  "title": "Rayonnement international",
+  "lead": "Les relations internationales du Cabinet permettent d'accompagner les clients sur des dossiers dépassant les frontières camerounaises.",
+  "narrative": "Depuis sa fondation, The Abeng Law Firm a construit des relations avec des réseaux internationaux qui lui permettent d'accompagner ses clients sur des dossiers transfrontaliers et multi-juridictionnels, tout en conservant une pratique indépendante basée au Cameroun.",
+  "recognitions": [
+    {
+      "name": "Chambers Global",
+      "type": "Classement",
+      "body": "Le Cabinet est classé par Chambers Global."
+    },
+    {
+      "name": "TagLaw",
+      "type": "Adhésion",
+      "body": "Le Cabinet est membre de TagLaw, une alliance internationale de cabinets d'avocats indépendants."
+    },
+    {
+      "name": "TRACE",
+      "type": "Adhésion",
+      "body": "Le Cabinet est membre de TRACE, un réseau international de conformité anti-corruption."
+    }
+  ],
+  "gallery": [
+    {
+      "image": "/images/intl-tag-alliances-meeting.jpeg",
+      "alt": "Une réunion des membres de TagLaw Alliances",
+      "caption": "Une réunion des membres de TagLaw Alliances.",
+      "confirmed": true
+    },
+    {
+      "image": "/images/intl-africa-regional-meeting.png",
+      "alt": "Délégués lors d'une réunion de stratégie régionale pour l'Afrique",
+      "caption": "Une réunion de stratégie régionale pour l'Afrique.",
+      "confirmed": true
+    },
+    {
+      "image": "/images/intl-event-india.jpeg",
+      "alt": "Maître Abeng Roland lors d'un événement international",
+      "caption": "[à confirmer avec le Cabinet : événement et date]",
+      "confirmed": false
+    }
+  ]
+}

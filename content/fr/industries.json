@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "Secteurs d'activité",
+    "description": "Douze secteurs d'activité accompagnés par The Abeng Law Firm au Cameroun et en Afrique centrale."
+  },
+  "eyebrowNumber": 4,
+  "title": "Secteurs d'activité",
+  "lead": "Un conseil informé par les secteurs qui structurent l'économie camerounaise et régionale.",
+  "items": [
+    { "slug": "energy-power", "title": "Énergie et électricité", "description": "Conseil aux acteurs de la production, du transport et de la distribution d'électricité." },
+    { "slug": "oil-gas", "title": "Pétrole et gaz", "description": "Dossiers couvrant les activités amont, intermédiaire et aval du secteur pétrolier et gazier." },
+    { "slug": "mining-natural-resources", "title": "Mines et ressources naturelles", "description": "Conseil aux opérateurs et investisseurs du secteur minier et des ressources naturelles." },
+    { "slug": "banking-financial-services", "title": "Banque et services financiers", "description": "Accompagnement réglementaire et transactionnel des banques et institutions financières." },
+    { "slug": "telecoms-technology", "title": "Télécommunications et technologies", "description": "Conseil aux opérateurs et entreprises des télécommunications et des technologies." },
+    { "slug": "infrastructure-construction", "title": "Infrastructures et construction", "description": "Accompagnement des projets de développement d'infrastructures et de construction." },
+    { "slug": "maritime-logistics", "title": "Maritime et logistique", "description": "Conseil aux opérateurs portuaires, maritimes et logistiques le long des corridors commerciaux camerounais." },
+    { "slug": "agriculture", "title": "Agriculture", "description": "Accompagnement juridique des opérateurs et investisseurs agro-industriels." },
+    { "slug": "real-estate", "title": "Immobilier", "description": "Conseil sur le foncier, les projets immobiliers et les opérations immobilières." },
+    { "slug": "healthcare", "title": "Santé", "description": "Conseil réglementaire et commercial pour les acteurs du secteur de la santé." },
+    { "slug": "manufacturing", "title": "Industrie manufacturière", "description": "Accompagnement des industriels sur les questions commerciales, réglementaires et sociales." },
+    { "slug": "international-trade-investment", "title": "Commerce international et investissement étranger", "description": "Conseil aux entreprises commerçant avec le Cameroun ou y investissant." }
+  ]
+}

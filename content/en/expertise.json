@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Expertise",
+    "description": "Sixteen practice areas covering OHADA, corporate, finance, regulatory, dispute resolution and private client matters."
+  },
+  "eyebrowNumber": 3,
+  "title": "Expertise",
+  "lead": "Sixteen practice areas spanning the OHADA Uniform Acts and Cameroonian domestic law.",
+  "items": [
+    { "slug": "corporate-ohada", "title": "Corporate, Commercial & OHADA Law", "description": "Company formation, corporate governance and commercial contracting under the OHADA Uniform Acts." },
+    { "slug": "mergers-acquisitions", "title": "Mergers & Acquisitions", "description": "Advice on the structuring, negotiation and completion of acquisitions and business combinations." },
+    { "slug": "banking-finance", "title": "Banking, Finance & Project Finance", "description": "Lending, security and project finance structures for banks, lenders and borrowers." },
+    { "slug": "energy-infrastructure", "title": "Energy, Infrastructure & Natural Resources", "description": "Regulatory and transactional advice across the energy, infrastructure and natural resources sectors." },
+    { "slug": "tax-customs", "title": "Tax, Customs & Foreign Exchange", "description": "Guidance on tax, customs duties and foreign exchange control matters affecting cross-border business." },
+    { "slug": "regulatory-competition", "title": "Regulatory, Competition & Public Law", "description": "Advice on regulatory compliance, competition law and public law matters." },
+    { "slug": "compliance-investigations", "title": "Compliance & Investigations", "description": "Compliance frameworks and internal investigations, informed by international anti-bribery standards." },
+    { "slug": "data-protection-tech", "title": "Data Protection, Technology & Digital Business", "description": "Advice on data protection, technology contracts and digital business models." },
+    { "slug": "employment-immigration", "title": "Employment, Benefits & Immigration", "description": "Employment relationships, staff benefits and immigration matters for employers." },
+    { "slug": "litigation-arbitration", "title": "Litigation, Arbitration & ADR", "description": "Representation before Cameroonian courts and in arbitration and other dispute resolution forums." },
+    { "slug": "debt-recovery-restructuring", "title": "Debt Recovery, Restructuring & Insolvency", "description": "Debt recovery, restructuring and insolvency proceedings under OHADA law." },
+    { "slug": "intellectual-property", "title": "Intellectual Property", "description": "Protection and enforcement of trademarks, patents and other intellectual property rights." },
+    { "slug": "real-estate-construction", "title": "Real Estate, Construction & Land", "description": "Land tenure, real estate transactions and construction matters." },
+    { "slug": "environment-health-esg", "title": "Environment, Health & Safety and ESG", "description": "Environmental, health and safety compliance and ESG-related advisory work." },
+    { "slug": "maritime-transport", "title": "Maritime, Aviation, Transport & Logistics", "description": "Advice for operators and businesses across maritime, aviation, transport and logistics." },
+    { "slug": "private-client-succession", "title": "Private Client, Family & Succession", "description": "Personal legal matters including family and succession planning for private clients." }
+  ]
+}

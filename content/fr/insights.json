@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Actualités",
+    "description": "Actualités juridiques et publications de The Abeng Law Firm, dans l'attente d'articles confirmés par le Cabinet."
+  },
+  "eyebrowNumber": 7,
+  "title": "Actualités",
+  "lead": "Les actualités juridiques et publications du Cabinet paraîtront ici. Les éléments ci-dessous sont des exemples illustratifs du format prévu.",
+  "placeholderBadge": "Exemple illustratif",
+  "items": [
+    { "category": "OHADA", "title": "Développements récents des Actes uniformes OHADA", "excerpt": "Exemple illustratif d'une actualité juridique sur les développements OHADA." },
+    { "category": "Fiscalité", "title": "Considérations de change pour les paiements transfrontaliers", "excerpt": "Exemple illustratif d'une actualité juridique sur la réglementation des changes." },
+    { "category": "Droit du travail", "title": "Points clés du droit du travail camerounais pour les employeurs", "excerpt": "Exemple illustratif d'une actualité juridique sur le droit du travail." },
+    { "category": "Conformité", "title": "L'essentiel de la conformité anti-corruption pour les entreprises au Cameroun", "excerpt": "Exemple illustratif d'une actualité juridique sur la conformité." }
+  ]
+}

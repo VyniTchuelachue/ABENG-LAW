@@ -1,0 +1,129 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import Container from "./Container";
+import LanguageSwitcher from "./LanguageSwitcher";
+import ThemeToggle from "./ThemeToggle";
+import { routes } from "@/lib/routes";
+import type { Locale } from "@/lib/i18n";
+import type { CommonContent } from "@/lib/content";
+
+export default function Header({
+  locale,
+  common,
+}: {
+  locale: Locale;
+  common: CommonContent;
+}) {
+  const pathname = usePathname() ?? `/${locale}`;
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header className="sticky top-0 z-40 border-b border-gold/25 bg-paper/95 backdrop-blur supports-[backdrop-filter]:bg-paper/85 shadow-[0_1px_0_rgba(169,132,45,0.15)]">
+      <div className="h-[3px] bg-gradient-to-r from-gold-dark via-gold to-gold-dark" />
+      <Container className="flex h-20 md:h-24 items-center justify-between gap-4">
+        <Link
+          href={`/${locale}`}
+          className="flex items-center gap-2.5 md:gap-3 shrink-0 min-w-0"
+          onClick={() => setOpen(false)}
+        >
+          <Image
+            src="/images/logo.png"
+            alt={`${common.siteName} crest`}
+            width={52}
+            height={48}
+            className="h-11 md:h-12 w-auto shrink-0"
+            priority
+          />
+          <span aria-hidden="true" className="hidden sm:block h-9 w-px bg-line" />
+          <span className="flex flex-col leading-none min-w-0">
+            <span className="font-heading text-base md:text-lg font-semibold tracking-[0.02em] text-brand dark:text-ink uppercase truncate">
+              {common.siteNameMark}
+            </span>
+            <span className="hidden sm:block mt-1.5 font-mono text-[10px] tracking-[0.22em] uppercase text-gold-dark dark:text-gold">
+              {common.estLabel}
+            </span>
+          </span>
+        </Link>
+
+        <nav className="hidden xl:flex items-center gap-5" aria-label="Primary">
+          {routes.map((route) => {
+            const href = route.slug ? `/${locale}/${route.slug}` : `/${locale}`;
+            const isActive =
+              pathname === href || (route.slug !== "" && pathname.startsWith(`${href}/`));
+            const label =
+              (common.navShort as Partial<Record<string, string>>)[route.key] ??
+              common.nav[route.key];
+            return (
+              <Link
+                key={route.key}
+                href={href}
+                aria-current={isActive ? "page" : undefined}
+                className={`relative whitespace-nowrap py-1 text-[13px] font-medium tracking-wide transition-colors hover:text-gold-dark dark:hover:text-gold ${
+                  isActive ? "text-gold-dark dark:text-gold" : "text-ink"
+                } after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-px after:bg-gold after:origin-left after:transition-transform after:duration-200 ${
+                  isActive ? "after:scale-x-100" : "after:scale-x-0"
+                }`}
+              >
+                {label}
+              </Link>
+            );
+          })}
+        </nav>
+
+        <div className="hidden xl:flex items-center gap-3 shrink-0">
+          <LanguageSwitcher locale={locale} switchToLabel={common.language.switchTo} />
+          <ThemeToggle toggleLabel={common.theme.toggleLabel} />
+        </div>
+
+        <button
+          type="button"
+          className="xl:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border border-line text-ink shrink-0"
+          aria-label="Menu"
+          aria-expanded={open}
+          onClick={() => setOpen((v) => !v)}
+        >
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
+            {open ? (
+              <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
+            ) : (
+              <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
+            )}
+          </svg>
+        </button>
+      </Container>
+
+      {open ? (
+        <div className="xl:hidden border-t border-line bg-paper">
+          <Container className="py-6 flex flex-col gap-5">
+            <nav className="flex flex-col gap-4" aria-label="Primary">
+              {routes.map((route) => {
+                const href = route.slug ? `/${locale}/${route.slug}` : `/${locale}`;
+                const isActive =
+                  pathname === href || (route.slug !== "" && pathname.startsWith(`${href}/`));
+                return (
+                  <Link
+                    key={route.key}
+                    href={href}
+                    onClick={() => setOpen(false)}
+                    aria-current={isActive ? "page" : undefined}
+                    className={`text-base font-medium ${isActive ? "text-gold-dark dark:text-gold" : "text-ink"}`}
+                  >
+                    {common.nav[route.key]}
+                  </Link>
+                );
+              })}
+            </nav>
+            <div className="flex items-center justify-between pt-4 border-t border-line">
+              <LanguageSwitcher locale={locale} switchToLabel={common.language.switchTo} />
+              <ThemeToggle toggleLabel={common.theme.toggleLabel} />
+            </div>
+          </Container>
+        </div>
+      ) : null}
+    </header>
+  );
+}

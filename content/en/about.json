@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "About the Firm",
+    "description": "Founded in 1998 by Barrister Abeng Roland, The Abeng Law Firm is a business law firm based in Bonapriso, Douala, Cameroon."
+  },
+  "eyebrowNumber": 1,
+  "title": "About the Firm",
+  "lead": "The Abeng Law Firm is a business law firm based in Douala, advising Cameroonian and international clients since 1998.",
+  "history": {
+    "title": "Our history",
+    "paragraphs": [
+      "The Abeng Law Firm was founded in 1998 by Barrister Abeng Roland in Douala, Cameroon, with a practice built around the OHADA Uniform Acts and the needs of businesses operating in Central Africa.",
+      "Over more than two decades, the Firm has advised on corporate, commercial and regulatory matters for domestic and international clients, while building relationships with law firms and compliance networks beyond Cameroon's borders."
+    ]
+  },
+  "founder": {
+    "title": "Founded by Barrister Abeng Roland",
+    "body": "As Managing Partner, Barrister Abeng Roland has led the Firm's practice and its international relationships since founding it in 1998.",
+    "cta": "Read his full profile",
+    "href": "/people"
+  },
+  "values": [
+    {
+      "title": "Civil-law rigor",
+      "body": "Advice grounded in the OHADA Uniform Acts and Cameroonian statute, applied with the discipline of codified law."
+    },
+    {
+      "title": "Institutional discretion",
+      "body": "A sober, professional approach to client matters, free of unnecessary publicity."
+    },
+    {
+      "title": "International outlook",
+      "body": "Relationships with international networks that support clients on cross-border matters."
+    }
+  ],
+  "gallery": [
+    {
+      "image": "/images/roland-with-colleagues.jpeg",
+      "alt": "Barrister Abeng Roland with two colleagues at a professional event",
+      "caption": "[confirm event/date with the Firm]"
+    },
+    {
+      "image": "/images/roland-formal-event.jpeg",
+      "alt": "Barrister Abeng Roland at a formal professional event",
+      "caption": "[confirm event/date with the Firm]"
+    }
+  ]
+}

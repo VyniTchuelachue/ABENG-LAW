@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "People",
+    "description": "Barrister Abeng Roland, Managing Partner and founder of The Abeng Law Firm, and the wider team of the Firm."
+  },
+  "eyebrowNumber": 2,
+  "title": "People",
+  "lead": "The Firm is led by its founder, Barrister Abeng Roland, supported by a growing team of associates and counsel.",
+  "founder": {
+    "name": "Barrister Abeng Roland",
+    "role": "Managing Partner & Founder",
+    "image": "/images/roland-headshot.png",
+    "imageAlt": "Portrait of Barrister Abeng Roland, Managing Partner of The Abeng Law Firm",
+    "bio": [
+      "Barrister Abeng Roland founded The Abeng Law Firm in 1998 in Douala, Cameroon, and has led the Firm as Managing Partner since its inception.",
+      "Under his leadership, the Firm has built a practice centered on OHADA and Cameroonian business law, and has represented the Firm within international networks including TagLaw and TRACE. The Firm is also ranked in Chambers Global."
+    ],
+    "qualifications": [
+      "[Qualification details pending confirmation from the Firm]"
+    ],
+    "barAdmission": "[Bar admission details pending confirmation from the Firm]",
+    "practiceAreasNote": "Leads the Firm's practice across its core business law areas, with particular focus on Corporate, Commercial & OHADA Law.",
+    "practiceAreas": [
+      "corporate-ohada",
+      "mergers-acquisitions",
+      "banking-finance",
+      "regulatory-competition"
+    ],
+    "experience": [
+      "Founded The Abeng Law Firm in 1998 and has led the Firm as Managing Partner since inception.",
+      "[Further experience highlights pending confirmation from the Firm]"
+    ],
+    "memberships": [
+      "TagLaw — international alliance of independent law firms",
+      "TRACE — international anti-bribery compliance network",
+      "[Additional professional memberships pending confirmation from the Firm]"
+    ],
+    "publications": [
+      "[Publications list pending confirmation from the Firm]"
+    ],
+    "languages": [
+      "[Languages pending confirmation from the Firm]"
+    ]
+  },
+  "labels": {
+    "qualifications": "Qualifications",
+    "barAdmission": "Bar admission",
+    "practiceAreas": "Practice areas",
+    "experience": "Experience",
+    "memberships": "Memberships",
+    "publications": "Publications",
+    "languages": "Languages"
+  },
+  "teamIntro": {
+    "title": "The wider team",
+    "body": "The Firm's associates and counsel will be introduced here as their profiles are confirmed."
+  },
+  "placeholderNote": "Profile pending — the Firm will supply names, photographs and biographies.",
+  "placeholderRoles": [
+    "Senior Associate",
+    "Associate",
+    "Legal Counsel",
+    "Associate",
+    "Trainee Lawyer",
+    "Office Manager"
+  ]
+}

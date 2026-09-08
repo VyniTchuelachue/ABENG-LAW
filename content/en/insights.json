@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Insights",
+    "description": "Legal updates and publications from The Abeng Law Firm, pending confirmed articles from the Firm."
+  },
+  "eyebrowNumber": 7,
+  "title": "Insights",
+  "lead": "Legal updates and publications will appear here. The items below are illustrative placeholders showing the intended format.",
+  "placeholderBadge": "Illustrative placeholder",
+  "items": [
+    { "category": "OHADA", "title": "Recent developments under the OHADA Uniform Acts", "excerpt": "Illustrative placeholder for a legal update on OHADA developments." },
+    { "category": "Tax", "title": "Foreign exchange control considerations for cross-border payments", "excerpt": "Illustrative placeholder for a legal update on foreign exchange matters." },
+    { "category": "Employment", "title": "Key points for employers on Cameroonian labour law", "excerpt": "Illustrative placeholder for a legal update on employment matters." },
+    { "category": "Compliance", "title": "Anti-bribery compliance essentials for businesses in Cameroon", "excerpt": "Illustrative placeholder for a legal update on compliance matters." }
+  ]
+}

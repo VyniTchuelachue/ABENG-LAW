@@ -1,0 +1,48 @@
+{
+  "siteName": "The Abeng Law Firm",
+  "siteNameShort": "Abeng Law",
+  "siteNameMark": "Abeng Law Firm",
+  "estLabel": "Depuis 1998 · Douala",
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "people": "Équipe",
+    "expertise": "Expertise",
+    "industries": "Secteurs",
+    "experience": "Références",
+    "international": "Rayonnement international",
+    "insights": "Actualités",
+    "careers": "Carrières",
+    "contact": "Contact"
+  },
+  "navShort": {
+    "experience": "Références",
+    "international": "International"
+  },
+  "footer": {
+    "description": "Droit des affaires au Cameroun depuis 1998.",
+    "addressTitle": "Bureau",
+    "contactTitle": "Contact",
+    "navTitle": "Cabinet",
+    "rights": "Tous droits réservés.",
+    "ohadaNote": "Cabinet exerçant sous les Actes uniformes OHADA et le droit camerounais."
+  },
+  "actions": {
+    "readMore": "Lire la suite",
+    "viewAll": "Tout voir",
+    "learnMore": "En savoir plus",
+    "submit": "Envoyer",
+    "sending": "Envoi…",
+    "backHome": "Retour à l'accueil"
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "toggleLabel": "Changer le thème"
+  },
+  "language": {
+    "switchTo": "English",
+    "label": "Langue"
+  },
+  "articleWord": "Art."
+}

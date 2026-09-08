@@ -1,0 +1,48 @@
+{
+  "siteName": "The Abeng Law Firm",
+  "siteNameShort": "Abeng Law",
+  "siteNameMark": "Abeng Law Firm",
+  "estLabel": "Est. 1998 · Douala",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "people": "People",
+    "expertise": "Expertise",
+    "industries": "Industries",
+    "experience": "Representative Experience",
+    "international": "International Reach & Affiliations",
+    "insights": "Insights",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "navShort": {
+    "experience": "Experience",
+    "international": "International"
+  },
+  "footer": {
+    "description": "Business law in Cameroon since 1998.",
+    "addressTitle": "Office",
+    "contactTitle": "Contact",
+    "navTitle": "Firm",
+    "rights": "All rights reserved.",
+    "ohadaNote": "Practicing under OHADA Uniform Acts and Cameroonian law."
+  },
+  "actions": {
+    "readMore": "Read more",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "submit": "Submit",
+    "sending": "Sending…",
+    "backHome": "Back to home"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "toggleLabel": "Toggle color theme"
+  },
+  "language": {
+    "switchTo": "Français",
+    "label": "Language"
+  },
+  "articleWord": "Art."
+}

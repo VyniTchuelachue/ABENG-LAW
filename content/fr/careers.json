@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Carrières",
+    "description": "Carrières chez The Abeng Law Firm à Douala, Cameroun."
+  },
+  "eyebrowNumber": 8,
+  "title": "Carrières",
+  "lead": "The Abeng Law Firm développe son équipe au rythme de sa pratique. Les opportunités actuelles sont listées ci-dessous.",
+  "why": {
+    "title": "Pourquoi rejoindre le Cabinet",
+    "points": [
+      "Une exposition au droit OHADA et aux dossiers transfrontaliers au sein d'une pratique établie à Douala.",
+      "Un cabinet doté de relations internationales via TagLaw et TRACE.",
+      "Un encadrement direct par l'Associé gérant et l'équipe senior du Cabinet."
+    ]
+  },
+  "openPositions": {
+    "title": "Opportunités actuelles",
+    "emptyState": "Aucun poste n'est actuellement à pourvoir. Les candidats intéressés sont invités à soumettre une candidature spontanée via la page contact.",
+    "placeholderBadge": "Exemple illustratif",
+    "items": [
+      { "title": "Collaborateur, Droit des sociétés et OHADA", "type": "Exemple illustratif — présentation uniquement" }
+    ]
+  },
+  "application": {
+    "title": "Comment postuler",
+    "body": "Pour postuler ou pour toute question générale sur les opportunités au sein du Cabinet, veuillez utiliser le formulaire de contact ou téléphoner directement le Cabinet."
+  }
+}

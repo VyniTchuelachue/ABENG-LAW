@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "title": "Industries",
+    "description": "Twelve industries served by The Abeng Law Firm across Cameroon and Central Africa."
+  },
+  "eyebrowNumber": 4,
+  "title": "Industries",
+  "lead": "Sector-informed advice across the industries that anchor the Cameroonian and regional economy.",
+  "items": [
+    { "slug": "energy-power", "title": "Energy & Power", "description": "Advising participants across power generation, transmission and distribution." },
+    { "slug": "oil-gas", "title": "Oil & Gas", "description": "Matters spanning upstream, midstream and downstream oil and gas activity." },
+    { "slug": "mining-natural-resources", "title": "Mining & Natural Resources", "description": "Advice for operators and investors in mining and natural resource extraction." },
+    { "slug": "banking-financial-services", "title": "Banking & Financial Services", "description": "Regulatory and transactional support for banks and financial institutions." },
+    { "slug": "telecoms-technology", "title": "Telecommunications & Technology", "description": "Advice for operators and businesses in telecommunications and technology." },
+    { "slug": "infrastructure-construction", "title": "Infrastructure & Construction", "description": "Support for infrastructure development and construction projects." },
+    { "slug": "maritime-logistics", "title": "Maritime & Logistics", "description": "Advice for port, shipping and logistics operators along Cameroon's trade corridors." },
+    { "slug": "agriculture", "title": "Agriculture", "description": "Legal support for agribusiness operators and investors." },
+    { "slug": "real-estate", "title": "Real Estate", "description": "Advice on land, development and real estate transactions." },
+    { "slug": "healthcare", "title": "Healthcare", "description": "Regulatory and commercial advice for healthcare sector participants." },
+    { "slug": "manufacturing", "title": "Manufacturing", "description": "Support for manufacturers on commercial, regulatory and employment matters." },
+    { "slug": "international-trade-investment", "title": "International Trade & Foreign Investment", "description": "Advice for businesses trading with, or investing into, Cameroon." }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Representative Experience",
+    "description": "Illustrative examples of the type of matters The Abeng Law Firm handles, pending confirmed matter descriptions from the Firm."
+  },
+  "eyebrowNumber": 5,
+  "title": "Representative Experience",
+  "lead": "The examples below illustrate the type of work the Firm undertakes. They are placeholders in format only — the Firm will supply descriptions of actual matters.",
+  "placeholderBadge": "Illustrative example",
+  "items": [
+    { "sector": "Energy & Power", "title": "Advising on a power sector project financing", "summary": "Illustrative example of the type of financing matter the Firm advises on in the energy sector." },
+    { "sector": "Banking & Financial Services", "title": "Structuring security for a syndicated facility", "summary": "Illustrative example of security and facility structuring work for lenders." },
+    { "sector": "Corporate & OHADA", "title": "Advising on a cross-border share acquisition", "summary": "Illustrative example of acquisition advisory work under the OHADA Uniform Acts." },
+    { "sector": "Telecommunications", "title": "Regulatory advice for a telecommunications operator", "summary": "Illustrative example of regulatory advisory work for the telecommunications sector." },
+    { "sector": "Maritime & Logistics", "title": "Advising a logistics operator on a port concession", "summary": "Illustrative example of maritime and logistics sector advisory work." },
+    { "sector": "Litigation & Arbitration", "title": "Representing a client in commercial arbitration", "summary": "Illustrative example of dispute resolution representation before an arbitral tribunal." }
+  ]
+}

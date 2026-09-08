@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "International Reach & Affiliations",
+    "description": "The Abeng Law Firm is ranked in Chambers Global and is a member of TagLaw and TRACE."
+  },
+  "eyebrowNumber": 6,
+  "title": "International Reach & Affiliations",
+  "lead": "The Firm's international relationships support clients on matters that extend beyond Cameroon's borders.",
+  "narrative": "Since its founding, The Abeng Law Firm has built relationships with international networks that allow the Firm to support clients on cross-border and multi-jurisdictional matters, while maintaining independent, Cameroon-based practice.",
+  "recognitions": [
+    {
+      "name": "Chambers Global",
+      "type": "Ranking",
+      "body": "The Firm is ranked in Chambers Global."
+    },
+    {
+      "name": "TagLaw",
+      "type": "Membership",
+      "body": "The Firm is a member of TagLaw, an international alliance of independent law firms."
+    },
+    {
+      "name": "TRACE",
+      "type": "Membership",
+      "body": "The Firm is a member of TRACE, an international anti-bribery compliance network."
+    }
+  ],
+  "gallery": [
+    {
+      "image": "/images/intl-tag-alliances-meeting.jpeg",
+      "alt": "A TagLaw Alliances member meeting in progress",
+      "caption": "A TagLaw Alliances member meeting.",
+      "confirmed": true
+    },
+    {
+      "image": "/images/intl-africa-regional-meeting.png",
+      "alt": "Delegates at an Africa regional strategy meeting",
+      "caption": "An Africa regional strategy meeting.",
+      "confirmed": true
+    },
+    {
+      "image": "/images/intl-event-india.jpeg",
+      "alt": "Barrister Abeng Roland at an international event",
+      "caption": "[confirm event/date with the Firm]",
+      "confirmed": false
+    }
+  ]
+}

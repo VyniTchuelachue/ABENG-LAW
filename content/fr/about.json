@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "À propos du Cabinet",
+    "description": "Fondé en 1998 par Maître Abeng Roland, The Abeng Law Firm est un cabinet d'affaires basé à Bonapriso, Douala, Cameroun."
+  },
+  "eyebrowNumber": 1,
+  "title": "À propos du Cabinet",
+  "lead": "The Abeng Law Firm est un cabinet de droit des affaires basé à Douala, conseillant des clients camerounais et internationaux depuis 1998.",
+  "history": {
+    "title": "Notre histoire",
+    "paragraphs": [
+      "The Abeng Law Firm a été fondé en 1998 par Maître Abeng Roland à Douala, au Cameroun, avec une pratique construite autour des Actes uniformes OHADA et des besoins des entreprises opérant en Afrique centrale.",
+      "Depuis plus de deux décennies, le Cabinet conseille sur des questions sociétaires, commerciales et réglementaires pour une clientèle locale et internationale, tout en construisant des relations avec des cabinets et réseaux de conformité au-delà des frontières camerounaises."
+    ]
+  },
+  "founder": {
+    "title": "Fondé par Maître Abeng Roland",
+    "body": "En tant qu'Associé gérant, Maître Abeng Roland dirige la pratique du Cabinet et ses relations internationales depuis sa fondation en 1998.",
+    "cta": "Consulter son profil complet",
+    "href": "/people"
+  },
+  "values": [
+    {
+      "title": "Rigueur civiliste",
+      "body": "Des conseils ancrés dans les Actes uniformes OHADA et le droit camerounais, appliqués avec la discipline du droit codifié."
+    },
+    {
+      "title": "Discrétion institutionnelle",
+      "body": "Une approche sobre et professionnelle des dossiers, sans publicité superflue."
+    },
+    {
+      "title": "Ouverture internationale",
+      "body": "Des relations avec des réseaux internationaux qui accompagnent les clients sur leurs opérations transfrontalières."
+    }
+  ],
+  "gallery": [
+    {
+      "image": "/images/roland-with-colleagues.jpeg",
+      "alt": "Maître Abeng Roland avec deux confrères lors d'un événement professionnel",
+      "caption": "[à confirmer avec le Cabinet : événement et date]"
+    },
+    {
+      "image": "/images/roland-formal-event.jpeg",
+      "alt": "Maître Abeng Roland lors d'un événement professionnel formel",
+      "caption": "[à confirmer avec le Cabinet : événement et date]"
+    }
+  ]
+}

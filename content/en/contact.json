@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Contact",
+    "description": "Contact The Abeng Law Firm in Bonapriso, Douala, Cameroon."
+  },
+  "eyebrowNumber": 9,
+  "title": "Contact",
+  "lead": "Reach the Firm at its Bonapriso office, by telephone, or through the form below.",
+  "disclaimer": "This form is not a secure channel for privileged or highly confidential information and does not create an attorney–client relationship. For sensitive matters, please contact the Firm directly by telephone or through your usual contact at the Firm.",
+  "officeTitle": "Office",
+  "address": {
+    "line1": "Immeuble 4 Étages (Apt. 300)",
+    "line2": "Rue Koloko, Bonapriso",
+    "line3": "Douala, Littoral Region, Cameroon",
+    "poBox": "P.O. Box 4155"
+  },
+  "phonesTitle": "Telephone",
+  "phones": ["+237 677 78 08 78", "+237 233 43 75 79"],
+  "phoneConfirmNote": "Telephone numbers pending final confirmation from the Firm before publication.",
+  "mapTitle": "Find the office",
+  "mapCoordinates": { "lat": 4.0290645, "lng": 9.7019888 },
+  "form": {
+    "title": "Send a message",
+    "nameLabel": "Full name",
+    "emailLabel": "Email address",
+    "phoneLabel": "Phone (optional)",
+    "subjectLabel": "Subject",
+    "subjectOptions": ["General enquiry", "New matter", "Careers", "Media", "Other"],
+    "messageLabel": "Message",
+    "submitLabel": "Submit",
+    "sendingLabel": "Sending…",
+    "successTitle": "Message received",
+    "successBody": "Thank you — your message has been recorded. The Firm has not been emailed automatically; a transactional email service is pending integration. For sensitive or urgent matters, please telephone the Firm directly.",
+    "errorBody": "Something went wrong. Please try again, or contact the Firm by telephone.",
+    "requiredNote": "Required fields are marked *"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Références",
+    "description": "Exemples illustratifs du type de dossiers traités par The Abeng Law Firm, dans l'attente de descriptions de dossiers réels fournies par le Cabinet."
+  },
+  "eyebrowNumber": 5,
+  "title": "Références",
+  "lead": "Les exemples ci-dessous illustrent le type de travail réalisé par le Cabinet. Ils ne constituent que des exemples de présentation — le Cabinet fournira les descriptions de dossiers réels.",
+  "placeholderBadge": "Exemple illustratif",
+  "items": [
+    { "sector": "Énergie et électricité", "title": "Conseil sur le financement d'un projet du secteur électrique", "summary": "Exemple illustratif du type de dossier de financement traité par le Cabinet dans le secteur de l'énergie." },
+    { "sector": "Banque et services financiers", "title": "Structuration de sûretés pour un financement syndiqué", "summary": "Exemple illustratif de structuration de sûretés et de financements pour des prêteurs." },
+    { "sector": "Droit des sociétés et OHADA", "title": "Conseil sur une acquisition transfrontalière de parts sociales", "summary": "Exemple illustratif de conseil en acquisition sous les Actes uniformes OHADA." },
+    { "sector": "Télécommunications", "title": "Conseil réglementaire pour un opérateur de télécommunications", "summary": "Exemple illustratif de conseil réglementaire pour le secteur des télécommunications." },
+    { "sector": "Maritime et logistique", "title": "Conseil à un opérateur logistique sur une concession portuaire", "summary": "Exemple illustratif de conseil dans le secteur maritime et logistique." },
+    { "sector": "Contentieux et arbitrage", "title": "Représentation d'un client dans un arbitrage commercial", "summary": "Exemple illustratif de représentation en résolution des litiges devant un tribunal arbitral." }
+  ]
+}

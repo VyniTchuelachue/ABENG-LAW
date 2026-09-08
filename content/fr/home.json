@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "The Abeng Law Firm | Droit des affaires à Douala, Cameroun",
+    "description": "The Abeng Law Firm est un cabinet d'affaires basé à Douala, fondé en 1998, intervenant en droit OHADA, droit des sociétés, financement et opérations transfrontalières en Afrique centrale."
+  },
+  "hero": {
+    "kicker": "Douala, Cameroun — depuis 1998",
+    "title": "Le droit des affaires, avec la rigueur de l'OHADA.",
+    "subtitle": "The Abeng Law Firm conseille des clients camerounais et internationaux sur des opérations commerciales, sociétaires et transfrontalières, depuis Bonapriso, Douala.",
+    "ctaPrimary": "Notre expertise",
+    "ctaPrimaryHref": "/expertise",
+    "ctaSecondary": "Contacter le Cabinet",
+    "ctaSecondaryHref": "/contact"
+  },
+  "stats": [
+    { "value": "1998", "label": "Fondation" },
+    { "value": "16", "label": "Domaines de pratique" },
+    { "value": "12", "label": "Secteurs d'activité" },
+    { "value": "3", "label": "Affiliations internationales" }
+  ],
+  "intro": {
+    "title": "Un cabinet fondé sur la rigueur du droit civil",
+    "body": "Fondé en 1998 par Maître Abeng Roland, The Abeng Law Firm conseille les entreprises opérant au Cameroun et avec le Cameroun sur l'ensemble des questions juridiques relevant du droit OHADA et du droit interne, de la constitution de sociétés au financement, jusqu'au contentieux et à la conformité réglementaire."
+  },
+  "pillars": [
+    {
+      "title": "Droit des sociétés et OHADA",
+      "body": "Des conseils ancrés dans les Actes uniformes OHADA qui régissent les affaires dans dix-sept États membres d'Afrique de l'Ouest et du Centre.",
+      "href": "/expertise"
+    },
+    {
+      "title": "Rayonnement international",
+      "body": "Un réseau international grâce à une reconnaissance Chambers et à l'appartenance à TagLaw et TRACE.",
+      "href": "/international"
+    },
+    {
+      "title": "Une expertise sectorielle",
+      "body": "Des dossiers couvrant l'énergie, la banque, les télécommunications, le secteur maritime et d'autres piliers de l'économie camerounaise.",
+      "href": "/industries"
+    }
+  ],
+  "peopleTeaser": {
+    "title": "Dirigé par Maître Abeng Roland",
+    "body": "L'Associé gérant du Cabinet a construit la pratique de The Abeng Law Firm et son réseau de relations internationales depuis 1998.",
+    "cta": "Découvrir l'équipe",
+    "href": "/people"
+  },
+  "cta": {
+    "title": "Échanger avec le Cabinet",
+    "body": "Pour toute nouvelle mission ou demande générale, contactez directement le Cabinet par téléphone ou via le formulaire de contact.",
+    "button": "Nous contacter",
+    "href": "/contact"
+  }
+}

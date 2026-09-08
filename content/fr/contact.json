@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Contact",
+    "description": "Contactez The Abeng Law Firm à Bonapriso, Douala, Cameroun."
+  },
+  "eyebrowNumber": 9,
+  "title": "Contact",
+  "lead": "Contactez le Cabinet à son bureau de Bonapriso, par téléphone, ou via le formulaire ci-dessous.",
+  "disclaimer": "Ce formulaire ne constitue pas un canal sécurisé pour la transmission d'informations couvertes par le secret professionnel ou hautement confidentielles, et ne crée aucune relation avocat-client. Pour toute question sensible, veuillez contacter directement le Cabinet par téléphone ou par l'intermédiaire de votre correspondant habituel au sein du Cabinet.",
+  "officeTitle": "Bureau",
+  "address": {
+    "line1": "Immeuble 4 Étages (Apt. 300)",
+    "line2": "Rue Koloko, Bonapriso",
+    "line3": "Douala, Région du Littoral, Cameroun",
+    "poBox": "B.P. 4155"
+  },
+  "phonesTitle": "Téléphone",
+  "phones": ["+237 677 78 08 78", "+237 233 43 75 79"],
+  "phoneConfirmNote": "Numéros de téléphone à confirmer définitivement avec le Cabinet avant publication.",
+  "mapTitle": "Localiser le bureau",
+  "mapCoordinates": { "lat": 4.0290645, "lng": 9.7019888 },
+  "form": {
+    "title": "Envoyer un message",
+    "nameLabel": "Nom complet",
+    "emailLabel": "Adresse email",
+    "phoneLabel": "Téléphone (facultatif)",
+    "subjectLabel": "Objet",
+    "subjectOptions": ["Demande générale", "Nouveau dossier", "Carrières", "Presse", "Autre"],
+    "messageLabel": "Message",
+    "submitLabel": "Envoyer",
+    "sendingLabel": "Envoi…",
+    "successTitle": "Message reçu",
+    "successBody": "Merci — votre message a été enregistré. Le Cabinet n'a pas été notifié automatiquement par email ; un service d'envoi transactionnel reste à intégrer. Pour toute question sensible ou urgente, veuillez téléphoner directement le Cabinet.",
+    "errorBody": "Une erreur est survenue. Veuillez réessayer ou contacter le Cabinet par téléphone.",
+    "requiredNote": "Les champs obligatoires sont marqués d'un *"
+  }
+}

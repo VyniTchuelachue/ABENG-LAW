@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "title": "The Abeng Law Firm | Business Law in Douala, Cameroon",
+    "description": "The Abeng Law Firm is a Douala-based business law firm founded in 1998, advising on OHADA, corporate, banking and cross-border matters across Central Africa."
+  },
+  "hero": {
+    "kicker": "Douala, Cameroon — since 1998",
+    "title": "Business law, built on OHADA discipline.",
+    "subtitle": "The Abeng Law Firm advises Cameroonian and international clients on corporate, commercial and cross-border matters, from Bonapriso, Douala.",
+    "ctaPrimary": "Our Expertise",
+    "ctaPrimaryHref": "/expertise",
+    "ctaSecondary": "Speak to the Firm",
+    "ctaSecondaryHref": "/contact"
+  },
+  "stats": [
+    { "value": "1998", "label": "Founded" },
+    { "value": "16", "label": "Practice areas" },
+    { "value": "12", "label": "Industries served" },
+    { "value": "3", "label": "International affiliations" }
+  ],
+  "intro": {
+    "title": "A firm built on civil-law discipline",
+    "body": "Founded in 1998 by Barrister Abeng Roland, The Abeng Law Firm advises businesses operating in and with Cameroon on the full range of OHADA and domestic legal matters, from company formation and financing to disputes and regulatory compliance."
+  },
+  "pillars": [
+    {
+      "title": "Corporate & OHADA Law",
+      "body": "Advice grounded in the OHADA Uniform Acts that govern business across seventeen West and Central African member states.",
+      "href": "/expertise"
+    },
+    {
+      "title": "Cross-border reach",
+      "body": "An international network through Chambers-ranked recognition and membership of TagLaw and TRACE.",
+      "href": "/international"
+    },
+    {
+      "title": "Sector depth",
+      "body": "Matters spanning energy, banking, telecommunications, maritime and other pillars of the Cameroonian economy.",
+      "href": "/industries"
+    }
+  ],
+  "peopleTeaser": {
+    "title": "Led by Barrister Abeng Roland",
+    "body": "The Firm's Managing Partner has built The Abeng Law Firm's practice and its network of international relationships since 1998.",
+    "cta": "Meet the team",
+    "href": "/people"
+  },
+  "cta": {
+    "title": "Discuss a matter with the Firm",
+    "body": "For new instructions or general enquiries, reach the Firm directly by telephone or through the contact form.",
+    "button": "Contact us",
+    "href": "/contact"
+  }
+}

@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/*
+ * Tailwind v4 is CSS-first: named design tokens live here in `@theme` rather
+ * than in a tailwind.config.js file. This is the v4 equivalent of "extending
+ * tailwind.config with the palette as named tokens" — utilities like
+ * `bg-brand`, `text-gold`, `bg-paper` are generated from the variables below,
+ * so no component ever hard-codes a hex value.
+ *
+ * Palette is drawn directly from the Firm's crest: a deep burgundy sphere
+ * inside a brass/gold double ring, on ivory.
+ */
+
+:root {
+  /* Theme-invariant tones for surfaces that are always dark by design
+     (hero band, footer, dark CTA panels) regardless of light/dark mode. */
+  --cream: #f6eedd;
+  --cream-muted: #cbb9a6;
+
+  /* Light mode (default) */
+  --paper: #f8f4ea;
+  --paper-raised: #efe6d3;
+  --ink: #241512;
+  --ink-muted: #6b564c;
+  --brand: #5c1420;
+  --brand-dark: #34090f;
+  --brand-light: #8b2632;
+  --gold: #a9842d;
+  --gold-light: #cba84c;
+  --gold-dark: #7c5e1e;
+  --line: #e1d6be;
+}
+
+.dark {
+  /* Dark mode: same palette, roles inverted sensibly rather than a generic
+     gray theme — the burgundy sphere becomes the paper, ivory becomes ink.
+     --brand-dark is intentionally NOT relightened here: it is used as a
+     stable dark, high-contrast text color on gold-background buttons/chips
+     in both themes, not as a "darker brand" swatch that itself inverts. */
+  --paper: #1b0f0e;
+  --paper-raised: #241715;
+  --ink: #f6eedd;
+  --ink-muted: #cbb9a6;
+  --brand: #c2707a;
+  --brand-light: #8b2632;
+  --gold: #d9bb6e;
+  --gold-light: #ead08c;
+  --gold-dark: #a9842d;
+  --line: #3a2a22;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-cream-muted: var(--cream-muted);
+
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-light: var(--brand-light);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-line: var(--line);
+
+  --font-heading: var(--font-fraunces);
+  --font-body: var(--font-public-sans);
+  --font-mono: var(--font-ibm-plex-mono);
+}
+
+/* Class-based dark mode (Tailwind v4 requires opting in explicitly). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
