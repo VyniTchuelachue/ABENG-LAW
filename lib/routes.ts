@@ -15,12 +15,13 @@ export type NavKey = (typeof routes)[number]["key"];
 
 /**
  * The persistent header nav is intentionally short (a premium-firm pattern):
- * the remaining pages (People, Experience, International, Contact) stay
- * reachable from the homepage's own section-by-section narrative and from
- * the footer's full sitemap.
+ * the remaining pages (Experience, International, Contact) stay reachable
+ * from the homepage's own section-by-section narrative and from the
+ * footer's full sitemap.
  */
 export const headerRoutes = [
   { slug: "about", key: "about" },
+  { slug: "people", key: "people" },
   { slug: "expertise", key: "expertise" },
   { slug: "industries", key: "industries" },
   { slug: "insights", key: "insights" },

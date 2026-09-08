@@ -37,10 +37,9 @@ export default async function CareersPage({
     <section className="py-16 md:py-24">
       <Container>
         <SectionHeading
-          number={careers.eyebrowNumber}
+          kicker={common.nav.careers}
           title={careers.title}
           lead={careers.lead}
-          articleWord={common.articleWord}
         />
 
         <div className="mt-14 grid gap-12 md:grid-cols-2">

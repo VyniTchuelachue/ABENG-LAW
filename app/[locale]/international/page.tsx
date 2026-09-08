@@ -38,10 +38,9 @@ export default async function InternationalPage({
       <section className="py-16 md:py-24">
         <Container>
           <SectionHeading
-            number={international.eyebrowNumber}
+            kicker={common.nav.international}
             title={international.title}
             lead={international.lead}
-            articleWord={common.articleWord}
           />
 
           {/* DRAFT: pending Firm-approved copy */}

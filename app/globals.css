@@ -27,6 +27,16 @@
      unlike `--brand`, which relights for use as text on dark backgrounds. */
   --maroon: #5c1420;
 
+  /* Gold is a constant brand accent (sampled from the Firm's prior site),
+     not something that should invert with the theme. --gold and
+     --gold-light are legible on every dark surface in both themes
+     (verified against ink-black, maroon, and the dark-mode paper); only
+     --gold-dark exists separately, for gold text placed on light paper,
+     where the brighter constant would fail contrast. */
+  --gold: #c8a24a;
+  --gold-light: #e4c778;
+  --gold-dark: #7c6321;
+
   /* Light mode (default) */
   --paper: #f8f4ea;
   --paper-raised: #efe6d3;
@@ -35,9 +45,6 @@
   --brand: #5c1420;
   --brand-dark: #34090f;
   --brand-light: #8b2632;
-  --gold: #a9842d;
-  --gold-light: #cba84c;
-  --gold-dark: #7c5e1e;
   --line: #e1d6be;
 }
 
@@ -53,9 +60,6 @@
   --ink-muted: #cbb9a6;
   --brand: #c2707a;
   --brand-light: #8b2632;
-  --gold: #d9bb6e;
-  --gold-light: #ead08c;
-  --gold-dark: #a9842d;
   --line: #3a2a22;
 }
 

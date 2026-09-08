@@ -58,10 +58,9 @@ export default async function PeoplePage({
       <section className="py-16 md:py-24">
         <Container>
           <SectionHeading
-            number={people.eyebrowNumber}
+            kicker={common.nav.people}
             title={people.title}
             lead={people.lead}
-            articleWord={common.articleWord}
           />
         </Container>
       </section>

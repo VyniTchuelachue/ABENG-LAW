@@ -34,10 +34,9 @@ export default async function AboutPage({
       <section className="py-16 md:py-24">
         <Container>
           <SectionHeading
-            number={about.eyebrowNumber}
+            kicker={common.nav.about}
             title={about.title}
             lead={about.lead}
-            articleWord={common.articleWord}
           />
 
           {/* DRAFT: pending Firm-approved copy */}

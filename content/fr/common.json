@@ -6,7 +6,7 @@
   "nav": {
     "home": "Accueil",
     "about": "Le Cabinet",
-    "people": "Équipe",
+    "people": "Notre Équipe",
     "expertise": "Expertise",
     "industries": "Secteurs",
     "experience": "Références",
@@ -35,6 +35,5 @@
     "switchTo": "English",
     "label": "Langue"
   },
-  "headerContactCta": "Contact",
-  "articleWord": "Art."
+  "headerContactCta": "Contact"
 }

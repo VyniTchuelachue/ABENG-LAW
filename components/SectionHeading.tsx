@@ -1,33 +1,30 @@
 /**
- * The "Art. 01 / Art. 02…" numbering device used on every section header — a
- * nod to OHADA Uniform Act / civil-code article numbering.
+ * The primary heading for a page section: an optional short kicker label,
+ * the heading itself (rendered as the page's H1 when it opens the page),
+ * and an optional lead paragraph.
  */
 export default function SectionHeading({
-  number,
   title,
   lead,
-  articleWord = "Art.",
+  kicker,
   align = "left",
 }: {
-  number: number;
   title: string;
   lead?: string;
-  articleWord?: string;
+  kicker?: string;
   align?: "left" | "center";
 }) {
   const alignClass = align === "center" ? "text-center mx-auto" : "text-left";
-  const ruleClass = align === "center" ? "mx-auto" : "";
   return (
     <div className={`max-w-3xl ${alignClass}`}>
-      <div className={`flex items-center gap-3 ${align === "center" ? "justify-center" : ""}`}>
-        <span aria-hidden="true" className={`h-px w-8 bg-gold-dark dark:bg-gold ${ruleClass}`} />
-        <p className="font-mono text-sm tracking-[0.2em] uppercase text-gold-dark dark:text-gold">
-          {articleWord} {String(number).padStart(2, "0")}
+      {kicker ? (
+        <p className="font-mono text-xs tracking-[0.2em] uppercase text-gold-dark dark:text-gold">
+          {kicker}
         </p>
-      </div>
-      <h2 className="mt-4 font-heading text-3xl md:text-4xl font-medium text-brand dark:text-ink">
+      ) : null}
+      <h1 className="mt-3 font-heading text-3xl md:text-4xl font-medium text-brand dark:text-ink">
         {title}
-      </h2>
+      </h1>
       {lead ? (
         <p className="mt-4 text-base md:text-lg text-ink-muted">{lead}</p>
       ) : null}

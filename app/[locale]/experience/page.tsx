@@ -36,18 +36,17 @@ export default async function ExperiencePage({
     <section className="py-16 md:py-24">
       <Container>
         <SectionHeading
-          number={experience.eyebrowNumber}
+          kicker={common.nav.experience}
           title={experience.title}
           lead={experience.lead}
-          articleWord={common.articleWord}
         />
 
         <div className="mt-14 grid gap-px bg-line border border-line md:grid-cols-2">
-          {experience.items.map((item, index) => (
+          {experience.items.map((item) => (
             <div key={item.title} className="group bg-paper hover:bg-paper-raised transition-colors p-7">
               <div className="flex items-start justify-between gap-4">
-                <p className="font-mono text-xs text-gold-dark dark:text-gold">
-                  {common.articleWord} {String(index + 1).padStart(2, "0")} — {item.sector}
+                <p className="font-mono text-xs uppercase tracking-wide text-gold-dark dark:text-gold">
+                  {item.sector}
                 </p>
                 <span className="shrink-0 font-mono text-[10px] uppercase tracking-[0.1em] text-ink-muted border border-line px-2 py-1">
                   {experience.placeholderBadge}

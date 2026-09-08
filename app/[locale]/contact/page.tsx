@@ -38,10 +38,9 @@ export default async function ContactPage({
     <section className="py-16 md:py-24">
       <Container>
         <SectionHeading
-          number={contact.eyebrowNumber}
+          kicker={common.nav.contact}
           title={contact.title}
           lead={contact.lead}
-          articleWord={common.articleWord}
         />
 
         <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_1.3fr]">

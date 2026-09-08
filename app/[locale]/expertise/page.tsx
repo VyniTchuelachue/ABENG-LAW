@@ -36,20 +36,17 @@ export default async function ExpertisePage({
     <section className="py-16 md:py-24">
       <Container>
         <SectionHeading
-          number={expertise.eyebrowNumber}
+          kicker={common.nav.expertise}
           title={expertise.title}
           lead={expertise.lead}
-          articleWord={common.articleWord}
         />
 
         {/* DRAFT: pending Firm-approved copy (practice area descriptions) */}
         <div className="mt-14 grid gap-px bg-line border border-line sm:grid-cols-2 lg:grid-cols-3">
-          {expertise.items.map((item, index) => (
+          {expertise.items.map((item) => (
             <div key={item.slug} className="group bg-paper hover:bg-paper-raised transition-colors p-7">
-              <p className="font-mono text-xs text-gold-dark dark:text-gold">
-                {common.articleWord} {String(index + 1).padStart(2, "0")}
-              </p>
-              <h3 className="mt-2 font-heading text-lg text-brand dark:text-ink">
+              <span aria-hidden="true" className="block h-px w-8 bg-gold-dark dark:bg-gold mb-4" />
+              <h3 className="font-heading text-lg text-brand dark:text-ink">
                 {item.title}
               </h3>
               <p className="mt-3 text-sm text-ink-muted">{item.description}</p>

@@ -18,10 +18,9 @@ export async function generateMetadata({
   return buildMetadata({ locale, path: "", title: home.meta.title, description: home.meta.description });
 }
 
-function Kicker({ index, text }: { index: string; text: string }) {
+function Kicker({ text }: { text: string }) {
   return (
     <p className="font-mono text-xs tracking-[0.25em] uppercase text-gold-dark dark:text-gold">
-      <span className="text-ink-muted/60 mr-2">{index}</span>
       {text}
     </p>
   );
@@ -65,7 +64,7 @@ export default async function HomePage({
 
   return (
     <>
-      {/* 01 — Hero */}
+      {/* Hero */}
       <section className="relative overflow-hidden bg-ink-black">
         <Image
           src="/images/law-library-generic.png"
@@ -74,7 +73,7 @@ export default async function HomePage({
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[80%_50%]"
+          className="object-cover object-[75%_20%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ink-black/95 via-ink-black/70 to-ink-black/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink-black/80 via-transparent to-transparent" />
@@ -84,10 +83,10 @@ export default async function HomePage({
           style={{ background: "radial-gradient(closest-side, var(--gold), transparent 70%)" }}
         />
 
-        <Container className="relative py-20 md:py-28">
+        <Container className="relative py-14 md:py-20">
           <div className="grid gap-14 lg:grid-cols-[1.15fr_0.85fr] items-center">
             <div>
-              <p className="font-mono text-sm font-semibold uppercase tracking-[0.2em] text-gold-light">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-gold-light">
                 {home.hero.kicker}
               </p>
               <h1 className="mt-6 font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-cream leading-[1.08]">
@@ -124,7 +123,7 @@ export default async function HomePage({
                   priority
                 />
                 <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-brand-dark to-transparent" />
-                <div className="absolute left-5 right-5 bottom-6">
+                <div className="absolute left-5 right-5 bottom-10">
                   <p className="font-script text-3xl text-cream leading-none">{home.hero.founderName}</p>
                   <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-gold-light">
                     {home.hero.founderTitle}
@@ -134,14 +133,14 @@ export default async function HomePage({
               <StatBadge
                 value={home.hero.badgeValue}
                 label={home.hero.badgeLabel}
-                className="absolute -bottom-6 -right-4 sm:-right-6"
+                className="absolute -bottom-10 -right-6 sm:-right-10"
               />
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 02 — Statistics */}
+      {/* Statistics */}
       <section className="border-b border-line bg-paper-raised">
         <Container className="py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
           {home.stats.map((stat) => (
@@ -155,7 +154,7 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* 03 — The Firm */}
+      {/* The Firm */}
       <section className="py-20 md:py-32">
         <Container>
           <div className="grid gap-16 lg:grid-cols-2 items-center">
@@ -177,7 +176,7 @@ export default async function HomePage({
             </div>
 
             <div className="order-1 lg:order-2">
-              <Kicker index="03" text={home.firm.kicker} />
+              <Kicker text={home.firm.kicker} />
               <h2 className="mt-4 font-heading text-3xl md:text-4xl font-medium text-brand dark:text-ink leading-tight">
                 {home.firm.title}
               </h2>
@@ -195,11 +194,11 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* 04 — Expertise */}
+      {/* Expertise */}
       <section className="py-20 md:py-32 bg-paper-raised">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
-            <Kicker index="04" text={home.expertiseSection.kicker} />
+            <Kicker text={home.expertiseSection.kicker} />
             <h2 className="mt-4 font-heading text-3xl md:text-4xl font-medium text-brand dark:text-ink">
               {home.expertiseSection.title}
             </h2>
@@ -223,11 +222,11 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* 05 — Industries */}
+      {/* Industries */}
       <section className="py-20 md:py-32">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
-            <Kicker index="05" text={home.industriesSection.kicker} />
+            <Kicker text={home.industriesSection.kicker} />
             <h2 className="mt-4 font-heading text-3xl md:text-4xl font-medium text-brand dark:text-ink">
               {home.industriesSection.title}
             </h2>
@@ -250,11 +249,11 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* 06 — Experience */}
+      {/* Experience */}
       <section className="py-20 md:py-32 bg-paper-raised">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
-            <Kicker index="06" text={home.experienceSection.kicker} />
+            <Kicker text={home.experienceSection.kicker} />
             <h2 className="mt-4 font-heading text-3xl md:text-4xl font-medium text-brand dark:text-ink">
               {home.experienceSection.title}
             </h2>
@@ -284,7 +283,7 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* 07 — People */}
+      {/* People */}
       <section className="py-20 md:py-32">
         <Container className="grid gap-10 md:grid-cols-[auto_1fr] items-center">
           <Image
@@ -295,7 +294,7 @@ export default async function HomePage({
             className="w-40 h-auto border border-line"
           />
           <div>
-            <Kicker index="07" text={home.peopleSection.kicker} />
+            <Kicker text={home.peopleSection.kicker} />
             {/* DRAFT: pending Firm-approved copy */}
             <h2 className="mt-4 font-heading text-2xl md:text-3xl font-medium text-brand dark:text-ink">
               {home.peopleSection.title}
@@ -308,12 +307,11 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* 08 — International */}
+      {/* International */}
       <section className="relative overflow-hidden bg-ink-black py-20 md:py-32">
         <Container className="relative">
           <div className="max-w-2xl mx-auto text-center">
             <p className="font-mono text-xs tracking-[0.25em] uppercase text-gold">
-              <span className="text-cream-muted/50 mr-2">08</span>
               {home.internationalSection.kicker}
             </p>
             <h2 className="mt-4 font-heading text-3xl md:text-4xl font-medium text-cream">
@@ -353,11 +351,11 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* 09 — Insights */}
+      {/* Insights */}
       <section className="py-20 md:py-32">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
-            <Kicker index="09" text={home.insightsSection.kicker} />
+            <Kicker text={home.insightsSection.kicker} />
             <h2 className="mt-4 font-heading text-3xl md:text-4xl font-medium text-brand dark:text-ink">
               {home.insightsSection.title}
             </h2>
@@ -387,12 +385,12 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* 10 — Careers (small, attractive) */}
+      {/* Careers (small, attractive) */}
       <section className="py-16 md:py-20 bg-paper-raised">
         <Container>
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border border-line p-8 md:p-10">
             <div>
-              <Kicker index="10" text={home.careersSection.kicker} />
+              <Kicker text={home.careersSection.kicker} />
               <h2 className="mt-3 font-heading text-xl md:text-2xl font-medium text-brand dark:text-ink">
                 {home.careersSection.title}
               </h2>
@@ -408,12 +406,12 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* 11 — Contact (large final CTA) */}
+      {/* Contact (large final CTA) */}
       <section className="relative overflow-hidden bg-ink-black py-24 md:py-32">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--gold)_0%,_transparent_60%)] opacity-[0.12]" />
         <Container className="relative text-center max-w-2xl mx-auto">
           <span aria-hidden="true" className="mx-auto block h-px w-10 bg-gold mb-6" />
-          <p className="font-mono text-xs tracking-[0.25em] uppercase text-cream-muted/60">11 — {common.nav.contact}</p>
+          <p className="font-mono text-xs tracking-[0.25em] uppercase text-cream-muted/60">{common.nav.contact}</p>
           <h2 className="mt-4 font-heading text-3xl md:text-4xl font-medium text-cream">
             {home.cta.title}
           </h2>

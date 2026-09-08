@@ -36,18 +36,17 @@ export default async function InsightsPage({
     <section className="py-16 md:py-24">
       <Container>
         <SectionHeading
-          number={insights.eyebrowNumber}
+          kicker={common.nav.insights}
           title={insights.title}
           lead={insights.lead}
-          articleWord={common.articleWord}
         />
 
         <div className="mt-14 grid gap-px bg-line border border-line md:grid-cols-2">
-          {insights.items.map((item, index) => (
+          {insights.items.map((item) => (
             <div key={item.title} className="group bg-paper hover:bg-paper-raised transition-colors p-7">
               <div className="flex items-start justify-between gap-4">
-                <p className="font-mono text-xs text-gold-dark dark:text-gold">
-                  {common.articleWord} {String(index + 1).padStart(2, "0")} — {item.category}
+                <p className="font-mono text-xs uppercase tracking-wide text-gold-dark dark:text-gold">
+                  {item.category}
                 </p>
                 <span className="shrink-0 font-mono text-[10px] uppercase tracking-[0.1em] text-ink-muted border border-line px-2 py-1">
                   {insights.placeholderBadge}
