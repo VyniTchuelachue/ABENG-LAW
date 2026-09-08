@@ -80,8 +80,8 @@ export default async function PersonProfilePage({
   return (
     <section className="py-16 md:py-24">
       <Container>
-        <div className="border border-line grid md:grid-cols-[280px_1fr]">
-          <div className="relative aspect-[4/5] md:aspect-auto bg-paper-raised">
+        <div className="border border-line grid md:grid-cols-[280px_1fr] items-start">
+          <div className="relative aspect-[4/5] bg-paper-raised">
             {member.image ? (
               <Image
                 src={member.image}
