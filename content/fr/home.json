@@ -4,13 +4,18 @@
     "description": "The Abeng Law Firm est un cabinet d'affaires basé à Douala, fondé en 1998, intervenant en droit OHADA, droit des sociétés, financement et opérations transfrontalières en Afrique centrale."
   },
   "hero": {
-    "kicker": "Douala, Cameroun — depuis 1998",
-    "title": "Le droit des affaires, avec la rigueur de l'OHADA.",
-    "subtitle": "The Abeng Law Firm conseille des clients camerounais et internationaux sur des opérations commerciales, sociétaires et transfrontalières, depuis Bonapriso, Douala.",
-    "ctaPrimary": "Notre expertise",
-    "ctaPrimaryHref": "/expertise",
-    "ctaSecondary": "Contacter le Cabinet",
-    "ctaSecondaryHref": "/contact"
+    "kicker": "Cabinet d'avocats d'affaires — Douala, Cameroun",
+    "titlePrefix": "Protégez ce que vous avez mis des",
+    "titleAccent": "années à construire.",
+    "subtitle": "Nous aidons les entreprises à prévenir les risques, sécuriser leurs opérations et défendre leurs intérêts dans des dossiers juridiques et commerciaux complexes.",
+    "ctaPrimary": "Prendre rendez-vous",
+    "ctaPrimaryHref": "/contact",
+    "ctaSecondary": "Découvrir notre expertise",
+    "ctaSecondaryHref": "/expertise",
+    "founderName": "Maître Abeng Roland",
+    "founderTitle": "Fondateur & Associé gérant",
+    "badgeValue": "28+",
+    "badgeLabel": "Années au service des entreprises"
   },
   "stats": [
     { "value": "1998", "label": "Fondation" },
@@ -18,37 +23,73 @@
     { "value": "12", "label": "Secteurs d'activité" },
     { "value": "3", "label": "Affiliations internationales" }
   ],
-  "intro": {
-    "title": "Un cabinet fondé sur la rigueur du droit civil",
-    "body": "Fondé en 1998 par Maître Abeng Roland, The Abeng Law Firm conseille les entreprises opérant au Cameroun et avec le Cameroun sur l'ensemble des questions juridiques relevant du droit OHADA et du droit interne, de la constitution de sociétés au financement, jusqu'au contentieux et à la conformité réglementaire."
+  "firm": {
+    "kicker": "Le Cabinet",
+    "title": "Un cabinet de référence, reconnu pour la rigueur de son conseil",
+    "body": [
+      "The Abeng Law Firm est un cabinet d'affaires basé à Douala, qui conseille et défend des entreprises locales et internationales à chaque étape de leur développement au Cameroun et dans la sous-région OHADA.",
+      "Notre approche allie exigence technique, sens stratégique et connaissance fine du contexte des affaires en Afrique centrale, pour offrir à nos clients une véritable sécurité juridique."
+    ],
+    "cta": "Découvrir le Cabinet",
+    "href": "/about",
+    "image": "/images/roland-with-colleagues.jpeg",
+    "imageAlt": "Maître Abeng Roland avec des confrères lors d'un événement professionnel",
+    "badgeValue": "28+",
+    "badgeLabel": "Années de droit des affaires"
   },
-  "pillars": [
-    {
-      "title": "Droit des sociétés et OHADA",
-      "body": "Des conseils ancrés dans les Actes uniformes OHADA qui régissent les affaires dans dix-sept États membres d'Afrique de l'Ouest et du Centre.",
-      "href": "/expertise"
-    },
-    {
-      "title": "Rayonnement international",
-      "body": "Un réseau international grâce à une reconnaissance Chambers et à l'appartenance à TagLaw et TRACE.",
-      "href": "/international"
-    },
-    {
-      "title": "Une expertise sectorielle",
-      "body": "Des dossiers couvrant l'énergie, la banque, les télécommunications, le secteur maritime et d'autres piliers de l'économie camerounaise.",
-      "href": "/industries"
-    }
-  ],
-  "peopleTeaser": {
+  "expertiseSection": {
+    "kicker": "Expertise",
+    "title": "Les défis juridiques ne doivent pas ralentir votre entreprise",
+    "lead": "Quel que soit le stade de votre activité, nous anticipons les risques et intervenons avec rapidité pour que vos affaires continuent d'avancer.",
+    "cta": "Voir tous les domaines d'expertise",
+    "href": "/expertise"
+  },
+  "industriesSection": {
+    "kicker": "Secteurs",
+    "title": "Un conseil informé par votre secteur d'activité",
+    "lead": "De l'énergie aux télécommunications, nos conseils sont façonnés par la réalité des secteurs que nous accompagnons.",
+    "cta": "Explorer les secteurs",
+    "href": "/industries"
+  },
+  "experienceSection": {
+    "kicker": "Références",
+    "title": "Ce que nous avons concrètement réalisé",
+    "lead": "Un aperçu du type de dossiers traités par le Cabinet pour ses clients.",
+    "cta": "Voir nos références",
+    "href": "/experience"
+  },
+  "peopleSection": {
+    "kicker": "Équipe",
     "title": "Dirigé par Maître Abeng Roland",
-    "body": "L'Associé gérant du Cabinet a construit la pratique de The Abeng Law Firm et son réseau de relations internationales depuis 1998.",
+    "body": "L'Associé gérant du Cabinet a construit la pratique de The Abeng Law Firm et son réseau de relations internationales depuis sa fondation en 1998.",
     "cta": "Découvrir l'équipe",
     "href": "/people"
   },
+  "internationalSection": {
+    "kicker": "International",
+    "title": "Jusqu'où s'étend notre rayonnement",
+    "lead": "Au-delà du Cameroun, The Abeng Law Firm participe activement aux réseaux juridiques internationaux, pour offrir à ses clients une vision élargie et des alliances de confiance à travers le monde.",
+    "cta": "Découvrir notre réseau",
+    "href": "/international"
+  },
+  "insightsSection": {
+    "kicker": "Actualités",
+    "title": "Ce à quoi nous réfléchissons",
+    "lead": "Actualités juridiques et publications du Cabinet.",
+    "cta": "Voir toutes les actualités",
+    "href": "/insights"
+  },
+  "careersSection": {
+    "kicker": "Carrières",
+    "title": "Construisez votre carrière avec nous",
+    "body": "The Abeng Law Firm développe son équipe au rythme de sa pratique, avec un encadrement direct par les avocats seniors du Cabinet.",
+    "cta": "Voir les opportunités",
+    "href": "/careers"
+  },
   "cta": {
-    "title": "Échanger avec le Cabinet",
-    "body": "Pour toute nouvelle mission ou demande générale, contactez directement le Cabinet par téléphone ou via le formulaire de contact.",
-    "button": "Nous contacter",
+    "title": "Parlons de vos enjeux juridiques",
+    "body": "Prenez rendez-vous avec notre équipe pour évaluer votre situation et construire ensemble une stratégie de protection sur mesure pour votre entreprise.",
+    "button": "Contacter le Cabinet",
     "href": "/contact"
   }
 }

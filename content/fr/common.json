@@ -5,19 +5,15 @@
   "estLabel": "Depuis 1998 · Douala",
   "nav": {
     "home": "Accueil",
-    "about": "À propos",
+    "about": "Le Cabinet",
     "people": "Équipe",
     "expertise": "Expertise",
     "industries": "Secteurs",
     "experience": "Références",
     "international": "Rayonnement international",
     "insights": "Actualités",
-    "careers": "Carrières",
+    "careers": "Carrière",
     "contact": "Contact"
-  },
-  "navShort": {
-    "experience": "Références",
-    "international": "International"
   },
   "footer": {
     "description": "Droit des affaires au Cameroun depuis 1998.",
@@ -35,14 +31,10 @@
     "sending": "Envoi…",
     "backHome": "Retour à l'accueil"
   },
-  "theme": {
-    "light": "Clair",
-    "dark": "Sombre",
-    "toggleLabel": "Changer le thème"
-  },
   "language": {
     "switchTo": "English",
     "label": "Langue"
   },
+  "headerContactCta": "Contact",
   "articleWord": "Art."
 }

@@ -68,6 +68,7 @@
   --font-heading: var(--font-fraunces);
   --font-body: var(--font-public-sans);
   --font-mono: var(--font-ibm-plex-mono);
+  --font-script: var(--font-script);
 }
 
 /* Class-based dark mode (Tailwind v4 requires opting in explicitly). */

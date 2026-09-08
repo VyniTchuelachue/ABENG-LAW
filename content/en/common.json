@@ -5,19 +5,15 @@
   "estLabel": "Est. 1998 · Douala",
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "The Firm",
     "people": "People",
     "expertise": "Expertise",
     "industries": "Industries",
     "experience": "Representative Experience",
     "international": "International Reach & Affiliations",
     "insights": "Insights",
-    "careers": "Careers",
+    "careers": "Career",
     "contact": "Contact"
-  },
-  "navShort": {
-    "experience": "Experience",
-    "international": "International"
   },
   "footer": {
     "description": "Business law in Cameroon since 1998.",
@@ -35,14 +31,10 @@
     "sending": "Sending…",
     "backHome": "Back to home"
   },
-  "theme": {
-    "light": "Light",
-    "dark": "Dark",
-    "toggleLabel": "Toggle color theme"
-  },
   "language": {
     "switchTo": "Français",
     "label": "Language"
   },
+  "headerContactCta": "Contact",
   "articleWord": "Art."
 }

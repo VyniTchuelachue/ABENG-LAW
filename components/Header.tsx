@@ -5,9 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Container from "./Container";
-import LanguageSwitcher from "./LanguageSwitcher";
-import ThemeToggle from "./ThemeToggle";
-import { routes } from "@/lib/routes";
+import LocaleToggle from "./LocaleToggle";
+import { routes, headerRoutes } from "@/lib/routes";
 import type { Locale } from "@/lib/i18n";
 import type { CommonContent } from "@/lib/content";
 
@@ -49,14 +48,10 @@ export default function Header({
           </span>
         </Link>
 
-        <nav className="hidden xl:flex items-center gap-5" aria-label="Primary">
-          {routes.map((route) => {
-            const href = route.slug ? `/${locale}/${route.slug}` : `/${locale}`;
-            const isActive =
-              pathname === href || (route.slug !== "" && pathname.startsWith(`${href}/`));
-            const label =
-              (common.navShort as Partial<Record<string, string>>)[route.key] ??
-              common.nav[route.key];
+        <nav className="hidden lg:flex items-center gap-8" aria-label="Primary">
+          {headerRoutes.map((route) => {
+            const href = `/${locale}/${route.slug}`;
+            const isActive = pathname === href || pathname.startsWith(`${href}/`);
             return (
               <Link
                 key={route.key}
@@ -68,36 +63,44 @@ export default function Header({
                   isActive ? "after:scale-x-100" : "after:scale-x-0"
                 }`}
               >
-                {label}
+                {common.nav[route.key]}
               </Link>
             );
           })}
         </nav>
 
-        <div className="hidden xl:flex items-center gap-3 shrink-0">
-          <LanguageSwitcher locale={locale} switchToLabel={common.language.switchTo} />
-          <ThemeToggle toggleLabel={common.theme.toggleLabel} />
+        <div className="hidden lg:flex items-center gap-6 shrink-0">
+          <LocaleToggle locale={locale} />
+          <Link
+            href={`/${locale}/contact`}
+            className="inline-flex items-center justify-center bg-gold px-5 py-2.5 text-xs font-medium uppercase tracking-[0.12em] text-brand-dark hover:bg-gold-light transition-colors"
+          >
+            {common.headerContactCta}
+          </Link>
         </div>
 
-        <button
-          type="button"
-          className="xl:hidden inline-flex h-10 w-10 items-center justify-center rounded-md border border-line text-ink shrink-0"
-          aria-label="Menu"
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-        >
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
-            {open ? (
-              <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
-            ) : (
-              <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
-            )}
-          </svg>
-        </button>
+        <div className="flex items-center gap-4 lg:hidden">
+          <LocaleToggle locale={locale} />
+          <button
+            type="button"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-line text-ink shrink-0"
+            aria-label="Menu"
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
+              {open ? (
+                <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
+              ) : (
+                <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" />
+              )}
+            </svg>
+          </button>
+        </div>
       </Container>
 
       {open ? (
-        <div className="xl:hidden border-t border-line bg-paper">
+        <div className="lg:hidden border-t border-line bg-paper">
           <Container className="py-6 flex flex-col gap-5">
             <nav className="flex flex-col gap-4" aria-label="Primary">
               {routes.map((route) => {
@@ -117,10 +120,6 @@ export default function Header({
                 );
               })}
             </nav>
-            <div className="flex items-center justify-between pt-4 border-t border-line">
-              <LanguageSwitcher locale={locale} switchToLabel={common.language.switchTo} />
-              <ThemeToggle toggleLabel={common.theme.toggleLabel} />
-            </div>
           </Container>
         </div>
       ) : null}

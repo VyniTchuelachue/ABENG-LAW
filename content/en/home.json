@@ -4,13 +4,18 @@
     "description": "The Abeng Law Firm is a Douala-based business law firm founded in 1998, advising on OHADA, corporate, banking and cross-border matters across Central Africa."
   },
   "hero": {
-    "kicker": "Douala, Cameroon — since 1998",
-    "title": "Business law, built on OHADA discipline.",
-    "subtitle": "The Abeng Law Firm advises Cameroonian and international clients on corporate, commercial and cross-border matters, from Bonapriso, Douala.",
-    "ctaPrimary": "Our Expertise",
-    "ctaPrimaryHref": "/expertise",
-    "ctaSecondary": "Speak to the Firm",
-    "ctaSecondaryHref": "/contact"
+    "kicker": "Business Law Firm — Douala, Cameroon",
+    "titlePrefix": "Protect today what took you",
+    "titleAccent": "years to build.",
+    "subtitle": "We help businesses prevent risk, secure their operations and defend their interests across complex legal and commercial matters.",
+    "ctaPrimary": "Book a Consultation",
+    "ctaPrimaryHref": "/contact",
+    "ctaSecondary": "Discover our expertise",
+    "ctaSecondaryHref": "/expertise",
+    "founderName": "Barrister Abeng Roland",
+    "founderTitle": "Founder & Managing Partner",
+    "badgeValue": "28+",
+    "badgeLabel": "Years serving businesses"
   },
   "stats": [
     { "value": "1998", "label": "Founded" },
@@ -18,37 +23,73 @@
     { "value": "12", "label": "Industries served" },
     { "value": "3", "label": "International affiliations" }
   ],
-  "intro": {
-    "title": "A firm built on civil-law discipline",
-    "body": "Founded in 1998 by Barrister Abeng Roland, The Abeng Law Firm advises businesses operating in and with Cameroon on the full range of OHADA and domestic legal matters, from company formation and financing to disputes and regulatory compliance."
+  "firm": {
+    "kicker": "The Firm",
+    "title": "A firm of reference, recognized for the rigor of its counsel",
+    "body": [
+      "The Abeng Law Firm is a Douala-based business law firm advising and defending local and international businesses at every stage of their development in Cameroon and across the OHADA region.",
+      "Our approach combines technical rigor, strategic judgment and a close understanding of the business environment in Central Africa, to give our clients genuine legal security."
+    ],
+    "cta": "Discover the Firm",
+    "href": "/about",
+    "image": "/images/roland-with-colleagues.jpeg",
+    "imageAlt": "Barrister Abeng Roland with colleagues at a professional event",
+    "badgeValue": "28+",
+    "badgeLabel": "Years in business law"
   },
-  "pillars": [
-    {
-      "title": "Corporate & OHADA Law",
-      "body": "Advice grounded in the OHADA Uniform Acts that govern business across seventeen West and Central African member states.",
-      "href": "/expertise"
-    },
-    {
-      "title": "Cross-border reach",
-      "body": "An international network through Chambers-ranked recognition and membership of TagLaw and TRACE.",
-      "href": "/international"
-    },
-    {
-      "title": "Sector depth",
-      "body": "Matters spanning energy, banking, telecommunications, maritime and other pillars of the Cameroonian economy.",
-      "href": "/industries"
-    }
-  ],
-  "peopleTeaser": {
+  "expertiseSection": {
+    "kicker": "Expertise",
+    "title": "Legal challenges should not slow down your business",
+    "lead": "Whatever stage your business is at, we anticipate risk and act with speed so your affairs keep moving forward.",
+    "cta": "View all practice areas",
+    "href": "/expertise"
+  },
+  "industriesSection": {
+    "kicker": "Industries",
+    "title": "Sector-informed counsel, wherever your business operates",
+    "lead": "From energy to telecommunications, our advice is shaped by the realities of the industries we serve.",
+    "cta": "Explore industries",
+    "href": "/industries"
+  },
+  "experienceSection": {
+    "kicker": "Experience",
+    "title": "What we have actually done",
+    "lead": "A sense of the type of matters the Firm undertakes for its clients.",
+    "cta": "View our experience",
+    "href": "/experience"
+  },
+  "peopleSection": {
+    "kicker": "People",
     "title": "Led by Barrister Abeng Roland",
-    "body": "The Firm's Managing Partner has built The Abeng Law Firm's practice and its network of international relationships since 1998.",
-    "cta": "Meet the team",
+    "body": "The Firm's Managing Partner has built The Abeng Law Firm's practice and its network of international relationships since founding it in 1998.",
+    "cta": "Meet our team",
     "href": "/people"
   },
+  "internationalSection": {
+    "kicker": "International",
+    "title": "Where our reach extends",
+    "lead": "Beyond Cameroon, The Abeng Law Firm takes an active part in international legal networks, giving clients a wider view and trusted alliances around the world.",
+    "cta": "Explore our network",
+    "href": "/international"
+  },
+  "insightsSection": {
+    "kicker": "Insights",
+    "title": "What we're thinking about",
+    "lead": "Legal updates and publications from the Firm.",
+    "cta": "View all insights",
+    "href": "/insights"
+  },
+  "careersSection": {
+    "kicker": "Careers",
+    "title": "Build your career with us",
+    "body": "The Abeng Law Firm grows its team as its practice grows, with direct mentorship from the Firm's senior lawyers.",
+    "cta": "View opportunities",
+    "href": "/careers"
+  },
   "cta": {
-    "title": "Discuss a matter with the Firm",
-    "body": "For new instructions or general enquiries, reach the Firm directly by telephone or through the contact form.",
-    "button": "Contact us",
+    "title": "Let's talk about your legal challenges",
+    "body": "Book a consultation with our team to assess your situation and build a tailored protection strategy for your business.",
+    "button": "Contact the Firm",
     "href": "/contact"
   }
 }
