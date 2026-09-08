@@ -58,7 +58,7 @@ export default async function HomePage({
   const featuredIndustries = industries.items.slice(0, 3);
   const featuredExperience = experience.items.slice(0, 2);
   const featuredInsights = insights.items.slice(0, 2);
-  const featuredGallery = international.gallery.slice(0, 3);
+  const featuredGallery = international.gallery;
 
   const l = (href: string) => `/${locale}${href}`;
 
@@ -320,7 +320,7 @@ export default async function HomePage({
             <p className="mt-4 text-cream-muted">{home.internationalSection.lead}</p>
           </div>
 
-          <div className="mt-14 grid gap-8 md:grid-cols-3">
+          <div className="mt-14 grid gap-8 md:grid-cols-2 max-w-3xl mx-auto">
             {featuredGallery.map((photo) => (
               <figure key={photo.image}>
                 <div className="relative aspect-[4/3] border border-gold/15">
@@ -328,7 +328,7 @@ export default async function HomePage({
                     src={photo.image}
                     alt={photo.alt}
                     fill
-                    sizes="(min-width: 768px) 33vw, 100vw"
+                    sizes="(min-width: 768px) 50vw, 100vw"
                     className="object-cover"
                   />
                 </div>

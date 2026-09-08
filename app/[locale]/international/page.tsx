@@ -64,7 +64,7 @@ export default async function InternationalPage({
 
       <section className="py-16 md:py-24 bg-paper-raised">
         <Container>
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2">
             {international.gallery.map((photo) => (
               <figure key={photo.image} className="border border-line bg-paper">
                 <div className="relative aspect-[4/3]">
@@ -72,7 +72,7 @@ export default async function InternationalPage({
                     src={photo.image}
                     alt={photo.alt}
                     fill
-                    sizes="(min-width: 768px) 33vw, 100vw"
+                    sizes="(min-width: 768px) 50vw, 100vw"
                     className="object-cover"
                   />
                 </div>
