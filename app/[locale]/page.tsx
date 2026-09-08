@@ -74,23 +74,23 @@ export default async function HomePage({
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[80%_50%] opacity-[0.22] mix-blend-luminosity"
+          className="object-cover object-[80%_50%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink-black via-ink-black/95 to-ink-black/78" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink-black via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-black/95 via-ink-black/70 to-ink-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink-black/80 via-transparent to-transparent" />
         <div
           aria-hidden="true"
-          className="absolute right-0 top-1/2 -translate-y-1/2 h-[36rem] w-[36rem] rounded-full opacity-40 blur-3xl"
+          className="absolute right-0 top-1/2 -translate-y-1/2 h-[36rem] w-[36rem] rounded-full opacity-10 blur-3xl"
           style={{ background: "radial-gradient(closest-side, var(--gold), transparent 70%)" }}
         />
 
         <Container className="relative py-20 md:py-28">
           <div className="grid gap-14 lg:grid-cols-[1.15fr_0.85fr] items-center">
             <div>
-              <p className="font-mono text-sm uppercase tracking-[0.3em] text-gold-light">
+              <p className="font-mono text-sm font-semibold uppercase tracking-[0.2em] text-gold-light">
                 {home.hero.kicker}
               </p>
-              <h1 className="mt-6 font-heading text-4xl sm:text-5xl md:text-6xl font-medium text-cream leading-[1.08]">
+              <h1 className="mt-6 font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-cream leading-[1.08]">
                 {home.hero.titlePrefix}{" "}
                 <span className="text-gold-light">{home.hero.titleAccent}</span>
               </h1>

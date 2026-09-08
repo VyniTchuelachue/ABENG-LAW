@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Public_Sans, IBM_Plex_Mono, Pinyon_Script } from "next/font/google";
+import { Playfair_Display, Public_Sans, IBM_Plex_Mono, Pinyon_Script } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import Header from "@/components/Header";
@@ -7,9 +7,10 @@ import Footer from "@/components/Footer";
 import { getContent } from "@/lib/content";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 
-const fraunces = Fraunces({
+const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-playfair",
   display: "swap",
 });
 
@@ -75,7 +76,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${fraunces.variable} ${publicSans.variable} ${ibmPlexMono.variable} ${pinyonScript.variable}`}
+      className={`${playfairDisplay.variable} ${publicSans.variable} ${ibmPlexMono.variable} ${pinyonScript.variable}`}
       suppressHydrationWarning
     >
       <head>
