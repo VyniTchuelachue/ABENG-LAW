@@ -21,7 +21,7 @@ export default function Header({
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-gold/25 bg-paper/95 backdrop-blur supports-[backdrop-filter]:bg-paper/85 shadow-[0_1px_0_rgba(169,132,45,0.15)]">
+    <header className="sticky top-0 z-40 bg-ink-black/95 backdrop-blur supports-[backdrop-filter]:bg-ink-black/90 border-b border-gold/15">
       <div className="h-[3px] bg-gradient-to-r from-gold-dark via-gold to-gold-dark" />
       <Container className="flex h-20 md:h-24 items-center justify-between gap-4">
         <Link
@@ -37,12 +37,12 @@ export default function Header({
             className="h-11 md:h-12 w-auto shrink-0"
             priority
           />
-          <span aria-hidden="true" className="hidden sm:block h-9 w-px bg-line" />
+          <span aria-hidden="true" className="hidden sm:block h-9 w-px bg-cream/15" />
           <span className="flex flex-col leading-none min-w-0">
-            <span className="font-heading text-base md:text-lg font-semibold tracking-[0.02em] text-brand dark:text-ink uppercase truncate">
+            <span className="font-heading text-base md:text-lg font-semibold tracking-[0.02em] text-cream uppercase truncate">
               {common.siteNameMark}
             </span>
-            <span className="hidden sm:block mt-1.5 font-mono text-[10px] tracking-[0.22em] uppercase text-gold-dark dark:text-gold">
+            <span className="hidden sm:block mt-1.5 font-mono text-[10px] tracking-[0.22em] uppercase text-gold">
               {common.estLabel}
             </span>
           </span>
@@ -57,8 +57,8 @@ export default function Header({
                 key={route.key}
                 href={href}
                 aria-current={isActive ? "page" : undefined}
-                className={`relative whitespace-nowrap py-1 text-[13px] font-medium tracking-wide transition-colors hover:text-gold-dark dark:hover:text-gold ${
-                  isActive ? "text-gold-dark dark:text-gold" : "text-ink"
+                className={`relative whitespace-nowrap py-1 text-[13px] font-medium tracking-wide transition-colors hover:text-gold ${
+                  isActive ? "text-gold" : "text-cream-muted"
                 } after:absolute after:left-0 after:right-0 after:-bottom-1 after:h-px after:bg-gold after:origin-left after:transition-transform after:duration-200 ${
                   isActive ? "after:scale-x-100" : "after:scale-x-0"
                 }`}
@@ -73,7 +73,7 @@ export default function Header({
           <LocaleToggle locale={locale} />
           <Link
             href={`/${locale}/contact`}
-            className="inline-flex items-center justify-center bg-gold px-5 py-2.5 text-xs font-medium uppercase tracking-[0.12em] text-brand-dark hover:bg-gold-light transition-colors"
+            className="inline-flex items-center justify-center bg-gold px-5 py-2.5 text-xs font-medium uppercase tracking-[0.12em] text-ink-black hover:bg-gold-light transition-colors"
           >
             {common.headerContactCta}
           </Link>
@@ -83,7 +83,7 @@ export default function Header({
           <LocaleToggle locale={locale} />
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-line text-ink shrink-0"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-cream/20 text-cream shrink-0"
             aria-label="Menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -100,7 +100,7 @@ export default function Header({
       </Container>
 
       {open ? (
-        <div className="lg:hidden border-t border-line bg-paper">
+        <div className="lg:hidden border-t border-cream/10 bg-ink-black">
           <Container className="py-6 flex flex-col gap-5">
             <nav className="flex flex-col gap-4" aria-label="Primary">
               {routes.map((route) => {
@@ -113,7 +113,7 @@ export default function Header({
                     href={href}
                     onClick={() => setOpen(false)}
                     aria-current={isActive ? "page" : undefined}
-                    className={`text-base font-medium ${isActive ? "text-gold-dark dark:text-gold" : "text-ink"}`}
+                    className={`text-base font-medium ${isActive ? "text-gold" : "text-cream-muted"}`}
                   >
                     {common.nav[route.key]}
                   </Link>

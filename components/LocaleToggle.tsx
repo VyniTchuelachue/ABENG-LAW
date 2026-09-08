@@ -21,16 +21,16 @@ export default function LocaleToggle({ locale }: { locale: Locale }) {
         const isActive = code === locale;
         return (
           <span key={code} className="flex items-center gap-1.5">
-            {index > 0 ? <span className="text-line" aria-hidden="true">|</span> : null}
+            {index > 0 ? <span className="text-cream/25" aria-hidden="true">|</span> : null}
             {isActive ? (
-              <span aria-current="true" className="uppercase text-gold-dark dark:text-gold">
+              <span aria-current="true" className="uppercase text-gold">
                 {code}
               </span>
             ) : (
               <Link
                 href={href}
                 hrefLang={code}
-                className="uppercase text-ink-muted hover:text-gold-dark dark:hover:text-gold transition-colors"
+                className="uppercase text-cream-muted hover:text-gold transition-colors"
                 aria-label={code === "en" ? "Switch to English" : "Passer en français"}
               >
                 {code}

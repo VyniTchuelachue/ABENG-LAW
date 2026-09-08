@@ -117,7 +117,7 @@ export default function ContactForm({ form }: { form: ContactContent["form"] }) 
       <button
         type="submit"
         disabled={status === "sending"}
-        className="inline-flex items-center justify-center rounded-md bg-brand px-6 py-3 text-sm font-medium text-paper hover:bg-brand-dark disabled:opacity-60 transition-colors dark:bg-gold dark:text-brand-dark dark:hover:bg-gold-light"
+        className="inline-flex items-center justify-center bg-gold px-6 py-3 text-sm font-medium tracking-wide text-ink-black hover:bg-gold-light disabled:opacity-60 transition-colors"
       >
         {status === "sending" ? form.sendingLabel : form.submitLabel}
       </button>

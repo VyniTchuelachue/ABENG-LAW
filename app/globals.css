@@ -16,6 +16,16 @@
      (hero band, footer, dark CTA panels) regardless of light/dark mode. */
   --cream: #f6eedd;
   --cream-muted: #cbb9a6;
+  /* The large dark bands (header, hero, footer, international, final CTA)
+     use a near-black, cool-tinted charcoal — not burgundy — matching the
+     Firm's prior site. Burgundy stays reserved as an accent (badges,
+     headings, buttons) rather than a background for big surfaces. */
+  --ink-black: #0b0d14;
+  --ink-black-raised: #12141d;
+  /* Constant burgundy accent (matches the crest sphere) for small dark
+     surfaces like floating stat badges — stays this hue in both themes,
+     unlike `--brand`, which relights for use as text on dark backgrounds. */
+  --maroon: #5c1420;
 
   /* Light mode (default) */
   --paper: #f8f4ea;
@@ -52,6 +62,9 @@
 @theme inline {
   --color-cream: var(--cream);
   --color-cream-muted: var(--cream-muted);
+  --color-ink-black: var(--ink-black);
+  --color-ink-black-raised: var(--ink-black-raised);
+  --color-maroon: var(--maroon);
 
   --color-paper: var(--paper);
   --color-paper-raised: var(--paper-raised);

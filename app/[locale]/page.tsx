@@ -66,7 +66,7 @@ export default async function HomePage({
   return (
     <>
       {/* 01 — Hero */}
-      <section className="relative overflow-hidden bg-brand-dark">
+      <section className="relative overflow-hidden bg-ink-black">
         <Image
           src="/images/law-library-generic.png"
           alt=""
@@ -74,10 +74,15 @@ export default async function HomePage({
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[80%_50%] opacity-[0.28] mix-blend-luminosity"
+          className="object-cover object-[80%_50%] opacity-[0.22] mix-blend-luminosity"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/92 to-brand-dark/55" />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-black via-ink-black/95 to-ink-black/78" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink-black via-transparent to-transparent" />
+        <div
+          aria-hidden="true"
+          className="absolute right-0 top-1/2 -translate-y-1/2 h-[36rem] w-[36rem] rounded-full opacity-40 blur-3xl"
+          style={{ background: "radial-gradient(closest-side, var(--gold), transparent 70%)" }}
+        />
 
         <Container className="relative py-20 md:py-28">
           <div className="grid gap-14 lg:grid-cols-[1.15fr_0.85fr] items-center">
@@ -95,7 +100,7 @@ export default async function HomePage({
               <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
                 <Link
                   href={l(home.hero.ctaPrimaryHref)}
-                  className="inline-flex items-center justify-center bg-gold px-7 py-3.5 text-sm font-medium tracking-wide text-brand-dark hover:bg-gold-light transition-colors"
+                  className="inline-flex items-center justify-center bg-gold px-7 py-3.5 text-sm font-medium tracking-wide text-ink-black hover:bg-gold-light transition-colors"
                 >
                   {home.hero.ctaPrimary}
                 </Link>
@@ -304,7 +309,7 @@ export default async function HomePage({
       </section>
 
       {/* 08 — International */}
-      <section className="relative overflow-hidden bg-brand-dark py-20 md:py-32">
+      <section className="relative overflow-hidden bg-ink-black py-20 md:py-32">
         <Container className="relative">
           <div className="max-w-2xl mx-auto text-center">
             <p className="font-mono text-xs tracking-[0.25em] uppercase text-gold">
@@ -395,7 +400,7 @@ export default async function HomePage({
             </div>
             <Link
               href={l(home.careersSection.href)}
-              className="inline-flex items-center justify-center border border-gold-dark dark:border-gold px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-gold-dark dark:text-gold hover:bg-gold hover:text-brand-dark hover:border-gold transition-colors shrink-0"
+              className="inline-flex items-center justify-center border border-gold-dark dark:border-gold px-6 py-3 text-xs font-medium uppercase tracking-[0.15em] text-gold-dark dark:text-gold hover:bg-gold hover:text-ink-black hover:border-gold transition-colors shrink-0"
             >
               {home.careersSection.cta}
             </Link>
@@ -404,8 +409,8 @@ export default async function HomePage({
       </section>
 
       {/* 11 — Contact (large final CTA) */}
-      <section className="relative overflow-hidden bg-brand-dark py-24 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--brand)_0%,_transparent_60%)] opacity-40" />
+      <section className="relative overflow-hidden bg-ink-black py-24 md:py-32">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--gold)_0%,_transparent_60%)] opacity-[0.12]" />
         <Container className="relative text-center max-w-2xl mx-auto">
           <span aria-hidden="true" className="mx-auto block h-px w-10 bg-gold mb-6" />
           <p className="font-mono text-xs tracking-[0.25em] uppercase text-cream-muted/60">11 — {common.nav.contact}</p>
@@ -415,7 +420,7 @@ export default async function HomePage({
           <p className="mt-3 text-cream-muted">{home.cta.body}</p>
           <Link
             href={l(home.cta.href)}
-            className="mt-8 inline-flex items-center justify-center bg-gold px-8 py-3.5 text-sm font-medium tracking-wide text-brand-dark hover:bg-gold-light transition-colors"
+            className="mt-8 inline-flex items-center justify-center bg-gold px-8 py-3.5 text-sm font-medium tracking-wide text-ink-black hover:bg-gold-light transition-colors"
           >
             {home.cta.button}
           </Link>
