@@ -45,7 +45,6 @@ export default async function PeoplePage({
   if (!isLocale(rawLocale)) notFound();
   const locale: Locale = rawLocale;
   const people = getContent("people", locale);
-  const common = getContent("common", locale);
   const expertise = getContent("expertise", locale);
 
   const expertiseTitleBySlug = new Map(expertise.items.map((item) => [item.slug, item.title]));
@@ -58,7 +57,6 @@ export default async function PeoplePage({
       <section className="py-16 md:py-24">
         <Container>
           <SectionHeading
-            kicker={common.nav.people}
             title={people.title}
             lead={people.lead}
           />
