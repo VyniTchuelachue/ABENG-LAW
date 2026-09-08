@@ -285,13 +285,13 @@ export default async function HomePage({
 
       {/* People */}
       <section className="py-20 md:py-32">
-        <Container className="grid gap-10 md:grid-cols-[auto_1fr] items-center">
+        <Container className="grid grid-cols-[auto_1fr] gap-5 sm:gap-10 items-center">
           <Image
             src="/images/roland-headshot.jpg"
             alt="Portrait of Barrister Abeng Roland, Managing Partner"
             width={160}
             height={179}
-            className="w-40 h-auto border border-line"
+            className="w-20 sm:w-28 md:w-40 h-auto border border-line"
           />
           <div>
             <Kicker text={home.peopleSection.kicker} />
