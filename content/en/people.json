@@ -15,7 +15,8 @@
     "languages": "Languages",
     "linkedinCta": "Connect on LinkedIn",
     "linkedinAria": "LinkedIn profile",
-    "pendingNote": "Profile pending — the Firm will supply names, photographs and biographies."
+    "pendingNote": "Profile pending — the Firm will supply names, photographs and biographies.",
+    "pendingShort": "Profile coming soon"
   },
   "members": [
     {
@@ -30,8 +31,15 @@
         "Under his leadership, the Firm has built a practice centered on OHADA and Cameroonian business law, and has represented the Firm within international networks including TagLaw and TRACE. The Firm is also ranked in Chambers Global."
       ],
       "practiceAreasNote": "Leads the Firm's practice across its core business law areas, with particular focus on Corporate, Commercial & OHADA Law.",
-      "practiceAreas": ["corporate-ohada", "mergers-acquisitions", "banking-finance", "regulatory-competition"],
-      "qualifications": ["[Qualification details pending confirmation from the Firm]"],
+      "practiceAreas": [
+        "corporate-ohada",
+        "mergers-acquisitions",
+        "banking-finance",
+        "regulatory-competition"
+      ],
+      "qualifications": [
+        "[Qualification details pending confirmation from the Firm]"
+      ],
       "barAdmission": "[Bar admission details pending confirmation from the Firm]",
       "experience": [
         "Founded The Abeng Law Firm in 1998 and has led the Firm as Managing Partner since inception.",
@@ -42,14 +50,114 @@
         "TRACE — international anti-bribery compliance network",
         "[Additional professional memberships pending confirmation from the Firm]"
       ],
-      "publications": ["[Publications list pending confirmation from the Firm]"],
-      "languages": ["[Languages pending confirmation from the Firm]"]
+      "publications": [
+        "[Publications list pending confirmation from the Firm]"
+      ],
+      "languages": [
+        "[Languages pending confirmation from the Firm]"
+      ]
     },
-    { "slug": null, "name": null, "role": "Senior Associate", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null },
-    { "slug": null, "name": null, "role": "Associate", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null },
-    { "slug": null, "name": null, "role": "Legal Counsel", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null },
-    { "slug": null, "name": null, "role": "Associate", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null },
-    { "slug": null, "name": null, "role": "Trainee Lawyer", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null },
-    { "slug": null, "name": null, "role": "Office Manager", "image": null, "imageAlt": null, "linkedinUrl": null, "bio": null, "practiceAreasNote": null, "practiceAreas": null, "qualifications": null, "barAdmission": null, "experience": null, "memberships": null, "publications": null, "languages": null }
+    {
+      "slug": null,
+      "name": null,
+      "role": "Senior Associate",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": null,
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "qualifications": null,
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": null
+    },
+    {
+      "slug": null,
+      "name": null,
+      "role": "Associate",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": null,
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "qualifications": null,
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": null
+    },
+    {
+      "slug": null,
+      "name": null,
+      "role": "Legal Counsel",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": null,
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "qualifications": null,
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": null
+    },
+    {
+      "slug": null,
+      "name": null,
+      "role": "Associate",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": null,
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "qualifications": null,
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": null
+    },
+    {
+      "slug": null,
+      "name": null,
+      "role": "Trainee Lawyer",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": null,
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "qualifications": null,
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": null
+    },
+    {
+      "slug": null,
+      "name": null,
+      "role": "Office Manager",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": null,
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "qualifications": null,
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": null
+    }
   ]
 }

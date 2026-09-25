@@ -15,13 +15,30 @@
     "founderName": "Barrister Abeng Roland",
     "founderTitle": "Founder & Managing Partner",
     "badgeValue": "28+",
-    "badgeLabel": "Years serving businesses"
+    "badgeLabel": "Years of experience",
+    "badgeNote": "Advising businesses in Cameroon and across Central Africa."
   },
   "stats": [
-    { "value": "1998", "label": "Founded" },
-    { "value": "16", "label": "Practice areas" },
-    { "value": "12", "label": "Industries served" },
-    { "value": "3", "label": "International affiliations" }
+    {
+      "value": "1998",
+      "label": "Founded",
+      "icon": "founded"
+    },
+    {
+      "value": "16",
+      "label": "Practice areas",
+      "icon": "practice"
+    },
+    {
+      "value": "12",
+      "label": "Industries served",
+      "icon": "industries"
+    },
+    {
+      "value": "3",
+      "label": "International affiliations",
+      "icon": "global"
+    }
   ],
   "firm": {
     "kicker": "The Firm",
@@ -42,7 +59,20 @@
     "title": "Legal challenges should not slow down your business",
     "lead": "Whatever stage your business is at, we anticipate risk and act with speed so your affairs keep moving forward.",
     "cta": "View all practice areas",
-    "href": "/expertise"
+    "href": "/expertise",
+    "featured": [
+      "corporate-ohada",
+      "banking-finance",
+      "tax-customs",
+      "litigation-arbitration"
+    ],
+    "backgroundImage": "/images/stock/expertise-justice-statue.jpg",
+    "cardImages": {
+      "corporate-ohada": "/images/stock/corporate-glass-tower.jpg",
+      "banking-finance": "/images/stock/banking-columns.jpg",
+      "tax-customs": "/images/stock/tax-calculator.jpg",
+      "litigation-arbitration": "/images/stock/litigation-gavel.jpg"
+    }
   },
   "industriesSection": {
     "kicker": "Industries",
@@ -56,11 +86,24 @@
     "title": "What we have actually done",
     "lead": "A sense of the type of matters the Firm undertakes for its clients.",
     "cta": "View our experience",
-    "href": "/experience"
+    "href": "/experience",
+    "cardImages": [
+      "/images/stock/energy-pylons.jpg",
+      "/images/stock/banking-office-tower.jpg",
+      "/images/stock/corporate-signing.jpg",
+      "/images/stock/telecom-masts.jpg"
+    ]
+  },
+  "managingPartnerSection": {
+    "kicker": "Our Managing Partner",
+    "memberSlug": "abeng-roland",
+    "image": "/images/roland-formal-event.jpeg",
+    "imageAlt": "Barrister Abeng Roland, Managing Partner of The Abeng Law Firm",
+    "cta": "View full profile"
   },
   "peopleSection": {
     "kicker": "Our Team",
-    "title": "Led by Barrister Abeng Roland",
+    "title": "A team committed to your success",
     "body": "A team united by experience, integrity and a commitment to your interests. Discover the people behind Abeng Law Firm.",
     "cta": "Meet our team",
     "href": "/people"
@@ -70,14 +113,25 @@
     "title": "Where our reach extends",
     "lead": "Beyond Cameroon, The Abeng Law Firm takes an active part in international legal networks, giving clients a wider view and trusted alliances around the world.",
     "cta": "Explore our network",
-    "href": "/international"
+    "href": "/international",
+    "pillars": [
+      "Cameroon",
+      "Central Africa & OHADA",
+      "International partners"
+    ]
   },
   "insightsSection": {
     "kicker": "Insights",
     "title": "What we're thinking about",
     "lead": "Legal updates and publications from the Firm.",
     "cta": "View all insights",
-    "href": "/insights"
+    "href": "/insights",
+    "featuredLabel": "Featured",
+    "cardImages": [
+      "/images/stock/insight-justice-book.jpg",
+      "/images/stock/insight-finance-papers.jpg",
+      "/images/stock/insight-boardroom.jpg"
+    ]
   },
   "careersSection": {
     "kicker": "Careers",
@@ -87,6 +141,7 @@
     "href": "/careers"
   },
   "cta": {
+    "kicker": "Get in touch",
     "title": "Let's talk about your legal challenges",
     "body": "Book a consultation with our team to assess your situation and build a tailored protection strategy for your business.",
     "button": "Contact the Firm",

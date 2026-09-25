@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/Container";
-import SectionHeading from "@/components/SectionHeading";
+import PageHero from "@/components/PageHero";
 import { getContent } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { isLocale, type Locale } from "@/lib/i18n";
@@ -31,16 +31,11 @@ export default async function AboutPage({
 
   return (
     <>
+      <PageHero kicker={common.nav.about} title={about.title} lead={about.lead} />
       <section className="py-16 md:py-24">
         <Container>
-          <SectionHeading
-            kicker={common.nav.about}
-            title={about.title}
-            lead={about.lead}
-          />
-
           {/* DRAFT: pending Firm-approved copy */}
-          <div className="mt-14 grid gap-12 md:grid-cols-[1fr_1fr]">
+          <div className="grid gap-12 md:grid-cols-[1fr_1fr]">
             <div>
               <h3 className="font-heading text-xl text-brand dark:text-ink">
                 {about.history.title}

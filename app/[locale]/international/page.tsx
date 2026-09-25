@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/Container";
-import SectionHeading from "@/components/SectionHeading";
+import PageHero from "@/components/PageHero";
 import { getContent } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { isLocale, type Locale } from "@/lib/i18n";
@@ -35,16 +35,11 @@ export default async function InternationalPage({
 
   return (
     <>
+      <PageHero kicker={common.nav.international} title={international.title} lead={international.lead} />
       <section className="py-16 md:py-24">
         <Container>
-          <SectionHeading
-            kicker={common.nav.international}
-            title={international.title}
-            lead={international.lead}
-          />
-
           {/* DRAFT: pending Firm-approved copy */}
-          <p className="mt-6 max-w-2xl text-ink-muted">{international.narrative}</p>
+          <p className="max-w-2xl text-ink-muted">{international.narrative}</p>
 
           <div className="mt-12 grid gap-px bg-line border border-line md:grid-cols-3">
             {international.recognitions.map((item) => (

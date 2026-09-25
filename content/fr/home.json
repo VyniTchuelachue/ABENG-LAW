@@ -15,13 +15,30 @@
     "founderName": "Maître Abeng Roland",
     "founderTitle": "Fondateur & Associé gérant",
     "badgeValue": "28+",
-    "badgeLabel": "Années au service des entreprises"
+    "badgeLabel": "Années d'expérience",
+    "badgeNote": "Au service des entreprises au Cameroun et en Afrique centrale."
   },
   "stats": [
-    { "value": "1998", "label": "Fondation" },
-    { "value": "16", "label": "Domaines de pratique" },
-    { "value": "12", "label": "Secteurs d'activité" },
-    { "value": "3", "label": "Affiliations internationales" }
+    {
+      "value": "1998",
+      "label": "Fondation",
+      "icon": "founded"
+    },
+    {
+      "value": "16",
+      "label": "Domaines de pratique",
+      "icon": "practice"
+    },
+    {
+      "value": "12",
+      "label": "Secteurs d'activité",
+      "icon": "industries"
+    },
+    {
+      "value": "3",
+      "label": "Affiliations internationales",
+      "icon": "global"
+    }
   ],
   "firm": {
     "kicker": "Le Cabinet",
@@ -42,7 +59,20 @@
     "title": "Les défis juridiques ne doivent pas ralentir votre entreprise",
     "lead": "Quel que soit le stade de votre activité, nous anticipons les risques et intervenons avec rapidité pour que vos affaires continuent d'avancer.",
     "cta": "Voir tous les domaines d'expertise",
-    "href": "/expertise"
+    "href": "/expertise",
+    "featured": [
+      "corporate-ohada",
+      "banking-finance",
+      "tax-customs",
+      "litigation-arbitration"
+    ],
+    "backgroundImage": "/images/stock/expertise-justice-statue.jpg",
+    "cardImages": {
+      "corporate-ohada": "/images/stock/corporate-glass-tower.jpg",
+      "banking-finance": "/images/stock/banking-columns.jpg",
+      "tax-customs": "/images/stock/tax-calculator.jpg",
+      "litigation-arbitration": "/images/stock/litigation-gavel.jpg"
+    }
   },
   "industriesSection": {
     "kicker": "Secteurs",
@@ -56,11 +86,24 @@
     "title": "Ce que nous avons concrètement réalisé",
     "lead": "Un aperçu du type de dossiers traités par le Cabinet pour ses clients.",
     "cta": "Voir nos références",
-    "href": "/experience"
+    "href": "/experience",
+    "cardImages": [
+      "/images/stock/energy-pylons.jpg",
+      "/images/stock/banking-office-tower.jpg",
+      "/images/stock/corporate-signing.jpg",
+      "/images/stock/telecom-masts.jpg"
+    ]
+  },
+  "managingPartnerSection": {
+    "kicker": "Notre Associé gérant",
+    "memberSlug": "abeng-roland",
+    "image": "/images/roland-formal-event.jpeg",
+    "imageAlt": "Maître Abeng Roland, Associé gérant de The Abeng Law Firm",
+    "cta": "Voir le profil complet"
   },
   "peopleSection": {
     "kicker": "Notre Équipe",
-    "title": "Dirigé par Maître Abeng Roland",
+    "title": "Une équipe engagée pour votre réussite",
     "body": "Une équipe unie par l'expérience, l'intégrité et un engagement envers vos intérêts. Découvrez les personnes qui font Abeng Law Firm.",
     "cta": "Découvrir l'équipe",
     "href": "/people"
@@ -70,14 +113,25 @@
     "title": "Jusqu'où s'étend notre rayonnement",
     "lead": "Au-delà du Cameroun, The Abeng Law Firm participe activement aux réseaux juridiques internationaux, pour offrir à ses clients une vision élargie et des alliances de confiance à travers le monde.",
     "cta": "Découvrir notre réseau",
-    "href": "/international"
+    "href": "/international",
+    "pillars": [
+      "Cameroun",
+      "Afrique centrale & OHADA",
+      "Partenaires internationaux"
+    ]
   },
   "insightsSection": {
     "kicker": "Actualités",
     "title": "Ce à quoi nous réfléchissons",
     "lead": "Actualités juridiques et publications du Cabinet.",
     "cta": "Voir toutes les actualités",
-    "href": "/insights"
+    "href": "/insights",
+    "featuredLabel": "À la une",
+    "cardImages": [
+      "/images/stock/insight-justice-book.jpg",
+      "/images/stock/insight-finance-papers.jpg",
+      "/images/stock/insight-boardroom.jpg"
+    ]
   },
   "careersSection": {
     "kicker": "Carrières",
@@ -87,6 +141,7 @@
     "href": "/careers"
   },
   "cta": {
+    "kicker": "Contactez-nous",
     "title": "Parlons de vos enjeux juridiques",
     "body": "Prenez rendez-vous avec notre équipe pour évaluer votre situation et construire ensemble une stratégie de protection sur mesure pour votre entreprise.",
     "button": "Contacter le Cabinet",

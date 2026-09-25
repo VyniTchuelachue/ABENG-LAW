@@ -1,5 +1,5 @@
 import Container from "@/components/Container";
-import SectionHeading from "@/components/SectionHeading";
+import PageHero from "@/components/PageHero";
 import PersonCard from "@/components/PersonCard";
 import { getContent, getTeamMembers } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
@@ -32,34 +32,35 @@ export default async function PeoplePage({
   const expertiseTitleBySlug = new Map(expertise.items.map((item) => [item.slug, item.title]));
 
   return (
-    <section className="py-16 md:py-24">
-      <Container>
-        <SectionHeading title={people.title} lead={people.lead} />
+    <>
+      <PageHero title={people.title} lead={people.lead} />
+      <section className="py-16 md:py-24">
+        <Container>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {members.map((member, index) => {
+              const tags = member.practiceAreas
+                ?.slice(0, 2)
+                .map((slug) => expertiseTitleBySlug.get(slug) ?? slug);
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {members.map((member, index) => {
-            const tags = member.practiceAreas
-              ?.slice(0, 2)
-              .map((slug) => expertiseTitleBySlug.get(slug) ?? slug);
-
-            return (
-              <PersonCard
-                key={member.slug ?? `${member.role}-${index}`}
-                locale={locale}
-                slug={member.slug}
-                name={member.name}
-                role={member.role}
-                image={member.image}
-                imageAlt={member.imageAlt}
-                linkedinUrl={member.linkedinUrl}
-                linkedinAria={people.labels.linkedinAria}
-                practiceAreaTags={tags}
-                pendingNote={people.labels.pendingNote}
-              />
-            );
-          })}
-        </div>
-      </Container>
-    </section>
+              return (
+                <PersonCard
+                  key={member.slug ?? `${member.role}-${index}`}
+                  locale={locale}
+                  slug={member.slug}
+                  name={member.name}
+                  role={member.role}
+                  image={member.image}
+                  imageAlt={member.imageAlt}
+                  linkedinUrl={member.linkedinUrl}
+                  linkedinAria={people.labels.linkedinAria}
+                  practiceAreaTags={tags}
+                  pendingNote={people.labels.pendingNote}
+                />
+              );
+            })}
+          </div>
+        </Container>
+      </section>
+    </>
   );
 }

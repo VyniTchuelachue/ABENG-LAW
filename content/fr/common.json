@@ -19,9 +19,10 @@
     "description": "Droit des affaires au Cameroun depuis 1998.",
     "addressTitle": "Bureau",
     "contactTitle": "Contact",
-    "navTitle": "Cabinet",
+    "navTitle": "Liens rapides",
     "rights": "Tous droits réservés.",
-    "ohadaNote": "Cabinet exerçant sous les Actes uniformes OHADA et le droit camerounais."
+    "ohadaNote": "Cabinet exerçant sous les Actes uniformes OHADA et le droit camerounais.",
+    "practiceTitle": "Domaines d'expertise"
   },
   "actions": {
     "readMore": "Lire la suite",

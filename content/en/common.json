@@ -19,9 +19,10 @@
     "description": "Business law in Cameroon since 1998.",
     "addressTitle": "Office",
     "contactTitle": "Contact",
-    "navTitle": "Firm",
+    "navTitle": "Quick Links",
     "rights": "All rights reserved.",
-    "ohadaNote": "Practicing under OHADA Uniform Acts and Cameroonian law."
+    "ohadaNote": "Practicing under OHADA Uniform Acts and Cameroonian law.",
+    "practiceTitle": "Practice Areas"
   },
   "actions": {
     "readMore": "Read more",
