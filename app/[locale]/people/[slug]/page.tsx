@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import Container from "@/components/Container";
-import { getContent, getTeamMembers } from "@/lib/content";
+import { getContent, getInitials, getTeamMembers } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
@@ -44,7 +45,7 @@ function AccordionSection({
   if (!items || items.length === 0) return null;
   return (
     <details className="group border-b border-line py-5">
-      <summary className="flex cursor-pointer items-center justify-between gap-4 list-none font-mono text-xs uppercase tracking-[0.15em] text-gold-dark dark:text-gold">
+      <summary className="flex cursor-pointer items-center justify-between gap-4 list-none text-xs font-semibold uppercase tracking-[0.15em] text-gold-dark dark:text-gold">
         {label}
         <span aria-hidden="true" className="shrink-0 transition-transform duration-200 group-open:rotate-45">
           +
@@ -76,12 +77,22 @@ export default async function PersonProfilePage({
   const expertise = getContent("expertise", locale);
   const expertiseTitleBySlug = new Map(expertise.items.map((item) => [item.slug, item.title]));
   const practiceAreaTitles = member.practiceAreas?.map((s) => expertiseTitleBySlug.get(s) ?? s) ?? null;
+  const common = getContent("common", locale);
 
   return (
     <section className="py-16 md:py-24">
       <Container>
-        <div className="border border-line grid md:grid-cols-[280px_1fr] items-start">
-          <div className="relative aspect-[4/5] bg-paper-raised">
+        <Link
+          href={`/${locale}/people`}
+          className="group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-gold-dark dark:text-gold hover:underline underline-offset-4"
+        >
+          <span aria-hidden="true" className="transition-transform group-hover:-translate-x-1">←</span>
+          {common.nav.people}
+        </Link>
+        <div className="mt-6 border border-line grid md:grid-cols-[280px_1fr] items-start">
+          <div
+            className={`relative bg-ink-black ${member.image ? "aspect-[4/5]" : "aspect-[5/2] md:aspect-[4/5]"}`}
+          >
             {member.image ? (
               <Image
                 src={member.image}
@@ -91,17 +102,24 @@ export default async function PersonProfilePage({
                 className="object-cover"
                 priority
               />
-            ) : null}
+            ) : (
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 flex items-center justify-center font-heading text-7xl font-semibold tracking-wide text-gold-light/80"
+              >
+                {getInitials(member.name ?? member.role)}
+              </div>
+            )}
           </div>
           <div className="p-8 md:p-10">
-            <h1 className="font-heading text-2xl text-brand dark:text-ink">
+            <h1 className="font-heading text-3xl font-semibold text-brand dark:text-ink">
               {member.name ?? member.role}
             </h1>
-            <p className="mt-1 font-mono text-sm uppercase tracking-[0.1em] text-gold-dark dark:text-gold">
+            <p className="mt-2 text-sm font-semibold uppercase tracking-[0.12em] text-gold-dark dark:text-gold">
               {member.role}
             </p>
 
-            {/* DRAFT: pending Firm-approved copy */}
+            {/* DRAFT: the Managing Partner's bio is pending Firm-approved copy; all other profiles are Firm-supplied text */}
             {member.bio ? (
               <div className="mt-5 space-y-4 text-ink-muted">
                 {member.bio.map((paragraph, index) => (
@@ -132,6 +150,7 @@ export default async function PersonProfilePage({
                 items={member.barAdmission ? [member.barAdmission] : null}
               />
               <AccordionSection label={people.labels.practiceAreas} items={practiceAreaTitles} />
+              <AccordionSection label={people.labels.focusAreas} items={member.focusAreas} />
               <AccordionSection label={people.labels.experience} items={member.experience} />
               <AccordionSection label={people.labels.memberships} items={member.memberships} />
               <AccordionSection label={people.labels.publications} items={member.publications} />

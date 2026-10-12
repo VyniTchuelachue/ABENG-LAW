@@ -36,26 +36,42 @@ export default async function PeoplePage({
       <PageHero title={people.title} lead={people.lead} />
       <section className="py-16 md:py-24">
         <Container>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {members.map((member, index) => {
-              const tags = member.practiceAreas
-                ?.slice(0, 2)
-                .map((slug) => expertiseTitleBySlug.get(slug) ?? slug);
-
+          <div className="space-y-16">
+            {people.groups.map((group) => {
+              const groupMembers = members.filter((member) => member.group === group.key);
+              if (groupMembers.length === 0) return null;
               return (
-                <PersonCard
-                  key={member.slug ?? `${member.role}-${index}`}
-                  locale={locale}
-                  slug={member.slug}
-                  name={member.name}
-                  role={member.role}
-                  image={member.image}
-                  imageAlt={member.imageAlt}
-                  linkedinUrl={member.linkedinUrl}
-                  linkedinAria={people.labels.linkedinAria}
-                  practiceAreaTags={tags}
-                  pendingNote={people.labels.pendingNote}
-                />
+                <div key={group.key}>
+                  <div className="flex items-center gap-4">
+                    <h2 className="font-heading text-2xl font-semibold text-brand dark:text-ink">
+                      {group.title}
+                    </h2>
+                    <span aria-hidden="true" className="h-px flex-1 bg-line" />
+                  </div>
+                  <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    {groupMembers.map((member) => {
+                      const tags = (
+                        member.focusAreas ??
+                        member.practiceAreas?.map((slug) => expertiseTitleBySlug.get(slug) ?? slug)
+                      )?.slice(0, 2);
+
+                      return (
+                        <PersonCard
+                          key={member.slug ?? member.role}
+                          locale={locale}
+                          slug={member.slug}
+                          name={member.name}
+                          role={member.role}
+                          image={member.image}
+                          imageAlt={member.imageAlt}
+                          linkedinUrl={member.linkedinUrl}
+                          linkedinAria={people.labels.linkedinAria}
+                          tags={tags}
+                        />
+                      );
+                    })}
+                  </div>
+                </div>
               );
             })}
           </div>

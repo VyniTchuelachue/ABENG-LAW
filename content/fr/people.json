@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Notre Équipe",
-    "description": "Maître Abeng Roland, Associé gérant et fondateur de The Abeng Law Firm, et l'équipe élargie du Cabinet."
+    "description": "Découvrez les avocats, les juristes et l'équipe administrative de The Abeng Law Firm, dirigée par son Associé gérant, Maître Abeng Roland."
   },
   "title": "Notre Équipe",
-  "lead": "Le Cabinet est dirigé par son fondateur, Maître Abeng Roland, appuyé par une équipe croissante de collaborateurs et de conseils.",
+  "lead": "Le Cabinet est dirigé par son fondateur, Maître Abeng Roland, entouré d'une équipe d'avocats, de juristes et de professionnels administratifs.",
   "labels": {
     "qualifications": "Qualifications et statut professionnel",
     "barAdmission": "Admission au barreau",
@@ -15,12 +15,30 @@
     "languages": "Langues",
     "linkedinCta": "Voir le profil LinkedIn",
     "linkedinAria": "Profil LinkedIn",
-    "pendingNote": "Profil à venir — le Cabinet fournira les noms, photographies et biographies.",
-    "pendingShort": "Profil à venir"
+    "focusAreas": "Domaines d'intervention"
   },
+  "groups": [
+    {
+      "key": "partners",
+      "title": "Associé gérant"
+    },
+    {
+      "key": "lawyers",
+      "title": "Avocats"
+    },
+    {
+      "key": "paralegals",
+      "title": "Juristes"
+    },
+    {
+      "key": "administration",
+      "title": "Équipe administrative"
+    }
+  ],
   "members": [
     {
       "slug": "abeng-roland",
+      "group": "partners",
       "name": "Maître Abeng Roland",
       "role": "Associé gérant & Fondateur",
       "image": "/images/roland-headshot.jpg",
@@ -37,6 +55,7 @@
         "banking-finance",
         "regulatory-competition"
       ],
+      "focusAreas": null,
       "qualifications": [
         "[Détails des qualifications à confirmer avec le Cabinet]"
       ],
@@ -58,33 +77,159 @@
       ]
     },
     {
-      "slug": null,
-      "name": null,
+      "slug": "jean-aime-kounga",
+      "group": "lawyers",
+      "name": "Jean-Aimé Kounga",
       "role": "Collaborateur senior",
       "image": null,
       "imageAlt": null,
       "linkedinUrl": null,
-      "bio": null,
+      "bio": [
+        "Maître Jean-Aimé Kounga Kaptue est avocat au Barreau du Cameroun et collaborateur senior au sein de The Abeng Law Firm. Ses liens avec le Cabinet remontent à plus de vingt ans, au cours desquels il y a travaillé à différentes périodes. Cette connaissance approfondie du Cabinet enrichit sa pratique juridique et lui apporte une compréhension concrète de sa clientèle, de ses exigences et de son approche des dossiers complexes.",
+        "Il conseille des entreprises, des établissements financiers et des investisseurs en matière d’opérations sociétaires, de droit bancaire et financier, de marchés de capitaux et de contentieux commerciaux à forts enjeux, dans l’environnement juridique de l’OHADA et de la CEMAC.",
+        "Son activité transactionnelle couvre la constitution et la gouvernance des sociétés, les fusions-acquisitions, les contrats commerciaux, les financements, les opérations sur valeurs mobilières et la dématérialisation des titres. Il représente et assiste également les clients en matière de recouvrement de créances, de voies d’exécution régies par le droit OHADA, d’arbitrage et de contentieux commercial. Cette double expérience du conseil et du contentieux lui permet d’anticiper, dès la structuration des opérations, les risques de litige et les difficultés d’exécution, puis de mettre en œuvre les recours appropriés en cas de différend.",
+        "Jean-Aimé est titulaire d’un diplôme d’études supérieures en pratique juridique des affaires, d’un master en droit privé des affaires et d’un diplôme en droit privé et sciences criminelles de l’Université de Douala. Il a contribué au projet Doing Business de la Banque mondiale et a publié sur le régime juridique et fiscal des salariés expatriés au Cameroun. Il travaille en anglais et en français. Sa rigueur d’analyse, son sens de la stratégie et ses conseils résolument orientés vers les objectifs économiques des clients sont particulièrement appréciés."
+      ],
       "practiceAreasNote": null,
       "practiceAreas": null,
-      "qualifications": null,
+      "focusAreas": [
+        "Droit des sociétés et droit commercial",
+        "Droit bancaire et financier",
+        "Marchés de capitaux",
+        "Fusions-acquisitions",
+        "Contrats",
+        "Recouvrement de créances",
+        "Voies d’exécution OHADA",
+        "Arbitrage et contentieux commercial"
+      ],
+      "qualifications": [
+        "Certificat d’aptitude à la profession d’avocat",
+        "Diplôme d’études supérieures en pratique juridique des affaires",
+        "Master en droit privé des affaires",
+        "Diplôme en droit privé et sciences criminelles"
+      ],
+      "barAdmission": "Avocat au Barreau du Cameroun",
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": [
+        "Anglais",
+        "Français"
+      ]
+    },
+    {
+      "slug": "mirabel-toko",
+      "group": "lawyers",
+      "name": "Mirabel Toko",
+      "role": "Collaboratrice",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": [
+        "Maître Mungu épse Toko Mirabel Ntui est collaboratrice au sein de The Abeng Law Firm. Forte de plus de dix ans d’expérience au Cabinet, elle possède une connaissance approfondie des besoins des clients, des processus de travail internes et des exigences pratiques d’un conseil juridique utile aux activités des clients et rendu dans les délais. Sa connaissance de longue date du Cabinet et de sa clientèle lui permet d’assurer la continuité du suivi des dossiers, d’exercer un jugement sûr et de veiller avec exigence à la qualité du travail remis aux clients.",
+        "Elle intervient principalement en droit des sociétés et droit commercial, en droit des affaires OHADA, en droit des contrats, en secrétariat juridique des sociétés, en conformité réglementaire, en protection des données à caractère personnel et de la vie privée, en droit du travail et de l’immigration, ainsi qu’en audit juridique et en recouvrement de créances. Elle conseille des clients nationaux et internationaux, prépare des avis juridiques et des analyses de risques, rédige et négocie des contrats commerciaux et traduit les exigences juridiques et réglementaires complexes en mesures de conformité concrètes. Elle contribue également à des opérations transfrontalières, à des missions de gouvernance d’entreprise et à des dossiers complexes soumis à des réglementations sectorielles, en portant une attention particulière aux risques juridiques, à la mise en œuvre des solutions et aux objectifs économiques des clients.",
+        "Mirabel a contribué aux travaux de recherche de la Banque mondiale sur l’environnement des affaires ainsi qu’au Startup Legal Playbook d’ITechLaw. Ces contributions témoignent de son intérêt pour les conditions juridiques favorables à l’investissement responsable, à l’innovation et à la croissance des entreprises. Elle est titulaire d’un LL.B. en droit et travaille en anglais et en français. Ses clients et collègues apprécient la précision de sa rédaction, la profondeur de ses analyses, sa réactivité et sa capacité à formuler des conseils pratiques, clairs et accessibles."
+      ],
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "focusAreas": [
+        "Droit des sociétés et droit commercial",
+        "Droit des affaires OHADA",
+        "Contrats",
+        "Secrétariat juridique des sociétés",
+        "Conformité réglementaire",
+        "Protection des données à caractère personnel et de la vie privée",
+        "Droit du travail et de l’immigration",
+        "Audits juridiques",
+        "Recouvrement de créances"
+      ],
+      "qualifications": [
+        "LL.B. en droit",
+        "Formation et qualification professionnelles en droit au Cameroun",
+        "Diplôme en procédures administratives et assistanat"
+      ],
       "barAdmission": null,
       "experience": null,
       "memberships": null,
       "publications": null,
-      "languages": null
+      "languages": [
+        "Anglais",
+        "Français"
+      ]
     },
     {
-      "slug": null,
-      "name": null,
+      "slug": "doly-azangue",
+      "group": "lawyers",
+      "name": "Doly Azangue",
+      "role": "Collaboratrice",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": [
+        "Maître Doly Azangue Tetsop est collaboratrice au sein de The Abeng Law Firm. Elle intervient dans les dossiers de contentieux et de conseil en droit public et administratif, en droit des assurances et en droit des affaires. Elle contribue à l’évaluation des risques juridiques et à l’élaboration de stratégies adaptées aux priorités juridiques et commerciales des clients.",
+        "Ses fonctions comprennent la recherche juridique, la préparation d’avis juridiques, la rédaction et la revue de contrats, ainsi que la préparation de conclusions, de requêtes, de plaintes et de mises en demeure. Elle contribue à l’élaboration de l’argumentation juridique et assure le suivi des procédures auprès des juridictions, des greffes et des administrations. Elle établit également des comptes rendus d’audience, veille au respect des délais et participe aux discussions en vue d’un règlement amiable.",
+        "Doly intervient en matière de recouvrement de créances et de voies d’exécution, notamment dans les contestations de saisies et les demandes de mesures provisoires, ainsi que dans les contentieux commerciaux, sociaux, fonciers et administratifs. Elle contribue également aux dossiers de droit des sociétés et aux questions réglementaires relevant du droit OHADA et CEMAC, à l’examen des garanties bancaires et au traitement des questions relatives aux marchés publics.",
+        "Avant de rejoindre le Cabinet en 2024, Doly a exercé comme juriste en cabinet, puis a dirigé pendant cinq ans une agence de distribution d’assurances automobiles Activa. Ce parcours, à la fois juridique et commercial, lui apporte une compréhension concrète des opérations d’assurance, de la relation client, des questions liées aux sinistres et des réalités quotidiennes des entreprises. Elle met cette expérience au service des dossiers contentieux, des questions réglementaires et des missions nécessitant une coordination rigoureuse et une exécution dans les délais.",
+        "Doly est titulaire d’un master en droit public fondamental et d’un diplôme de technicien en assurance. Son parcours lui permet d’intervenir dans les dossiers de droit public, d’assurance, de réglementation et de contentieux. Elle y apporte la rigueur de ses recherches, une gestion méthodique des pièces et des procédures, ainsi qu’une attention constante aux objectifs du client."
+      ],
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "focusAreas": [
+        "Droit public et droit administratif",
+        "Droit des assurances",
+        "Contentieux et règlement des différends",
+        "Droit des affaires OHADA et CEMAC",
+        "Contrats et droit des sociétés",
+        "Recouvrement de créances et voies d’exécution",
+        "Contentieux social et foncier",
+        "Procédures civile et pénale",
+        "Marchés publics",
+        "Questions réglementaires",
+        "Recherches et avis juridiques"
+      ],
+      "qualifications": [
+        "Master en droit public fondamental",
+        "Diplôme de technicien en assurance"
+      ],
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": [
+        "Français",
+        "Connaissance pratique de l’anglais"
+      ]
+    },
+    {
+      "slug": "jean-patrick-musima",
+      "group": "lawyers",
+      "name": "Jean Patrick Musima",
       "role": "Collaborateur",
       "image": null,
       "imageAlt": null,
       "linkedinUrl": null,
-      "bio": null,
+      "bio": [
+        "Maître Jean Patrick Musima Bille est collaborateur au sein de The Abeng Law Firm à Douala. Ses interventions portent principalement sur le droit des affaires OHADA et CEMAC, le recouvrement de créances et les voies d’exécution, ainsi que sur les contentieux commerciaux, administratifs et fonciers. Sous la supervision de l’associé gérant, Roland Abeng, il contribue à l’analyse juridique, à la préparation des dossiers et à l’élaboration de l’argumentation et des stratégies procédurales.",
+        "Jean Patrick rédige des projets de conclusions, de requêtes, de mises en demeure, de contrats et d’avis juridiques. Il intervient en appui dans les procédures d’exécution et de contestation des saisies, les demandes de mesures provisoires, les litiges locatifs et immobiliers ainsi que les procédures administratives. Il participe également à l’examen des garanties bancaires, à l’établissement des faits et à la rédaction de rapports en matière de marchés publics, ainsi qu’à l’analyse des exigences de conformité applicables aux projets de financement participatif.",
+        "Son expérience antérieure comprend des prestations juridiques et fiscales réalisées à titre indépendant, l’enseignement du droit, des stages juridiques dans les secteurs bancaire et immobilier, ainsi que le recouvrement de créances. Il est titulaire d’un master en contentieux international de l’Institut des relations internationales du Cameroun (IRIC), Université de Yaoundé II, et d’un Master 1 en droit des affaires de l’Université de Douala. Ce parcours nourrit son approche des différends qui associent enjeux commerciaux et exigences réglementaires.",
+        "Parallèlement à son activité contentieuse, Jean Patrick développe ses travaux en droit du numérique, dans le domaine des technologies financières, en protection des données à caractère personnel et en droit des investissements internationaux. Ses recherches et publications portent sur la réglementation financière et numérique dans l’espace CEMAC, notamment sur les exigences de la BEAC applicables aux entreprises de fintech et sur le cadre établi par la COSUMAF pour les prestataires de services sur actifs numériques. Ces travaux complètent ses interventions sur les questions réglementaires touchant les entreprises et les nouveaux services financiers."
+      ],
       "practiceAreasNote": null,
       "practiceAreas": null,
-      "qualifications": null,
+      "focusAreas": [
+        "Droit des affaires OHADA et CEMAC",
+        "Recouvrement de créances et voies d’exécution",
+        "Contentieux commercial, administratif et fiscal",
+        "Droit foncier et immobilier",
+        "Droit du travail et des successions",
+        "Droit du numérique et protection des données",
+        "Technologies financières et réglementation financière",
+        "Investissements internationaux et arbitrage"
+      ],
+      "qualifications": [
+        "Master en contentieux international, IRIC, Université de Yaoundé II",
+        "Master 1 en droit des affaires, Université de Douala"
+      ],
       "barAdmission": null,
       "experience": null,
       "memberships": null,
@@ -92,72 +237,234 @@
       "languages": null
     },
     {
-      "slug": null,
-      "name": null,
-      "role": "Conseil juridique",
+      "slug": "tryphene-egoume",
+      "group": "paralegals",
+      "name": "Tryphène Egoume",
+      "role": "Juriste",
       "image": null,
       "imageAlt": null,
       "linkedinUrl": null,
-      "bio": null,
+      "bio": [
+        "Mme. Tryphène Egoume, épse Lobe, est juriste au sein de The Abeng Law Firm. Elle possède environ quatorze ans d’expérience acquise dans plusieurs cabinets d’avocats à Douala et a rejoint l’équipe de The Abeng Law Firm en 2021. Son parcours lui a permis de développer une solide connaissance du fonctionnement des cabinets et de la gestion des dossiers de conseil et de contentieux.",
+        "Elle intervient dans la recherche juridique, la préparation d’avis et de correspondances, la revue des contrats, l’appui en droit des sociétés, l’évaluation des risques contentieux, la préparation des dossiers et le suivi des procédures. Elle assiste les avocats du Cabinet dans la préparation des demandes, requêtes, plaintes, mises en demeure, conclusions et comptes rendus d’audience, et assure le suivi auprès des juridictions, des greffes, des administrations et des autres institutions concernées. Elle contribue également aux discussions en vue d’un règlement amiable et au suivi des formalités procédurales des clients.",
+        "Tryphène est titulaire d’un master en droit des affaires et d’un diplôme en droit privé. Son expérience couvre le droit des contrats, le droit bancaire, le droit des sociétés, le recouvrement de créances, les voies d’exécution, les procédures civile et pénale, ainsi que le droit du travail, le droit foncier et le droit administratif. Elle est appréciée pour sa rigueur, son respect de la confidentialité et sa gestion méthodique des dossiers et des échéances."
+      ],
       "practiceAreasNote": null,
       "practiceAreas": null,
-      "qualifications": null,
+      "focusAreas": [
+        "Contentieux et règlement des différends",
+        "Contrats",
+        "Recouvrement de créances et voies d’exécution",
+        "Droit du travail",
+        "Droit foncier",
+        "Droit des sociétés",
+        "Procédures civile et pénale",
+        "Droit administratif"
+      ],
+      "qualifications": [
+        "Master en droit des affaires",
+        "Diplôme en droit privé",
+        "Diplôme universitaire en droit"
+      ],
       "barAdmission": null,
       "experience": null,
       "memberships": null,
       "publications": null,
-      "languages": null
+      "languages": [
+        "Français",
+        "Connaissance pratique de l’anglais"
+      ]
     },
     {
-      "slug": null,
-      "name": null,
-      "role": "Collaborateur",
+      "slug": "francis-kaptue",
+      "group": "paralegals",
+      "name": "Francis Kaptue",
+      "role": "Juriste",
       "image": null,
       "imageAlt": null,
       "linkedinUrl": null,
-      "bio": null,
+      "bio": [
+        "Sieur Francis Bienvenue Kaptue Tueghuo est juriste au sein de The Abeng Law Firm. Depuis son arrivée au Cabinet en janvier 2023, il assiste les avocats dans la recherche et la rédaction juridiques, le suivi des procédures ainsi que la préparation et la gestion des dossiers de conseil et de contentieux.",
+        "Ses responsabilités comprennent la rédaction de requêtes, d’actes introductifs d’instance, de conclusions et de correspondances professionnelles, l’organisation des éléments de preuve et des pièces de procédure, le suivi des procédures judiciaires et des délais, ainsi que les échanges avec les greffiers, huissiers de justice, notaires et autres intervenants judiciaires et administratifs. Il assiste également les avocats lors des audiences et dans l’accomplissement des formalités procédurales. Sous leur supervision, il contribue à l’accueil des clients et à l’examen préliminaire de leurs demandes.",
+        "Francis est titulaire d’un diplôme en droit privé de l’Université de Douala et a suivi une formation juridique pratique avant de rejoindre le Cabinet. Son expérience couvre le droit civil, le droit pénal et la procédure pénale, le droit foncier, le droit de la famille et l’état des personnes, le droit administratif, le contentieux et les modes alternatifs de règlement des différends. Il apporte au Cabinet la précision de ses recherches, un suivi fiable des dossiers et une connaissance pratique des exigences procédurales."
+      ],
       "practiceAreasNote": null,
       "practiceAreas": null,
-      "qualifications": null,
+      "focusAreas": [
+        "Droit civil",
+        "Droit pénal et procédure pénale",
+        "Droit foncier",
+        "Droit de la famille et état des personnes",
+        "Droit administratif",
+        "Contentieux et règlement des différends",
+        "Recherche et rédaction juridiques",
+        "Suivi des procédures"
+      ],
+      "qualifications": [
+        "Diplôme en droit privé, Université de Douala"
+      ],
       "barAdmission": null,
       "experience": null,
       "memberships": null,
       "publications": null,
-      "languages": null
+      "languages": [
+        "Anglais",
+        "Français"
+      ]
     },
     {
-      "slug": null,
-      "name": null,
-      "role": "Stagiaire avocat",
-      "image": null,
-      "imageAlt": null,
-      "linkedinUrl": null,
-      "bio": null,
-      "practiceAreasNote": null,
-      "practiceAreas": null,
-      "qualifications": null,
-      "barAdmission": null,
-      "experience": null,
-      "memberships": null,
-      "publications": null,
-      "languages": null
-    },
-    {
-      "slug": null,
-      "name": null,
+      "slug": "nsong-jonas",
+      "group": "administration",
+      "name": "Nsong Jonas",
       "role": "Responsable administratif",
       "image": null,
       "imageAlt": null,
       "linkedinUrl": null,
-      "bio": null,
+      "bio": [
+        "Sieur Nsong Ntube Jonas est responsable administratif de The Abeng Law Firm. Il supervise l’administration quotidienne du bureau et contribue à la coordination des équipes, des dossiers, de la logistique et des démarches extérieures nécessaires au bon fonctionnement du Cabinet et à un service réactif aux clients.",
+        "Jonas gère les archives physiques et administratives du Cabinet, le classement et la recherche des documents, ainsi que les dossiers de correspondance et de facturation. Il apporte également un appui aux déclarations fiscales mensuelles, aux autres démarches administratives liées à la fiscalité, aux formalités d’immigration, à la remise des documents, au suivi du courrier et aux démarches auprès des administrations, des banques et des prestataires. Sa connaissance des dossiers et des procédures du Cabinet favorise la continuité du service, l’accès rapide à l’information et un suivi fiable des tâches administratives.",
+        "Il est titulaire d’un Bachelor en histoire de l’Université de Buea et a suivi une formation en fiscalité au Bernford Institute of Taxation à Douala. Jonas coordonne également les moyens matériels du bureau, les fournisseurs et la logistique courante, tout en assurant un lien essentiel entre les équipes juridiques, le secrétariat et les services administratifs. Sa discrétion, son sens de l’initiative et son esprit de service contribuent au bon fonctionnement quotidien du Cabinet."
+      ],
       "practiceAreasNote": null,
       "practiceAreas": null,
-      "qualifications": null,
+      "focusAreas": [
+        "Gestion administrative",
+        "Dossiers et archives",
+        "Gestion et recherche documentaires",
+        "Suivi des factures",
+        "Formalités fiscales",
+        "Formalités d’immigration",
+        "Courrier et démarches extérieures",
+        "Coordination des fournisseurs",
+        "Logistique du bureau"
+      ],
+      "qualifications": [
+        "Licence en histoire, Université de Buea",
+        "Formation en fiscalité, Bernford Institute of Taxation, Douala"
+      ],
       "barAdmission": null,
       "experience": null,
       "memberships": null,
       "publications": null,
-      "languages": null
+      "languages": [
+        "Anglais",
+        "Français"
+      ]
+    },
+    {
+      "slug": "terence-tamuno",
+      "group": "administration",
+      "name": "Terence Tamuno",
+      "role": "Chargé des finances et de la logistique et coordonnateur HSE",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": [
+        "Sieur Terence Tamuno est chargé des finances et de la logistique et coordonnateur HSE au sein de The Abeng Law Firm. Il coordonne la gestion financière, les achats et la logistique du Cabinet, contribuant à son fonctionnement quotidien et à l’exécution des missions confiées par les clients.",
+        "Ses responsabilités financières comprennent l’enregistrement des opérations et la tenue des pièces justificatives, la préparation des déclarations fiscales mensuelles, ainsi que l’exécution des paiements, des opérations bancaires et des retraits d’espèces conformément aux instructions et autorisations reçues. Il enregistre les décaissements, assure le suivi des factures et des reçus et tient les comptes et les relevés de dépenses en vue de leur contrôle. Il contribue ainsi à la fiabilité des rapports financiers et à l’efficacité des contrôles internes.",
+        "Terence coordonne les achats, les services de courrier et le suivi des documents, assure la liaison avec les banques et les prestataires, et participe à l’accueil téléphonique et au suivi des clients. Il a également contribué aux prestations de gestion de succursale et d’appui administratif assurées par le Cabinet pour une entreprise internationale, développant son expérience en préparation de rapports opérationnels, en communication avec les interlocuteurs concernés et en continuité des activités.",
+        "Titulaire d’un Bachelor of Science (B.Sc.) en sciences de l’environnement de l’Université de Buea, il met à profit sa formation et ses connaissances en droit de l’environnement et en santé et sécurité au travail pour contribuer à la sensibilisation interne aux questions de santé, de sécurité et d’environnement. Il apporte également un appui aux missions comportant une dimension environnementale ou HSE, en organisant la documentation pertinente et le suivi administratif pour les avocats chargés de l’analyse juridique et réglementaire.",
+        "Terence a suivi une formation en fiscalité au Bernford Institute of Taxation à Douala. Il est actuellement en dernière année d’un Master of Business Administration (MBA) en gestion de projets, une formation de deux ans dispensée par le FOMIC Polytechnic University Institute. Ces études complètent son expérience de la coordination des activités financières, logistiques et administratives."
+      ],
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "focusAreas": [
+        "Gestion financière et tenue des pièces comptables",
+        "Opérations bancaires et décaissements",
+        "Déclarations fiscales mensuelles",
+        "Logistique et achats",
+        "Coordination HSE",
+        "Documentation environnementale et réglementaire",
+        "Appui à la gestion de succursale",
+        "Rapports opérationnels"
+      ],
+      "qualifications": [
+        "Bachelor of Science (B.Sc.) en sciences de l’environnement, Université de Buea",
+        "Formation en fiscalité, Bernford Institute of Taxation, Douala",
+        "MBA en gestion de projets, FOMIC Polytechnic University Institute (en cours, dernière année d’un programme de deux ans)"
+      ],
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": [
+        "Anglais",
+        "Connaissance pratique du français"
+      ]
+    },
+    {
+      "slug": "ivonne-ngagni",
+      "group": "administration",
+      "name": "Ivonne Ngagni",
+      "role": "Assistante juridique",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": [
+        "Mme. Ivonne Sylvie Fouthmandeng Ngagni est assistante juridique au sein de The Abeng Law Firm. Elle met sa solide expérience du secrétariat et de la gestion administrative au service de la préparation, de la finalisation et du traitement rigoureux des correspondances, conclusions, requêtes et autres documents professionnels du Cabinet.",
+        "Ses responsabilités comprennent la réception et l’acheminement du courrier, la tenue des dossiers physiques et électroniques, la gestion des calendriers d’audiences et de réunions, l’organisation des réunions et des déplacements, l’accueil des clients, ainsi que l’appui aux achats du bureau et au suivi de la petite caisse. Elle participe également aux déclarations mensuelles du Cabinet auprès de la CNPS et possède une expérience dans l’appui aux déclarations fiscales mensuelles, au renouvellement annuel des documents fiscaux et à la coordination avec le comptable du Cabinet. Ses fonctions exigent discrétion, précision et collaboration étroite avec les équipes juridiques et administratives.",
+        "Ivonne est titulaire d’un certificat en gestion administrative et secrétariat. Elle maîtrise Word, Excel, PowerPoint, Publisher et les équipements bureautiques usuels. Son sens de l’organisation, sa réactivité et sa connaissance de longue date des exigences du travail en cabinet lui permettent d’apporter un soutien fiable dans des missions variées."
+      ],
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "focusAreas": [
+        "Assistance juridique et secrétariat",
+        "Préparation et finalisation des documents",
+        "Gestion des dossiers et des agendas",
+        "Correspondance",
+        "Appui aux formalités CNPS et fiscales",
+        "Organisation des réunions et des déplacements",
+        "Achats du bureau et petite caisse"
+      ],
+      "qualifications": [
+        "Certificat en gestion administrative et secrétariat"
+      ],
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": [
+        "Anglais",
+        "Français"
+      ]
+    },
+    {
+      "slug": "yakong-innocentia",
+      "group": "administration",
+      "name": "Yakong Innocentia",
+      "role": "Assistante personnelle de l’associé gérant",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": [
+        "Mme. Yakong Innocentia Ndzekashu est l’assistante personnelle de l’associé gérant de The Abeng Law Firm. Elle lui apporte un soutien administratif et organisationnel direct et participe également à la gestion de la correspondance, au traitement des documents et à la coordination des activités quotidiennes du bureau.",
+        "Ses responsabilités comprennent la réception et l’orientation des appels, la prise de messages, la planification des réunions, la réception et la numérisation des documents, la préparation des salles de réunion, ainsi que les travaux d’impression, de photocopie et d’appui documentaire. Avant de rejoindre le Cabinet, elle a géré un cybercafé à Douala, où elle a acquis une expérience pratique en préparation de documents, en impression, en numérisation, en service à la clientèle et en utilisation des outils bureautiques.",
+        "Innocentia est titulaire d’un Bachelor professionnel en gestion et d’un Higher National Diploma (HND) en gestion. Elle a également suivi une formation professionnelle en secrétariat et en communication. Sa formation administrative, son expérience pratique, sa discrétion et son attention aux détails lui permettent d’apporter un soutien fiable à l’associé gérant et de contribuer au bon fonctionnement du Cabinet."
+      ],
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "focusAreas": [
+        "Assistance de direction et appui administratif",
+        "Gestion de l’agenda et organisation des réunions",
+        "Correspondance",
+        "Traitement des documents",
+        "Accueil",
+        "Tenue des dossiers",
+        "Bureautique"
+      ],
+      "qualifications": [
+        "Licence professionnel en gestion",
+        "Higher National Diploma (HND) en gestion",
+        "Certificat de secrétariat"
+      ],
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": [
+        "Anglais",
+        "Connaissance pratique du français"
+      ]
     }
   ]
 }

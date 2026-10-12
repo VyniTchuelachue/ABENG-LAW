@@ -3,7 +3,7 @@ import Link from "next/link";
 import Container from "@/components/Container";
 import Icon from "@/components/Icons";
 import AfricaMap from "@/components/AfricaMap";
-import { getContent, getTeamMembers } from "@/lib/content";
+import { getContent, getInitials, getTeamMembers } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
@@ -100,7 +100,6 @@ export default async function HomePage({
   const [leadInsight, ...otherInsights] = insights.items.slice(0, 3);
   const featuredGallery = international.gallery;
 
-  const people = getContent("people", locale);
   const teamPreview = getTeamMembers(locale).slice(0, 5);
   const managingPartner = getTeamMembers(locale).find(
     (member) => member.slug === home.managingPartnerSection.memberSlug
@@ -584,15 +583,11 @@ export default async function HomePage({
                         className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                       />
                     ) : (
-                      <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-ink-black-raised to-ink-black">
-                        <Image
-                          src="/images/logo.png"
-                          alt=""
-                          aria-hidden="true"
-                          width={72}
-                          height={66}
-                          className="h-16 w-auto opacity-35 grayscale"
-                        />
+                      <div
+                        aria-hidden="true"
+                        className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-ink-black-raised to-ink-black font-heading text-5xl font-semibold tracking-wide text-gold-light/80 transition-colors group-hover:text-gold-light"
+                      >
+                        {getInitials(member.name ?? member.role)}
                       </div>
                     )}
                   </div>
@@ -600,7 +595,7 @@ export default async function HomePage({
                     {member.name ?? member.role}
                   </p>
                   <p className="mt-0.5 text-xs text-ink-muted">
-                    {member.name ? member.role : people.labels.pendingShort}
+                    {member.name ? member.role : null}
                   </p>
                 </>
               );

@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Our Team",
-    "description": "Barrister Abeng Roland, Managing Partner and founder of The Abeng Law Firm, and the wider team of the Firm."
+    "description": "Meet the lawyers, paralegals and administrative team of The Abeng Law Firm, led by Managing Partner Barrister Abeng Roland."
   },
   "title": "Our Team",
-  "lead": "The Firm is led by its founder, Barrister Abeng Roland, supported by a growing team of associates and counsel.",
+  "lead": "The Firm is led by its founder, Barrister Abeng Roland, working with a team of lawyers, paralegals and administrative professionals.",
   "labels": {
     "qualifications": "Qualifications & Professional Status",
     "barAdmission": "Bar Admission",
@@ -15,12 +15,30 @@
     "languages": "Languages",
     "linkedinCta": "Connect on LinkedIn",
     "linkedinAria": "LinkedIn profile",
-    "pendingNote": "Profile pending — the Firm will supply names, photographs and biographies.",
-    "pendingShort": "Profile coming soon"
+    "focusAreas": "Areas of Focus"
   },
+  "groups": [
+    {
+      "key": "partners",
+      "title": "Managing Partner"
+    },
+    {
+      "key": "lawyers",
+      "title": "Lawyers"
+    },
+    {
+      "key": "paralegals",
+      "title": "Paralegals"
+    },
+    {
+      "key": "administration",
+      "title": "Administrative Team"
+    }
+  ],
   "members": [
     {
       "slug": "abeng-roland",
+      "group": "partners",
       "name": "Barrister Abeng Roland",
       "role": "Managing Partner & Founder",
       "image": "/images/roland-headshot.jpg",
@@ -37,6 +55,7 @@
         "banking-finance",
         "regulatory-competition"
       ],
+      "focusAreas": null,
       "qualifications": [
         "[Qualification details pending confirmation from the Firm]"
       ],
@@ -58,84 +77,159 @@
       ]
     },
     {
-      "slug": null,
-      "name": null,
+      "slug": "jean-aime-kounga",
+      "group": "lawyers",
+      "name": "Jean-Aimé Kounga",
       "role": "Senior Associate",
       "image": null,
       "imageAlt": null,
       "linkedinUrl": null,
-      "bio": null,
+      "bio": [
+        "Barrister Jean-Aimé Kounga Kaptue is a Senior Associate at The Abeng Law Firm and a member of the Cameroon Bar. He has a longstanding relationship with the Firm, having worked with it at different stages over a period spanning more than two decades. This institutional knowledge complements his legal practice and gives him a practical understanding of the Firm's clients, standards and approach to complex assignments.",
+        "He advises companies, financial institutions and investors on corporate transactions, banking and finance, capital-markets matters and high-stakes commercial disputes within the OHADA and CEMAC legal environment.",
+        "His transactional work spans company formation and governance, mergers and acquisitions, commercial contracts, financing arrangements, securities transactions and the dematerialisation of securities. He also represents and assists clients in debt recovery, OHADA enforcement proceedings, arbitration and commercial litigation. This combination of advisory and contentious experience enables him to anticipate enforcement and dispute risks while structuring transactions and to pursue effective remedies when disputes arise.",
+        "Jean-Aimé holds a postgraduate degree in Business Legal Practice, a Master's degree in Private Business Law and a degree in Private Law and Criminal Sciences from the University of Douala. He has contributed to the World Bank's Doing Business project and has written on the legal and tax treatment of expatriate employees in Cameroon. Working in English and French, he is valued for rigorous analysis, strategic judgement and advice that remains firmly focused on the client's commercial objectives."
+      ],
       "practiceAreasNote": null,
       "practiceAreas": null,
-      "qualifications": null,
-      "barAdmission": null,
+      "focusAreas": [
+        "Corporate and Commercial Law",
+        "Banking and Finance",
+        "Capital Markets",
+        "Mergers and Acquisitions",
+        "Contracts",
+        "Debt Recovery",
+        "OHADA Enforcement",
+        "Arbitration and Commercial Litigation"
+      ],
+      "qualifications": [
+        "Certificate of Aptitude for the Legal Profession",
+        "Postgraduate degree in Business Legal Practice",
+        "Master's degree in Private Business Law",
+        "Degree in Private Law and Criminal Sciences"
+      ],
+      "barAdmission": "Member of the Cameroon Bar",
       "experience": null,
       "memberships": null,
       "publications": null,
-      "languages": null
+      "languages": [
+        "English",
+        "French"
+      ]
     },
     {
-      "slug": null,
-      "name": null,
+      "slug": "mirabel-toko",
+      "group": "lawyers",
+      "name": "Mirabel Toko",
       "role": "Associate",
       "image": null,
       "imageAlt": null,
       "linkedinUrl": null,
-      "bio": null,
+      "bio": [
+        "Barrister Mungu épse Toko Mirabel Ntui is an Associate at The Abeng Law Firm. With more than a decade of experience within the Firm, she brings a detailed understanding of client needs, internal business processes and the practical demands of delivering timely, commercially useful legal advice. Her long-standing knowledge of the Firm and its clients enables her to approach assignments with continuity, sound judgement and a strong sense of responsibility for the quality of the final work product.",
+        "Her practice focuses on corporate and commercial law, OHADA business law, contracts, company secretarial services, regulatory compliance, data protection and privacy, employment and immigration, legal due diligence and debt recovery. She advises local and international clients, prepares legal opinions and risk assessments, drafts and negotiates commercial agreements and translates complex legal and regulatory requirements into clear compliance measures. She also contributes to cross-border transactions, corporate-governance assignments and complex sector-specific matters, with particular attention to legal risk, implementation and the client's commercial objectives.",
+        "Mirabel has contributed to the World Bank's business-enabling environment research and to the ITechLaw Startup Legal Playbook, reflecting her interest in the legal conditions that support responsible investment, innovation and business growth. She holds an LLB in Law and works in English and French. Clients and colleagues value her precise drafting, analytical depth, responsiveness and ability to deliver practical advice in a clear and accessible form."
+      ],
       "practiceAreasNote": null,
       "practiceAreas": null,
-      "qualifications": null,
+      "focusAreas": [
+        "Corporate and Commercial Law",
+        "OHADA Business Law",
+        "Contracts",
+        "Company Secretarial Services",
+        "Regulatory Compliance",
+        "Data Protection and Privacy",
+        "Employment and Immigration",
+        "Legal Due Diligence",
+        "Debt Recovery"
+      ],
+      "qualifications": [
+        "LLB in Law",
+        "Professional legal training and qualification in Cameroon",
+        "Diploma in Administrative Procedures and Office Support"
+      ],
       "barAdmission": null,
       "experience": null,
       "memberships": null,
       "publications": null,
-      "languages": null
+      "languages": [
+        "English",
+        "French"
+      ]
     },
     {
-      "slug": null,
-      "name": null,
-      "role": "Legal Counsel",
-      "image": null,
-      "imageAlt": null,
-      "linkedinUrl": null,
-      "bio": null,
-      "practiceAreasNote": null,
-      "practiceAreas": null,
-      "qualifications": null,
-      "barAdmission": null,
-      "experience": null,
-      "memberships": null,
-      "publications": null,
-      "languages": null
-    },
-    {
-      "slug": null,
-      "name": null,
+      "slug": "doly-azangue",
+      "group": "lawyers",
+      "name": "Doly Azangue",
       "role": "Associate",
       "image": null,
       "imageAlt": null,
       "linkedinUrl": null,
-      "bio": null,
+      "bio": [
+        "Barrister Doly Azangue Tetsop is an Associate at The Abeng Law Firm. Her work combines litigation and advisory support across public and administrative law, insurance and business law. She contributes to the assessment of legal risks and the preparation of strategies that address clients’ legal and commercial priorities.",
+        "Her responsibilities include legal research, the preparation of legal opinions, contract drafting and review, and the preparation of pleadings, applications, complaints and formal notices. She contributes to the development of legal arguments and coordinates procedural follow-up with courts, registries and public authorities. She also prepares hearing reports, monitors deadlines and assists with amicable settlement discussions.",
+        "Doly works on debt recovery and enforcement, including challenges to attachments and applications for interim relief, as well as commercial, employment, land and administrative disputes. Her work also includes corporate and regulatory matters under OHADA and CEMAC law, the review of bank guarantees and support on public-procurement matters.",
+        "Before joining the Firm in 2024, Doly acquired experience as a jurist in private practice and later spent five years managing an Activa motor-insurance sales agency. This combination of legal and commercial experience gives her a practical understanding of insurance operations, customer relations, claims-related concerns and the day-to-day realities facing businesses. She brings that perspective to the management of disputes, regulatory questions and client assignments requiring careful coordination and timely implementation.",
+        "Doly holds a Master's degree in Fundamental Public Law and a Diploma of Insurance Technician. Her background enables her to work across public-law, insurance, regulatory and contentious matters while contributing disciplined research, organised file management and a clear focus on the client's objectives."
+      ],
       "practiceAreasNote": null,
       "practiceAreas": null,
-      "qualifications": null,
+      "focusAreas": [
+        "Public and Administrative Law",
+        "Insurance",
+        "Litigation and Dispute Resolution",
+        "OHADA and CEMAC Business Law",
+        "Contracts and Corporate Matters",
+        "Debt Recovery and Enforcement",
+        "Employment and Land Disputes",
+        "Civil and Criminal Procedure",
+        "Public Procurement",
+        "Regulatory Matters",
+        "Legal Research and Opinions"
+      ],
+      "qualifications": [
+        "Master's degree in Fundamental Public Law",
+        "Diploma of Insurance Technician"
+      ],
       "barAdmission": null,
       "experience": null,
       "memberships": null,
       "publications": null,
-      "languages": null
+      "languages": [
+        "French",
+        "Working knowledge of English"
+      ]
     },
     {
-      "slug": null,
-      "name": null,
-      "role": "Trainee Lawyer",
+      "slug": "jean-patrick-musima",
+      "group": "lawyers",
+      "name": "Jean Patrick Musima",
+      "role": "Associate",
       "image": null,
       "imageAlt": null,
       "linkedinUrl": null,
-      "bio": null,
+      "bio": [
+        "Barrister Jean Patrick Musima Bille is an Associate at The Abeng Law Firm in Douala. His work centres on OHADA and CEMAC business law, debt recovery and enforcement, and commercial, administrative and land-related disputes. Working under the supervision of the Managing Partner, Roland Abeng, he contributes to legal analysis, case preparation and the development of arguments and procedural strategies.",
+        "Jean Patrick prepares draft pleadings, procedural applications, formal notices, contracts and legal opinions. He assists with enforcement proceedings and challenges to attachments, applications for interim relief, lease and property disputes, and administrative proceedings. His work also includes reviewing bank guarantees, supporting fact-finding and reporting on public-procurement matters, and analysing compliance requirements for crowdfunding projects.",
+        "His earlier experience spans independent legal and tax work, law teaching, legal internships in the banking and real-estate sectors, and debt recovery. He holds a Master's degree in International Litigation from the International Relations Institute of Cameroon (IRIC), University of Yaoundé II, and a Master 1 in Business Law from the University of Douala. This background informs his work on disputes involving both commercial relationships and regulatory requirements.",
+        "Alongside his contentious work, Jean Patrick is developing a focus on digital law, fintech, personal data protection and international investment. His research and publications examine financial and digital regulation in the CEMAC region, including BEAC requirements for fintech businesses and the COSUMAF framework for digital-asset service providers. These interests complement his work on regulatory questions affecting businesses and emerging financial services."
+      ],
       "practiceAreasNote": null,
       "practiceAreas": null,
-      "qualifications": null,
+      "focusAreas": [
+        "OHADA and CEMAC Business Law",
+        "Debt Recovery and Enforcement",
+        "Commercial, Administrative and Tax Disputes",
+        "Land and Real Estate",
+        "Employment and Succession Matters",
+        "Digital Law and Data Protection",
+        "Fintech and Financial Regulation",
+        "International Investment and Arbitration"
+      ],
+      "qualifications": [
+        "Master's degree in International Litigation, IRIC, University of Yaoundé II",
+        "Master 1 in Business Law, University of Douala"
+      ],
       "barAdmission": null,
       "experience": null,
       "memberships": null,
@@ -143,21 +237,234 @@
       "languages": null
     },
     {
-      "slug": null,
-      "name": null,
+      "slug": "tryphene-egoume",
+      "group": "paralegals",
+      "name": "Tryphène Egoume",
+      "role": "Paralegal",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": [
+        "Ms. Tryphène Egoume, épse Lobe, is a Paralegal at The Abeng Law Firm. She has approximately 14 years of experience acquired in several law firms in Douala and has been a member of The Abeng Law Firm team since 2021. Her career has given her a sound understanding of legal-practice operations and the management of advisory and contentious files.",
+        "Her work includes legal research, legal opinions and correspondence, contract review, corporate support, litigation-risk assessment, file preparation and procedural follow-up. She assists the Firm's lawyers with claims, applications, complaints, formal notices, pleadings and hearing reports and coordinates follow-up before courts, registries, public authorities and other institutions. She also supports amicable-settlement discussions and clients' procedural requirements.",
+        "Tryphène holds a Master's degree in Business Law and a degree in Private Law. Her experience spans contract, banking and corporate law, debt recovery and enforcement, civil and criminal procedure, employment, land and administrative law. She is valued for her rigour, confidentiality and methodical management of files and deadlines."
+      ],
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "focusAreas": [
+        "Litigation and Dispute Resolution",
+        "Contracts",
+        "Debt Recovery and Enforcement",
+        "Employment Law",
+        "Land Law",
+        "Corporate Law",
+        "Civil and Criminal Procedure",
+        "Administrative Law"
+      ],
+      "qualifications": [
+        "Master's degree in Business Law",
+        "Degree in Private Law",
+        "University diploma in Law"
+      ],
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": [
+        "French",
+        "Working knowledge of English"
+      ]
+    },
+    {
+      "slug": "francis-kaptue",
+      "group": "paralegals",
+      "name": "Francis Kaptue",
+      "role": "Paralegal",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": [
+        "Mr. Francis Bienvenue Kaptue Tueghuo is a Paralegal at The Abeng Law Firm. Since joining the Firm in January 2023, he has supported its lawyers with legal research, drafting, procedural follow-up and the preparation and management of advisory and contentious files.",
+        "His responsibilities include drafting applications, originating processes, submissions and professional correspondence; organising evidence and procedural documents; monitoring court procedures and deadlines; and liaising with registrars, bailiffs, notaries and other judicial and administrative officers. He also assists the Firm's lawyers during hearings and procedural formalities and supports the reception and preliminary assessment of client concerns under their supervision.",
+        "Francis holds a degree in Private Law from the University of Douala and completed practical legal training before joining the Firm. His experience covers civil law, criminal law and procedure, land law, family and personal-status matters, administrative law, contentious matters and alternative dispute resolution. He brings careful research, dependable file management and a practical understanding of procedural requirements to the Firm's work."
+      ],
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "focusAreas": [
+        "Civil Law",
+        "Criminal Law and Procedure",
+        "Land Law",
+        "Family and Personal-Status Matters",
+        "Administrative Law",
+        "Litigation and Dispute Resolution",
+        "Legal Research and Drafting",
+        "Procedural Follow-up"
+      ],
+      "qualifications": [
+        "Bachelor’s Degree in Private Law, University of Douala"
+      ],
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": [
+        "English",
+        "French"
+      ]
+    },
+    {
+      "slug": "nsong-jonas",
+      "group": "administration",
+      "name": "Nsong Jonas",
       "role": "Office Manager",
       "image": null,
       "imageAlt": null,
       "linkedinUrl": null,
-      "bio": null,
+      "bio": [
+        "Mr. Nsong Ntube Jonas is the Office Manager at The Abeng Law Firm. He oversees day-to-day office administration and helps coordinate the people, records, logistics and external follow-up required for the Firm to operate efficiently and serve clients responsively.",
+        "Jonas manages the Firm's physical and administrative archives, document classification and retrieval, correspondence and invoice records. He also supports monthly tax declarations and other tax-related administrative processes, immigration formalities, document delivery, courier follow-up and practical assignments before public authorities, banks and service providers. His familiarity with the Firm's files and procedures promotes continuity, timely access to information and reliable follow-through on administrative tasks.",
+        "He holds a Bachelor's degree in History from the University of Buea and has completed training in taxation at the Bernford Institute of Taxation in Douala. Jonas also coordinates office resources, suppliers and routine logistics and serves as an important link between the legal, secretarial and administrative teams. He brings discretion, resourcefulness and a service-oriented approach to a role that is central to the smooth running of the Firm."
+      ],
       "practiceAreasNote": null,
       "practiceAreas": null,
-      "qualifications": null,
+      "focusAreas": [
+        "Office Administration",
+        "Records and Archives",
+        "Document Control and Retrieval",
+        "Invoice Management",
+        "Tax Administration",
+        "Immigration Formalities",
+        "Courier and External Follow-up",
+        "Supplier Coordination",
+        "Office Logistics"
+      ],
+      "qualifications": [
+        "Bachelor's degree in History, University of Buea",
+        "Training in Taxation, Bernford Institute of Taxation, Douala"
+      ],
       "barAdmission": null,
       "experience": null,
       "memberships": null,
       "publications": null,
-      "languages": null
+      "languages": [
+        "English",
+        "French"
+      ]
+    },
+    {
+      "slug": "terence-tamuno",
+      "group": "administration",
+      "name": "Terence Tamuno",
+      "role": "Finance and Logistics Officer and HSE Coordinator",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": [
+        "Mr. Terence Tamuno is the Finance and Logistics Officer and HSE Coordinator at The Abeng Law Firm. He coordinates financial administration, procurement and office logistics, supporting the Firm’s daily operations and the delivery of client assignments.",
+        "His financial responsibilities include maintaining transaction records and supporting documentation, preparing monthly tax declarations, and processing payments, banking transactions and cash withdrawals in accordance with authorised instructions. He records disbursements, follows up invoices and receipts, and maintains accounts and expenditure records for review, contributing to accurate reporting and effective internal controls.",
+        "Terence coordinates procurement, courier services and document follow-up, liaises with banks and service providers, and provides telephone and client-facing support. He has also supported branch-management and administrative services delivered by the Firm to an international corporate client, gaining experience in operational reporting, stakeholder communication and business continuity.",
+        "Drawing on his Bachelor of Science in Environmental Science from the University of Buea and his knowledge of environmental law and occupational health and safety, he promotes awareness of health, safety and environmental issues within the Firm. He also assists with assignments involving environmental and HSE issues, organising relevant documentation and administrative follow-up for the lawyers responsible for legal and regulatory analysis.",
+        "Terence has completed training in taxation at the Bernford Institute of Taxation in Douala. He is currently in the final year of a two-year Master of Business Administration (MBA) in Project Management programme at FOMIC Polytechnic University Institute. His ongoing studies complement his experience in coordinating financial, logistical and administrative activities."
+      ],
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "focusAreas": [
+        "Financial Administration and Transaction Records",
+        "Banking and Disbursements",
+        "Monthly Tax Declarations",
+        "Logistics and Procurement",
+        "HSE Coordination",
+        "Environmental and Regulatory Documentation",
+        "Branch Management Support",
+        "Operational Reporting"
+      ],
+      "qualifications": [
+        "Bachelor of Science in Environmental Science, University of Buea",
+        "Training in Taxation, Bernford Institute of Taxation, Douala",
+        "MBA in Project Management, FOMIC Polytechnic University Institute (in progress, final year of a two-year programme)"
+      ],
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": [
+        "English",
+        "Working knowledge of French"
+      ]
+    },
+    {
+      "slug": "ivonne-ngagni",
+      "group": "administration",
+      "name": "Ivonne Ngagni",
+      "role": "Legal Assistant",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": [
+        "Ms. Ivonne Sylvie Fouthmandeng Ngagni is a Legal Assistant at The Abeng Law Firm. She brings extensive secretarial and office-administration experience to the preparation, finalisation and orderly handling of the Firm's correspondence, pleadings, applications and other professional documents.",
+        "Her responsibilities include receiving and forwarding correspondence, maintaining physical and electronic files, managing hearing and meeting diaries, organising meetings and travel arrangements, receiving clients and supporting office purchasing and petty-cash records. She also assists with the Firm's monthly CNPS declarations and has experience supporting monthly tax declarations, annual tax-document renewals and coordination with the Firm's accountant. Her role requires discretion, accuracy and close coordination with the legal and administrative teams.",
+        "Ivonne holds a certificate in office administration and secretarial practice and is proficient in Word, Excel, PowerPoint, Publisher and standard office equipment. Her organisational discipline, responsiveness and long familiarity with professional-office requirements enable her to provide reliable support across a wide range of assignments."
+      ],
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "focusAreas": [
+        "Legal and Secretarial Support",
+        "Document Preparation and Finalisation",
+        "File and Diary Management",
+        "Correspondence",
+        "CNPS and Tax Administration Support",
+        "Meeting and Travel Coordination",
+        "Office Purchasing and Petty Cash"
+      ],
+      "qualifications": [
+        "Certificate in Office Administration and Secretarial Practice"
+      ],
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": [
+        "English",
+        "French"
+      ]
+    },
+    {
+      "slug": "yakong-innocentia",
+      "group": "administration",
+      "name": "Yakong Innocentia",
+      "role": "Personal Assistant to the Managing Partner",
+      "image": null,
+      "imageAlt": null,
+      "linkedinUrl": null,
+      "bio": [
+        "Ms. Yakong Innocentia Ndzekashu is the Personal Assistant to the Managing Partner of The Abeng Law Firm. She provides direct administrative and organisational support to the Managing Partner while also assisting with correspondence, document processing and the coordination of day-to-day office activities.",
+        "Her responsibilities include receiving and directing calls, taking messages, scheduling meetings, receiving and scanning documents, preparing meeting rooms and handling printing, photocopying and other document-support tasks. Before joining the Firm, she managed a cybercafé in Douala, where she developed practical experience in document preparation, printing, scanning, customer service and office technology.",
+        "Innocentia holds a professional bachelor's degree in Management and a Higher National Diploma in Management. She has also completed professional training in secretarial duties and communications. Her combination of administrative training, practical experience, discretion and attention to detail enables her to provide reliable support to the Managing Partner and contributes to the smooth functioning of the Firm."
+      ],
+      "practiceAreasNote": null,
+      "practiceAreas": null,
+      "focusAreas": [
+        "Executive and Administrative Support",
+        "Diary and Meeting Coordination",
+        "Correspondence",
+        "Document Processing",
+        "Reception",
+        "Records Management",
+        "Office Technology"
+      ],
+      "qualifications": [
+        "Professional bachelor's degree in Management",
+        "Higher National Diploma in Management",
+        "Certificate in Secretarial Duties"
+      ],
+      "barAdmission": null,
+      "experience": null,
+      "memberships": null,
+      "publications": null,
+      "languages": [
+        "English",
+        "Working knowledge of French"
+      ]
     }
   ]
 }

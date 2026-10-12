@@ -54,17 +54,21 @@ export function getContent<P extends Page>(
 export type CommonContent = ReturnType<typeof getContent<"common">>;
 
 /**
- * The `people.json` `members` array mixes one fully-populated entry with
- * several all-`null` placeholder entries. TypeScript infers a JSON array
- * like that as a union of distinct per-element literal shapes rather than
- * one shape with per-field unions, which breaks straightforward narrowing
- * (e.g. `if (member.image) { member.name }` can resolve to `never`). This
- * explicit type is what every member object actually conforms to, so
- * consumers get real per-field nullability instead of that literal-union
- * inference.
+ * The `people.json` `members` array holds entries whose optional fields are
+ * `null` in different combinations. TypeScript infers a JSON array like that
+ * as a union of distinct per-element literal shapes rather than one shape
+ * with per-field unions, which breaks straightforward narrowing (e.g.
+ * `if (member.image) { member.name }` can resolve to `never`). This explicit
+ * type is what every member object actually conforms to, so consumers get
+ * real per-field nullability instead of that literal-union inference.
+ *
+ * `practiceAreas` holds slugs from `expertise.json`; `focusAreas` holds the
+ * free-text areas supplied by the Firm for each profile. A member uses one
+ * or the other.
  */
 export interface TeamMember {
   slug: string | null;
+  group: string;
   name: string | null;
   role: string;
   image: string | null;
@@ -73,6 +77,7 @@ export interface TeamMember {
   bio: string[] | null;
   practiceAreasNote: string | null;
   practiceAreas: string[] | null;
+  focusAreas: string[] | null;
   qualifications: string[] | null;
   barAdmission: string | null;
   experience: string[] | null;
@@ -83,4 +88,15 @@ export interface TeamMember {
 
 export function getTeamMembers(locale: Locale): TeamMember[] {
   return getContent("people", locale).members as TeamMember[];
+}
+
+/** Two-letter monogram shown in place of a portrait until the Firm supplies one. */
+export function getInitials(name: string): string {
+  const words = name
+    .replace(/^(Barrister|Maître)\s+/i, "")
+    .split(/\s+/)
+    .filter(Boolean);
+  const first = words[0]?.[0] ?? "";
+  const last = words.length > 1 ? words[words.length - 1][0] : "";
+  return (first + last).toUpperCase();
 }
