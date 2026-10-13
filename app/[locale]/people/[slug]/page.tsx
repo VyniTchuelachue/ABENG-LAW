@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/Container";
-import { getContent, getInitials, getTeamMembers } from "@/lib/content";
+import { getContent, getInitials, getTeamMembers, isPendingPlaceholder } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
@@ -53,7 +53,7 @@ function AccordionSection({
       </summary>
       <ul className="mt-4 space-y-1.5 text-sm text-ink-muted">
         {items.map((item, index) => (
-          <li key={index} className={item.startsWith("[") ? "italic text-ink-muted/70" : undefined}>
+          <li key={index} className={isPendingPlaceholder(item) ? "italic text-ink-muted/70" : undefined}>
             {item}
           </li>
         ))}

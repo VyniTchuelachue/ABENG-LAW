@@ -21,8 +21,8 @@ export default function Header({
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 bg-ink-black/95 backdrop-blur supports-[backdrop-filter]:bg-ink-black/90 border-b border-gold/15">
-      <div className="h-[3px] bg-gradient-to-r from-gold-dark via-gold to-gold-dark" />
+    <header className="sticky top-0 z-40 bg-ink-black border-b border-gold/15">
+      <div className="h-[2px] bg-gold" />
       <Container className="flex h-20 md:h-24 items-center justify-between gap-4">
         <Link
           href={`/${locale}`}
@@ -42,7 +42,7 @@ export default function Header({
             <span className="font-heading text-base md:text-lg font-semibold tracking-[0.02em] text-cream uppercase truncate">
               {common.siteNameMark}
             </span>
-            <span className="hidden sm:block mt-1.5 font-mono text-[10px] tracking-[0.22em] uppercase text-gold">
+            <span className="hidden sm:block mt-1.5 text-[10px] font-semibold tracking-[0.22em] uppercase text-gold">
               {common.estLabel}
             </span>
           </span>
@@ -83,7 +83,7 @@ export default function Header({
           <LocaleToggle locale={locale} />
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-cream/20 text-cream shrink-0"
+            className="inline-flex h-10 w-10 items-center justify-center border border-cream/20 text-cream shrink-0"
             aria-label="Menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}

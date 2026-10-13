@@ -1,6 +1,7 @@
-import Link from "next/link";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
+import Icon from "@/components/Icons";
+import { ButtonLink } from "@/components/ui";
 import { getContent } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { isLocale, type Locale } from "@/lib/i18n";
@@ -35,53 +36,50 @@ export default async function CareersPage({
 
   return (
     <>
-      <PageHero kicker={common.nav.careers} title={careers.title} lead={careers.lead} />
+      <PageHero title={careers.title} lead={careers.lead} />
       <section className="py-16 md:py-24">
         <Container>
-          <div className="grid gap-12 md:grid-cols-2">
+          <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
-              <h3 className="font-heading text-xl text-brand dark:text-ink">
+              <h2 className="font-heading text-2xl md:text-3xl font-semibold text-brand dark:text-ink">
                 {careers.why.title}
-              </h3>
-              <ul className="mt-4 space-y-3">
+              </h2>
+              <ul className="mt-6 space-y-5">
                 {careers.why.points.map((point) => (
-                  <li key={point} className="flex gap-3 text-sm text-ink-muted">
-                    <span className="font-mono text-gold-dark dark:text-gold shrink-0">—</span>
-                    <span>{point}</span>
+                  <li key={point} className="flex gap-4">
+                    <span className="mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-gold-dark/50 text-gold-dark dark:border-gold/50 dark:text-gold">
+                      <Icon name="check" className="h-4 w-4" />
+                    </span>
+                    <span className="text-ink-muted">{point}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="border border-line p-8">
-              <h3 className="font-heading text-xl text-brand dark:text-ink">
+            <div className="border border-line bg-paper-raised p-8 md:p-10">
+              <h2 className="font-heading text-2xl font-semibold text-brand dark:text-ink">
                 {careers.openPositions.title}
-              </h3>
+              </h2>
 
-              <div className="mt-5 space-y-4">
+              <ul className="mt-6 space-y-3">
                 {careers.openPositions.items.map((item) => (
-                  <div key={item.title} className="border border-line p-4">
+                  <li key={item.title} className="border border-line bg-paper p-5">
                     <p className="font-medium text-ink">{item.title}</p>
-                    <p className="mt-1 font-mono text-xs uppercase tracking-[0.1em] text-gold-dark dark:text-gold">
-                      {item.type}
-                    </p>
-                  </div>
+                    <p className="mt-1 text-xs text-ink-muted">{item.type}</p>
+                  </li>
                 ))}
-              </div>
+              </ul>
 
               <p className="mt-5 text-sm text-ink-muted">{careers.openPositions.emptyState}</p>
 
-              <div className="mt-6 pt-6 border-t border-line">
-                <p className="font-heading text-base text-brand dark:text-ink">
+              <div className="mt-8 border-t border-line pt-8">
+                <h3 className="font-heading text-lg font-semibold text-brand dark:text-ink">
                   {careers.application.title}
-                </p>
+                </h3>
                 <p className="mt-2 text-sm text-ink-muted">{careers.application.body}</p>
-                <Link
-                  href={`/${locale}/contact`}
-                  className="mt-4 inline-block font-mono text-sm uppercase tracking-[0.15em] text-gold-dark dark:text-gold hover:underline"
-                >
-                  {common.nav.contact} →
-                </Link>
+                <ButtonLink href={`/${locale}/contact`} variant="outline" className="mt-6">
+                  {common.nav.contact}
+                </ButtonLink>
               </div>
             </div>
           </div>

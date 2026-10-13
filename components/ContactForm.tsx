@@ -45,9 +45,9 @@ export default function ContactForm({ form }: { form: ContactContent["form"] }) 
     return (
       <div
         role="status"
-        className="rounded-md border border-gold bg-paper-raised p-6"
+        className="border border-gold bg-paper p-6"
       >
-        <p className="font-heading text-lg text-brand dark:text-ink">
+        <p className="font-heading text-lg font-semibold text-brand dark:text-ink">
           {form.successTitle}
         </p>
         <p className="mt-2 text-sm text-ink-muted">{form.successBody}</p>
@@ -56,7 +56,7 @@ export default function ContactForm({ form }: { form: ContactContent["form"] }) 
   }
 
   const inputClass =
-    "w-full rounded-md border border-line bg-paper px-3 py-2 text-sm text-ink placeholder:text-ink-muted/70 focus:border-gold focus:outline-none";
+    "w-full border border-line bg-paper px-3 py-2.5 text-sm text-ink placeholder:text-ink-muted/70 focus:border-gold focus:outline-none";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5" noValidate>
@@ -117,7 +117,7 @@ export default function ContactForm({ form }: { form: ContactContent["form"] }) 
       <button
         type="submit"
         disabled={status === "sending"}
-        className="inline-flex items-center justify-center bg-gold px-6 py-3 text-sm font-medium tracking-wide text-ink-black hover:bg-gold-light disabled:opacity-60 transition-colors"
+        className="eyebrow inline-flex items-center justify-center bg-gold px-6 py-4 text-ink-black hover:bg-gold-light disabled:opacity-60 transition-colors"
       >
         {status === "sending" ? form.sendingLabel : form.submitLabel}
       </button>

@@ -1,5 +1,7 @@
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
+import ContactBand from "@/components/ContactBand";
+import { Eyebrow, Tag } from "@/components/ui";
 import { getContent } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { isLocale, type Locale } from "@/lib/i18n";
@@ -30,33 +32,30 @@ export default async function InsightsPage({
   if (!isLocale(rawLocale)) notFound();
   const locale: Locale = rawLocale;
   const insights = getContent("insights", locale);
-  const common = getContent("common", locale);
 
   return (
     <>
-      <PageHero kicker={common.nav.insights} title={insights.title} lead={insights.lead} />
+      <PageHero title={insights.title} lead={insights.lead} />
       <section className="py-16 md:py-24">
         <Container>
-          <div className="grid gap-px bg-line border border-line md:grid-cols-2">
+          <ul className="border-t border-line">
             {insights.items.map((item) => (
-              <div key={item.title} className="group bg-paper hover:bg-paper-raised transition-colors p-7">
-                <div className="flex items-start justify-between gap-4">
-                  <p className="font-mono text-xs uppercase tracking-wide text-gold-dark dark:text-gold">
-                    {item.category}
-                  </p>
-                  <span className="shrink-0 font-mono text-[10px] uppercase tracking-[0.1em] text-ink-muted border border-line px-2 py-1">
-                    {insights.placeholderBadge}
-                  </span>
+              <li
+                key={item.title}
+                className="grid gap-4 border-b border-line py-8 md:grid-cols-[14rem_1fr_auto] md:items-start md:gap-10"
+              >
+                <Eyebrow className="md:pt-1.5">{item.category}</Eyebrow>
+                <div>
+                  <h2 className="font-heading text-xl font-semibold text-brand dark:text-ink">{item.title}</h2>
+                  <p className="mt-2 max-w-2xl text-ink-muted">{item.excerpt}</p>
                 </div>
-                <h3 className="mt-3 font-heading text-lg text-brand dark:text-ink">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm text-ink-muted">{item.excerpt}</p>
-              </div>
+                <Tag>{insights.placeholderBadge}</Tag>
+              </li>
             ))}
-          </div>
+          </ul>
         </Container>
       </section>
+      <ContactBand locale={locale} />
     </>
   );
 }

@@ -1,11 +1,21 @@
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
+import Icon from "@/components/Icons";
 import MapEmbed from "@/components/MapEmbed";
 import ContactForm from "@/components/ContactForm";
+import { Eyebrow } from "@/components/ui";
 import { getContent } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
+
+function IconBadge({ name }: { name: string }) {
+  return (
+    <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold-dark/50 text-gold-dark dark:border-gold/50 dark:text-gold">
+      <Icon name={name} className="h-5 w-5" />
+    </span>
+  );
+}
 
 export async function generateMetadata({
   params,
@@ -32,46 +42,45 @@ export default async function ContactPage({
   if (!isLocale(rawLocale)) notFound();
   const locale: Locale = rawLocale;
   const contact = getContent("contact", locale);
-  const common = getContent("common", locale);
 
   return (
     <>
-      <PageHero kicker={common.nav.contact} title={contact.title} lead={contact.lead} />
+      <PageHero title={contact.title} lead={contact.lead} />
       <section className="py-16 md:py-24">
         <Container>
-          <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr]">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1.3fr] lg:gap-16">
             <div className="space-y-10">
-              <div>
-                <p className="font-mono text-xs uppercase tracking-[0.15em] text-gold-dark dark:text-gold">
-                  {contact.officeTitle}
-                </p>
-                <address className="mt-3 not-italic text-ink leading-relaxed">
-                  {contact.address.line1}
-                  <br />
-                  {contact.address.line2}
-                  <br />
-                  {contact.address.line3}
-                  <br />
-                  {contact.address.poBox}
-                </address>
+              <div className="flex gap-4">
+                <IconBadge name="location" />
+                <div>
+                  <Eyebrow>{contact.officeTitle}</Eyebrow>
+                  <address className="mt-2 not-italic leading-relaxed text-ink">
+                    {contact.address.line1}
+                    <br />
+                    {contact.address.line2}
+                    <br />
+                    {contact.address.line3}
+                    <br />
+                    {contact.address.poBox}
+                  </address>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <IconBadge name="phone" />
+                <div>
+                  <Eyebrow>{contact.phonesTitle}</Eyebrow>
+                  <ul className="mt-2 space-y-1 text-ink">
+                    {contact.phones.map((phone) => (
+                      <li key={phone}>{phone}</li>
+                    ))}
+                  </ul>
+                  <p className="mt-2 text-xs italic text-ink-muted">{contact.phoneConfirmNote}</p>
+                </div>
               </div>
 
               <div>
-                <p className="font-mono text-xs uppercase tracking-[0.15em] text-gold-dark dark:text-gold">
-                  {contact.phonesTitle}
-                </p>
-                <ul className="mt-3 space-y-1 font-mono text-ink">
-                  {contact.phones.map((phone) => (
-                    <li key={phone}>{phone}</li>
-                  ))}
-                </ul>
-                <p className="mt-2 text-xs text-ink-muted italic">{contact.phoneConfirmNote}</p>
-              </div>
-
-              <div>
-                <p className="font-mono text-xs uppercase tracking-[0.15em] text-gold-dark dark:text-gold mb-3">
-                  {contact.mapTitle}
-                </p>
+                <Eyebrow className="mb-3">{contact.mapTitle}</Eyebrow>
                 <MapEmbed
                   lat={contact.mapCoordinates.lat}
                   lng={contact.mapCoordinates.lng}
@@ -80,17 +89,14 @@ export default async function ContactPage({
               </div>
             </div>
 
-            <div>
-              <div className="border border-gold-dark/40 bg-paper-raised p-5 text-sm text-ink-muted mb-8">
+            <div className="border border-line bg-paper-raised p-8 md:p-10">
+              <h2 className="font-heading text-2xl font-semibold text-brand dark:text-ink">
+                {contact.form.title}
+              </h2>
+              <p className="mt-4 mb-8 border-l-2 border-gold-dark pl-4 text-sm text-ink-muted dark:border-gold">
                 {contact.disclaimer}
-              </div>
-
-              <div className="border border-line p-8">
-                <h2 className="font-heading text-xl text-brand dark:text-ink mb-6">
-                  {contact.form.title}
-                </h2>
-                <ContactForm form={contact.form} />
-              </div>
+              </p>
+              <ContactForm form={contact.form} />
             </div>
           </div>
         </Container>

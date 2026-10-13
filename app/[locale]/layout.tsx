@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Public_Sans, IBM_Plex_Mono, Pinyon_Script } from "next/font/google";
+import { Playfair_Display, Public_Sans, Pinyon_Script } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import Header from "@/components/Header";
@@ -9,7 +9,7 @@ import { isLocale, locales, type Locale } from "@/lib/i18n";
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["500", "600", "700"],
   variable: "--font-playfair",
   display: "swap",
 });
@@ -17,13 +17,6 @@ const playfairDisplay = Playfair_Display({
 const publicSans = Public_Sans({
   subsets: ["latin"],
   variable: "--font-public-sans",
-  display: "swap",
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-ibm-plex-mono",
   display: "swap",
 });
 
@@ -76,7 +69,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${playfairDisplay.variable} ${publicSans.variable} ${ibmPlexMono.variable} ${pinyonScript.variable}`}
+      className={`${playfairDisplay.variable} ${publicSans.variable} ${pinyonScript.variable}`}
       suppressHydrationWarning
     >
       <head>

@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
-import { getContent } from "@/lib/content";
+import ContactBand from "@/components/ContactBand";
+import { ArrowLink } from "@/components/ui";
+import { getContent, getTeamMembers, isPendingPlaceholder } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
@@ -27,80 +28,98 @@ export default async function AboutPage({
   if (!isLocale(rawLocale)) notFound();
   const locale: Locale = rawLocale;
   const about = getContent("about", locale);
-  const common = getContent("common", locale);
+  const founder = getTeamMembers(locale).find((member) => member.group === "partners");
 
   return (
     <>
-      <PageHero kicker={common.nav.about} title={about.title} lead={about.lead} />
+      <PageHero title={about.title} lead={about.lead} />
+
       <section className="py-16 md:py-24">
         <Container>
           {/* DRAFT: pending Firm-approved copy */}
-          <div className="grid gap-12 md:grid-cols-[1fr_1fr]">
+          <div className="grid items-start gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
             <div>
-              <h3 className="font-heading text-xl text-brand dark:text-ink">
+              <h2 className="font-heading text-2xl md:text-3xl font-semibold text-brand dark:text-ink">
                 {about.history.title}
-              </h3>
-              <div className="mt-4 space-y-4 text-ink-muted">
+              </h2>
+              <div className="mt-6 space-y-4 text-ink-muted">
                 {about.history.paragraphs.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
               </div>
             </div>
 
-            <div className="border border-line p-8">
-              <h3 className="font-heading text-xl text-brand dark:text-ink">
-                {about.founder.title}
-              </h3>
-              <p className="mt-4 text-ink-muted">{about.founder.body}</p>
-              <Link
-                href={`/${locale}${about.founder.href}`}
-                className="mt-5 inline-block font-mono text-sm uppercase tracking-[0.15em] text-gold-dark dark:text-gold hover:underline"
-              >
-                {about.founder.cta} →
-              </Link>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      <section className="py-16 md:py-24 bg-paper-raised">
-        <Container>
-          <div className="grid gap-px bg-line border border-line md:grid-cols-3">
-            {about.values.map((value) => (
-              <div key={value.title} className="bg-paper p-8">
-                <span aria-hidden="true" className="block h-px w-8 bg-gold-dark dark:bg-gold mb-5" />
-                <h3 className="font-heading text-lg text-brand dark:text-ink">
-                  {value.title}
-                </h3>
-                <p className="mt-3 text-sm text-ink-muted">{value.body}</p>
+            <aside className="bg-ink-black p-8 md:p-10">
+              {founder?.image ? (
+                <div className="relative h-24 w-24 overflow-hidden rounded-full border border-gold/50">
+                  <Image
+                    src={founder.image}
+                    alt={founder.imageAlt ?? about.founder.title}
+                    fill
+                    sizes="96px"
+                    className="object-cover object-top"
+                  />
+                </div>
+              ) : null}
+              <h2 className="mt-6 font-heading text-xl font-semibold text-cream">{about.founder.title}</h2>
+              <p className="mt-3 text-cream-muted">{about.founder.body}</p>
+              <div className="mt-6">
+                <ArrowLink href={`/${locale}${about.founder.href}`} onDark>
+                  {about.founder.cta}
+                </ArrowLink>
               </div>
-            ))}
+            </aside>
           </div>
         </Container>
       </section>
 
+      <section className="bg-paper-raised py-16 md:py-20">
+        <Container>
+          <ul className="grid gap-10 md:grid-cols-3 md:gap-0 md:divide-x md:divide-line">
+            {about.values.map((value) => (
+              <li key={value.title} className="md:px-10 md:first:pl-0 md:last:pr-0">
+                <span aria-hidden="true" className="block h-0.5 w-10 bg-gold-dark dark:bg-gold" />
+                <h2 className="mt-5 font-heading text-xl font-semibold text-brand dark:text-ink">
+                  {value.title}
+                </h2>
+                <p className="mt-3 text-sm text-ink-muted">{value.body}</p>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
+
+      {/* One landscape and one portrait photograph, cropped from the top so
+          faces are never cut off. Captions the Firm has not confirmed yet
+          (bracketed in the content file) are not shown. */}
       <section className="py-16 md:py-24">
         <Container>
-          <div className="grid gap-8 md:grid-cols-2">
-            {about.gallery.map((photo) => (
-              <figure key={photo.image} className="border border-line">
-                <div className="relative aspect-[4/3]">
+          <div className="grid gap-6 md:grid-cols-[1.55fr_1fr]">
+            {about.gallery.map((photo, index) => (
+              <figure key={photo.image}>
+                <div
+                  className={`relative bg-ink-black md:aspect-auto md:h-[460px] ${
+                    index === 0 ? "aspect-[3/2]" : "aspect-[4/5]"
+                  }`}
+                >
                   <Image
                     src={photo.image}
                     alt={photo.alt}
                     fill
-                    sizes="(min-width: 768px) 50vw, 100vw"
-                    className="object-cover"
+                    sizes="(min-width: 768px) 60vw, 100vw"
+                    className="object-cover object-top photo-grade"
                   />
                 </div>
-                <figcaption className="p-4 font-mono text-xs uppercase tracking-[0.1em] text-ink-muted">
-                  {photo.caption}
-                </figcaption>
+                {isPendingPlaceholder(photo.caption) ? null : (
+                  <figcaption className="mt-3 text-sm text-ink-muted">{photo.caption}</figcaption>
+                )}
               </figure>
             ))}
           </div>
         </Container>
       </section>
+
+      <ContactBand locale={locale} />
     </>
   );
 }

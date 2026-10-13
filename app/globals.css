@@ -2,65 +2,57 @@
 
 /*
  * Tailwind v4 is CSS-first: named design tokens live here in `@theme` rather
- * than in a tailwind.config.js file. This is the v4 equivalent of "extending
- * tailwind.config with the palette as named tokens" — utilities like
- * `bg-brand`, `text-gold`, `bg-paper` are generated from the variables below,
- * so no component ever hard-codes a hex value.
+ * than in a tailwind.config.js file. Utilities like `bg-paper`, `text-gold`
+ * and `bg-ink-black` are generated from the variables below, so no component
+ * ever hard-codes a hex value.
  *
- * Palette is drawn directly from the Firm's crest: a deep burgundy sphere
- * inside a brass/gold double ring, on ivory.
+ * The palette has four families and each has one job:
+ *   navy-black  — the large dark bands (header, heroes, footer)
+ *   ivory/stone — the reading surfaces
+ *   burgundy    — headings on light surfaces and the one closing CTA band
+ *                 (the crest's sphere)
+ *   gold        — actions and markers only (the crest's ring)
  */
 
 :root {
-  /* Theme-invariant tones for surfaces that are always dark by design
-     (hero band, footer, dark CTA panels) regardless of light/dark mode. */
+  /* Theme-invariant tones for surfaces that are always dark by design. */
   --cream: #f6eedd;
-  --cream-muted: #cbb9a6;
-  /* The large dark bands (header, hero, footer, international, final CTA)
-     use a near-black, cool-tinted charcoal — not burgundy — matching the
-     Firm's prior site. Burgundy stays reserved as an accent (badges,
-     headings, buttons) rather than a background for big surfaces. */
+  --cream-muted: #c4bcae;
   --ink-black: #0b0d14;
-  --ink-black-raised: #12141d;
-  /* Constant burgundy accent (matches the crest sphere) for small dark
-     surfaces like floating stat badges — stays this hue in both themes,
-     unlike `--brand`, which relights for use as text on dark backgrounds. */
+  --ink-black-raised: #141824;
   --maroon: #5c1420;
 
-  /* Gold is a constant brand accent (sampled from the Firm's prior site),
-     not something that should invert with the theme. --gold and
-     --gold-light are legible on every dark surface in both themes
-     (verified against ink-black, maroon, and the dark-mode paper); only
-     --gold-dark exists separately, for gold text placed on light paper,
-     where the brighter constant would fail contrast. */
+  /* Gold never inverts with the theme. --gold and --gold-light are for dark
+     surfaces; --gold-dark is the same hue deepened to a bronze so gold text
+     and rules stay legible on ivory (5.4:1) and stone (4.9:1). */
   --gold: #c8a24a;
   --gold-light: #e4c778;
-  --gold-dark: #7c6321;
+  --gold-dark: #84600f;
 
-  /* Light mode (default) */
-  --paper: #f8f4ea;
-  --paper-raised: #efe6d3;
-  --ink: #241512;
-  --ink-muted: #6b564c;
+  /* Light mode (default): a neutral ivory with a slightly deeper stone for
+     alternate sections — warm, but not yellow against the cool navy bands. */
+  --paper: #faf7f1;
+  --paper-raised: #f2ece1;
+  --ink: #1d1a17;
+  --ink-muted: #5f564d;
   --brand: #5c1420;
   --brand-dark: #34090f;
   --brand-light: #8b2632;
-  --line: #e1d6be;
+  --line: #e3dccd;
 }
 
 .dark {
-  /* Dark mode: same palette, roles inverted sensibly rather than a generic
-     gray theme — the burgundy sphere becomes the paper, ivory becomes ink.
-     --brand-dark is intentionally NOT relightened here: it is used as a
-     stable dark, high-contrast text color on gold-background buttons/chips
-     in both themes, not as a "darker brand" swatch that itself inverts. */
-  --paper: #1b0f0e;
-  --paper-raised: #241715;
-  --ink: #f6eedd;
-  --ink-muted: #cbb9a6;
-  --brand: #c2707a;
+  /* Dark mode is built from the same navy as the dark bands, one and two
+     steps lighter, so every dark surface on the page shares a single hue.
+     --brand-dark is intentionally not relit: it is the stable dark text
+     colour on gold buttons in both themes. */
+  --paper: #0f121b;
+  --paper-raised: #161b28;
+  --ink: #f3ecdc;
+  --ink-muted: #b9b3a6;
+  --brand: #d9a0a8;
   --brand-light: #8b2632;
-  --line: #3a2a22;
+  --line: #262d3d;
 }
 
 @theme inline {
@@ -84,12 +76,40 @@
 
   --font-heading: var(--font-playfair);
   --font-body: var(--font-public-sans);
-  --font-mono: var(--font-ibm-plex-mono);
   --font-script: var(--font-script);
 }
 
 /* Class-based dark mode (Tailwind v4 requires opting in explicitly). */
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* The one small-label style used across the site (section kickers, card
+   categories, field labels). */
+@utility eyebrow {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/*
+ * Photography. The site mixes a studio portrait, event snapshots and
+ * decorative stock, which do not match each other out of the camera. Two
+ * grades pull them into one family:
+ *   photo-grade — real photographs of people and events: a light, uniform
+ *                 correction that leaves skin tones alone.
+ *   stock-grade — decorative stock: desaturated so it sits inside the navy
+ *                 and gold palette instead of competing with it.
+ * `group-hover:photo-grade` on a stock image brings its colour back when the
+ * card is hovered.
+ */
+@utility photo-grade {
+  filter: saturate(0.92) contrast(1.04);
+}
+
+@utility stock-grade {
+  filter: saturate(0.5) contrast(1.08) brightness(0.95);
+}
 
 body {
   background: var(--paper);
@@ -98,7 +118,7 @@ body {
 
 ::selection {
   background: var(--gold);
-  color: var(--paper);
+  color: var(--ink-black);
 }
 
 :focus-visible {

@@ -15,7 +15,7 @@ export default function LocaleToggle({ locale }: { locale: Locale }) {
   const rest = pathname.split("/").slice(2).join("/");
 
   return (
-    <div className="flex items-center gap-1.5 font-mono text-xs tracking-wide" aria-label="Language">
+    <div className="flex items-center gap-1.5 text-xs font-semibold tracking-[0.08em]" aria-label="Language">
       {locales.map((code, index) => {
         const href = rest ? `/${code}/${rest}` : `/${code}`;
         const isActive = code === locale;

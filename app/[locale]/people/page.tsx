@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import PersonCard from "@/components/PersonCard";
+import ContactBand from "@/components/ContactBand";
 import { getContent, getTeamMembers } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { isLocale, type Locale } from "@/lib/i18n";
@@ -77,6 +78,7 @@ export default async function PeoplePage({
           </div>
         </Container>
       </section>
+      <ContactBand locale={locale} />
     </>
   );
 }

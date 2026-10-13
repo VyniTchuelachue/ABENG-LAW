@@ -100,3 +100,12 @@ export function getInitials(name: string): string {
   const last = words.length > 1 ? words[words.length - 1][0] : "";
   return (first + last).toUpperCase();
 }
+
+/**
+ * Content the Firm has not confirmed yet is written in square brackets in the
+ * JSON files ("[confirm event/date with the Firm]"). Pages use this to keep
+ * such notes out of public view or to style them as provisional.
+ */
+export function isPendingPlaceholder(text: string): boolean {
+  return text.trim().startsWith("[");
+}

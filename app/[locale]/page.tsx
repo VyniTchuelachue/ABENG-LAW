@@ -3,6 +3,8 @@ import Link from "next/link";
 import Container from "@/components/Container";
 import Icon from "@/components/Icons";
 import AfricaMap from "@/components/AfricaMap";
+import ContactBand from "@/components/ContactBand";
+import { ArrowLink, ButtonLink, Eyebrow, SectionIntro, Tag } from "@/components/ui";
 import { getContent, getInitials, getTeamMembers } from "@/lib/content";
 import { buildMetadata } from "@/lib/metadata";
 import { isLocale, type Locale } from "@/lib/i18n";
@@ -19,59 +21,9 @@ export async function generateMetadata({
   return buildMetadata({ locale, path: "", title: home.meta.title, description: home.meta.description });
 }
 
-function Kicker({ text, onDark = false }: { text: string; onDark?: boolean }) {
-  return (
-    <p
-      className={`text-xs font-semibold uppercase tracking-[0.2em] ${
-        onDark ? "text-gold" : "text-gold-dark dark:text-gold"
-      }`}
-    >
-      {text}
-    </p>
-  );
-}
-
-function Arrow() {
-  return (
-    <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">
-      →
-    </span>
-  );
-}
-
-function ViewAllLink({
-  href,
-  children,
-  onDark = false,
-}: {
-  href: string;
-  children: React.ReactNode;
-  onDark?: boolean;
-}) {
-  return (
-    <Link
-      href={href}
-      className={`group inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] hover:underline underline-offset-4 ${
-        onDark ? "text-gold" : "text-gold-dark dark:text-gold"
-      }`}
-    >
-      {children}
-      <Arrow />
-    </Link>
-  );
-}
-
-function OutlineButton({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <Link
-      href={href}
-      className="group inline-flex items-center gap-2 border border-gold-dark dark:border-gold px-6 py-3 text-xs font-semibold uppercase tracking-[0.15em] text-gold-dark dark:text-gold hover:bg-gold hover:text-ink-black hover:border-gold transition-colors"
-    >
-      {children}
-      <Arrow />
-    </Link>
-  );
-}
+/* Decorative stock photography: muted at rest, colour returns on hover. */
+const stockImage =
+  "object-cover stock-grade group-hover:photo-grade transition-[filter,transform] duration-700 motion-safe:group-hover:scale-105";
 
 export default async function HomePage({
   params,
@@ -83,7 +35,6 @@ export default async function HomePage({
   const locale: Locale = rawLocale;
   const home = getContent("home", locale);
   const common = getContent("common", locale);
-  const contact = getContent("contact", locale);
   const expertise = getContent("expertise", locale);
   const industries = getContent("industries", locale);
   const experience = getContent("experience", locale);
@@ -139,20 +90,10 @@ export default async function HomePage({
               </h1>
               <p className="mt-6 max-w-lg text-lg text-cream-muted">{home.hero.subtitle}</p>
               <div className="mt-10 flex flex-wrap items-center gap-4">
-                <Link
-                  href={l(home.hero.ctaPrimaryHref)}
-                  className="group inline-flex items-center gap-2 bg-gold px-6 py-4 text-xs font-semibold uppercase tracking-[0.14em] text-ink-black hover:bg-gold-light transition-colors"
-                >
-                  {home.hero.ctaPrimary}
-                  <Arrow />
-                </Link>
-                <Link
-                  href={l(home.hero.ctaSecondaryHref)}
-                  className="group inline-flex items-center gap-2 border border-cream/40 px-6 py-4 text-xs font-semibold uppercase tracking-[0.14em] text-cream hover:border-gold-light hover:text-gold-light transition-colors"
-                >
+                <ButtonLink href={l(home.hero.ctaPrimaryHref)}>{home.hero.ctaPrimary}</ButtonLink>
+                <ButtonLink href={l(home.hero.ctaSecondaryHref)} variant="outlineOnDark">
                   {home.hero.ctaSecondary}
-                  <Arrow />
-                </Link>
+                </ButtonLink>
               </div>
             </div>
 
@@ -212,18 +153,18 @@ export default async function HomePage({
 
       {/* The Firm */}
       <section className="grid lg:grid-cols-2">
-        <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[520px]">
+        <div className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[520px] bg-ink-black">
           <Image
             src={home.firm.image}
             alt={home.firm.imageAlt}
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-cover"
+            className="object-cover object-[50%_25%] photo-grade"
           />
         </div>
         <div className="flex items-center px-6 py-16 md:px-12 lg:px-16 xl:px-20">
           <div className="max-w-xl">
-            <Kicker text={home.firm.kicker} />
+            <Eyebrow>{home.firm.kicker}</Eyebrow>
             <h2 className="mt-4 font-heading text-3xl md:text-[2.6rem] font-semibold text-brand dark:text-ink leading-tight">
               {home.firm.title}
             </h2>
@@ -234,7 +175,9 @@ export default async function HomePage({
               ))}
             </div>
             <div className="mt-8">
-              <OutlineButton href={l(home.firm.href)}>{home.firm.cta}</OutlineButton>
+              <ButtonLink href={l(home.firm.href)} variant="outline">
+                {home.firm.cta}
+              </ButtonLink>
             </div>
           </div>
         </div>
@@ -249,19 +192,19 @@ export default async function HomePage({
             aria-hidden="true"
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover object-[35%_30%] opacity-60"
+            className="object-cover object-[35%_30%] opacity-60 stock-grade"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-ink-black/20 via-ink-black/60 to-ink-black" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-ink-black/70 via-ink-black/30 to-ink-black/90" />
         <Container className="relative">
-          <div className="max-w-2xl mx-auto text-center">
-            <Kicker text={home.expertiseSection.kicker} onDark />
-            <h2 className="mt-4 font-heading text-3xl md:text-4xl font-semibold text-cream">
-              {home.expertiseSection.title}
-            </h2>
-            <p className="mt-4 text-cream-muted">{home.expertiseSection.lead}</p>
-          </div>
+          <SectionIntro
+            eyebrow={home.expertiseSection.kicker}
+            title={home.expertiseSection.title}
+            lead={home.expertiseSection.lead}
+            align="center"
+            onDark
+          />
 
           {/* DRAFT: pending Firm-approved copy (practice area descriptions) */}
           <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -278,10 +221,10 @@ export default async function HomePage({
                     aria-hidden="true"
                     fill
                     sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    className={stockImage}
                   />
                 ) : null}
-                <div className="absolute inset-0 bg-gradient-to-t from-ink-black via-ink-black/70 to-ink-black/5" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink-black via-ink-black/75 to-ink-black/10" />
                 <div className="relative">
                   <span className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-gold/60 bg-ink-black/50 text-gold">
                     <Icon name={item.slug} className="h-6 w-6" />
@@ -290,9 +233,14 @@ export default async function HomePage({
                     {item.title}
                   </h3>
                   <p className="mt-3 text-sm text-cream-muted">{item.description}</p>
-                  <span className="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.15em] text-gold">
+                  <span className="eyebrow mt-6 inline-flex items-center gap-2 text-gold">
                     {common.actions.learnMore}
-                    <Arrow />
+                    <span
+                      aria-hidden="true"
+                      className="transition-transform motion-reduce:transition-none group-hover:translate-x-1"
+                    >
+                      →
+                    </span>
                   </span>
                 </div>
               </Link>
@@ -300,9 +248,9 @@ export default async function HomePage({
           </div>
 
           <div className="mt-12 text-center">
-            <ViewAllLink href={l(home.expertiseSection.href)} onDark>
+            <ArrowLink href={l(home.expertiseSection.href)} onDark>
               {home.expertiseSection.cta}
-            </ViewAllLink>
+            </ArrowLink>
           </div>
         </Container>
       </section>
@@ -310,21 +258,17 @@ export default async function HomePage({
       {/* Experience */}
       <section className="py-20 md:py-28">
         <Container>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <div className="max-w-2xl">
-              <Kicker text={home.experienceSection.kicker} />
-              <h2 className="mt-4 font-heading text-3xl md:text-4xl font-semibold text-brand dark:text-ink">
-                {home.experienceSection.title}
-              </h2>
-              <p className="mt-4 text-ink-muted">{home.experienceSection.lead}</p>
-            </div>
-            <ViewAllLink href={l(home.experienceSection.href)}>{home.experienceSection.cta}</ViewAllLink>
-          </div>
+          <SectionIntro
+            eyebrow={home.experienceSection.kicker}
+            title={home.experienceSection.title}
+            lead={home.experienceSection.lead}
+            action={<ArrowLink href={l(home.experienceSection.href)}>{home.experienceSection.cta}</ArrowLink>}
+          />
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
             {featuredExperience.map((item, index) => (
               <article key={item.title} className="group flex flex-col">
-                <div className="relative aspect-[16/10] overflow-hidden bg-paper-raised">
+                <div className="relative aspect-[16/10] overflow-hidden bg-ink-black">
                   {home.experienceSection.cardImages[index] ? (
                     <Image
                       src={home.experienceSection.cardImages[index]}
@@ -332,16 +276,14 @@ export default async function HomePage({
                       aria-hidden="true"
                       fill
                       sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      className={stockImage}
                     />
                   ) : null}
-                  <span className="absolute left-3 top-3 bg-ink-black/75 px-2 py-1 text-[10px] uppercase tracking-[0.12em] text-cream">
+                  <span className="absolute left-3 top-3 bg-ink-black/80 px-2 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-cream">
                     {experience.placeholderBadge}
                   </span>
                 </div>
-                <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.15em] text-gold-dark dark:text-gold">
-                  {item.sector}
-                </p>
+                <Eyebrow className="mt-5">{item.sector}</Eyebrow>
                 <h3 className="mt-2 font-heading text-lg font-semibold text-brand dark:text-ink leading-snug">
                   {item.title}
                 </h3>
@@ -352,21 +294,30 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* Managing Partner */}
+      {/* Managing Partner: the portrait is framed rather than run full-bleed,
+          so it stays sharp at the size it is shown. */}
       {managingPartner ? (
         <section className="grid lg:grid-cols-2 bg-paper-raised">
-          <div className="relative min-h-[420px] sm:min-h-[520px] lg:min-h-[600px]">
-            <Image
-              src={home.managingPartnerSection.image}
-              alt={home.managingPartnerSection.imageAlt}
-              fill
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-cover object-[50%_15%]"
-            />
+          <div className="flex items-center justify-center bg-ink-black px-6 py-16 md:py-20">
+            <div className="relative w-full max-w-[340px]">
+              <span
+                aria-hidden="true"
+                className="absolute inset-0 translate-x-4 translate-y-4 border border-gold/50"
+              />
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <Image
+                  src={home.managingPartnerSection.image}
+                  alt={home.managingPartnerSection.imageAlt}
+                  fill
+                  sizes="340px"
+                  className="origin-[54%_4%] scale-[1.45] object-cover object-[50%_10%] photo-grade"
+                />
+              </div>
+            </div>
           </div>
           <div className="flex items-center px-6 py-16 md:px-12 lg:px-16 xl:px-20">
             <div className="max-w-xl">
-              <Kicker text={home.managingPartnerSection.kicker} />
+              <Eyebrow>{home.managingPartnerSection.kicker}</Eyebrow>
               <h2 className="mt-4 font-heading text-3xl md:text-4xl font-semibold text-brand dark:text-ink">
                 {managingPartner.name}
               </h2>
@@ -393,9 +344,9 @@ export default async function HomePage({
               ) : null}
 
               <div className="mt-8">
-                <OutlineButton href={l(`/people/${managingPartner.slug}`)}>
+                <ButtonLink href={l(`/people/${managingPartner.slug}`)} variant="outline">
                   {home.managingPartnerSection.cta}
-                </OutlineButton>
+                </ButtonLink>
               </div>
             </div>
           </div>
@@ -405,22 +356,24 @@ export default async function HomePage({
       {/* Industries */}
       <section className="py-20 md:py-28">
         <Container>
-          <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] items-start">
+          <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] items-center">
             <div>
-              <Kicker text={home.industriesSection.kicker} />
-              <h2 className="mt-4 font-heading text-3xl md:text-4xl font-semibold text-brand dark:text-ink">
-                {home.industriesSection.title}
-              </h2>
-              <p className="mt-4 text-ink-muted">{home.industriesSection.lead}</p>
+              <SectionIntro
+                eyebrow={home.industriesSection.kicker}
+                title={home.industriesSection.title}
+                lead={home.industriesSection.lead}
+              />
               <div className="mt-8">
-                <ViewAllLink href={l(home.industriesSection.href)}>{home.industriesSection.cta}</ViewAllLink>
+                <ArrowLink href={l(home.industriesSection.href)}>{home.industriesSection.cta}</ArrowLink>
               </div>
             </div>
             <ul className="grid sm:grid-cols-2 gap-px bg-line border border-line">
               {featuredIndustries.map((item) => (
-                <li key={item.slug} className="bg-paper p-6">
-                  <span aria-hidden="true" className="block h-px w-8 bg-gold-dark dark:bg-gold mb-4" />
-                  <p className="font-heading text-lg font-semibold text-brand dark:text-ink">{item.title}</p>
+                <li key={item.slug} className="flex items-center gap-4 bg-paper p-6">
+                  <Icon name={item.slug} className="h-7 w-7 shrink-0 text-gold-dark dark:text-gold" />
+                  <p className="font-heading text-lg font-semibold text-brand dark:text-ink leading-snug">
+                    {item.title}
+                  </p>
                 </li>
               ))}
             </ul>
@@ -434,7 +387,7 @@ export default async function HomePage({
           <div className="grid gap-14 xl:gap-10 lg:grid-cols-[1.05fr_0.95fr] xl:grid-cols-[0.7fr_1fr_0.95fr] items-center">
             <AfricaMap className="hidden xl:block w-full max-w-sm -ml-6" />
             <div>
-              <Kicker text={home.internationalSection.kicker} onDark />
+              <Eyebrow onDark>{home.internationalSection.kicker}</Eyebrow>
               <h2 className="mt-4 font-heading text-3xl md:text-[2.6rem] font-semibold text-cream leading-tight">
                 {home.internationalSection.title}
               </h2>
@@ -451,9 +404,9 @@ export default async function HomePage({
                 ))}
               </ul>
               <div className="mt-10">
-                <ViewAllLink href={l(home.internationalSection.href)} onDark>
+                <ArrowLink href={l(home.internationalSection.href)} onDark>
                   {home.internationalSection.cta}
-                </ViewAllLink>
+                </ArrowLink>
               </div>
             </div>
 
@@ -465,7 +418,7 @@ export default async function HomePage({
                     alt={photo.alt}
                     fill
                     sizes="(min-width: 1024px) 45vw, 100vw"
-                    className="object-cover"
+                    className="object-cover photo-grade"
                   />
                   <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink-black/90 to-transparent px-4 pb-3 pt-10 text-xs text-cream">
                     {photo.caption}
@@ -480,16 +433,12 @@ export default async function HomePage({
       {/* Insights */}
       <section className="py-20 md:py-28">
         <Container>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <div className="max-w-2xl">
-              <Kicker text={home.insightsSection.kicker} />
-              <h2 className="mt-4 font-heading text-3xl md:text-4xl font-semibold text-brand dark:text-ink">
-                {home.insightsSection.title}
-              </h2>
-              <p className="mt-4 text-ink-muted">{home.insightsSection.lead}</p>
-            </div>
-            <ViewAllLink href={l(home.insightsSection.href)}>{home.insightsSection.cta}</ViewAllLink>
-          </div>
+          <SectionIntro
+            eyebrow={home.insightsSection.kicker}
+            title={home.insightsSection.title}
+            lead={home.insightsSection.lead}
+            action={<ArrowLink href={l(home.insightsSection.href)}>{home.insightsSection.cta}</ArrowLink>}
+          />
 
           <div className="mt-12 grid gap-6 lg:grid-cols-[1.4fr_1fr_1fr]">
             {leadInsight ? (
@@ -501,30 +450,28 @@ export default async function HomePage({
                     aria-hidden="true"
                     fill
                     sizes="(min-width: 1024px) 45vw, 100vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    className={stockImage}
                   />
                 ) : null}
-                <div className="absolute inset-0 bg-gradient-to-t from-ink-black via-ink-black/75 to-ink-black/20" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink-black via-ink-black/80 to-ink-black/55" />
                 <div className="relative flex items-center gap-3">
                   <span className="bg-gold px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-ink-black">
                     {home.insightsSection.featuredLabel}
                   </span>
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.15em] text-gold">
-                    {leadInsight.category}
-                  </span>
+                  <Eyebrow onDark>{leadInsight.category}</Eyebrow>
                 </div>
                 <h3 className="relative mt-auto pt-10 font-heading text-2xl font-semibold text-cream leading-snug">
                   {leadInsight.title}
                 </h3>
                 <p className="relative mt-3 text-sm text-cream-muted">{leadInsight.excerpt}</p>
-                <span className="relative mt-5 self-start text-[10px] uppercase tracking-[0.12em] text-cream-muted border border-cream/20 px-2 py-1">
-                  {insights.placeholderBadge}
-                </span>
+                <div className="relative mt-5 flex">
+                  <Tag onDark>{insights.placeholderBadge}</Tag>
+                </div>
               </article>
             ) : null}
             {otherInsights.map((item, index) => (
               <article key={item.title} className="group flex flex-col overflow-hidden border border-line bg-paper-raised">
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative aspect-[16/10] overflow-hidden bg-ink-black">
                   {home.insightsSection.cardImages[index + 1] ? (
                     <Image
                       src={home.insightsSection.cardImages[index + 1]}
@@ -532,21 +479,19 @@ export default async function HomePage({
                       aria-hidden="true"
                       fill
                       sizes="(min-width: 1024px) 25vw, 100vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      className={stockImage}
                     />
                   ) : null}
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-gold-dark dark:text-gold">
-                    {item.category}
-                  </p>
+                  <Eyebrow>{item.category}</Eyebrow>
                   <h3 className="mt-3 font-heading text-lg font-semibold text-brand dark:text-ink leading-snug">
                     {item.title}
                   </h3>
                   <p className="mt-3 text-sm text-ink-muted">{item.excerpt}</p>
-                  <span className="mt-auto pt-5 self-start text-[10px] uppercase tracking-[0.12em] text-ink-muted border border-line px-2 py-1">
-                    {insights.placeholderBadge}
-                  </span>
+                  <div className="mt-auto flex pt-5">
+                    <Tag>{insights.placeholderBadge}</Tag>
+                  </div>
                 </div>
               </article>
             ))}
@@ -557,17 +502,13 @@ export default async function HomePage({
       {/* Our Team */}
       <section className="py-20 md:py-28 bg-paper-raised">
         <Container>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <div className="max-w-2xl">
-              <Kicker text={home.peopleSection.kicker} />
-              {/* DRAFT: pending Firm-approved copy */}
-              <h2 className="mt-4 font-heading text-3xl md:text-4xl font-semibold text-brand dark:text-ink">
-                {home.peopleSection.title}
-              </h2>
-              <p className="mt-4 text-ink-muted">{home.peopleSection.body}</p>
-            </div>
-            <ViewAllLink href={l(home.peopleSection.href)}>{home.peopleSection.cta}</ViewAllLink>
-          </div>
+          {/* DRAFT: pending Firm-approved copy */}
+          <SectionIntro
+            eyebrow={home.peopleSection.kicker}
+            title={home.peopleSection.title}
+            lead={home.peopleSection.body}
+            action={<ArrowLink href={l(home.peopleSection.href)}>{home.peopleSection.cta}</ArrowLink>}
+          />
 
           <ul className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {teamPreview.map((member, index) => {
@@ -580,7 +521,7 @@ export default async function HomePage({
                         alt={member.imageAlt ?? member.name ?? member.role}
                         fill
                         sizes="(min-width: 1024px) 20vw, (min-width: 640px) 33vw, 50vw"
-                        className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                        className="object-cover object-top transition-transform duration-700 motion-safe:group-hover:scale-105"
                       />
                     ) : (
                       <div
@@ -594,9 +535,7 @@ export default async function HomePage({
                   <p className="mt-3 font-heading text-base font-semibold text-brand dark:text-ink leading-snug">
                     {member.name ?? member.role}
                   </p>
-                  <p className="mt-0.5 text-xs text-ink-muted">
-                    {member.name ? member.role : null}
-                  </p>
+                  <p className="mt-0.5 text-xs text-ink-muted">{member.name ? member.role : null}</p>
                 </>
               );
               return (
@@ -620,77 +559,20 @@ export default async function HomePage({
         <Container>
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border border-line p-8 md:p-10">
             <div>
-              <Kicker text={home.careersSection.kicker} />
+              <Eyebrow>{home.careersSection.kicker}</Eyebrow>
               <h2 className="mt-3 font-heading text-2xl font-semibold text-brand dark:text-ink">
                 {home.careersSection.title}
               </h2>
               <p className="mt-2 max-w-xl text-ink-muted">{home.careersSection.body}</p>
             </div>
-            <div className="shrink-0">
-              <OutlineButton href={l(home.careersSection.href)}>{home.careersSection.cta}</OutlineButton>
-            </div>
+            <ButtonLink href={l(home.careersSection.href)} variant="outline" className="shrink-0">
+              {home.careersSection.cta}
+            </ButtonLink>
           </div>
         </Container>
       </section>
 
-      {/* Contact */}
-      <section className="relative overflow-hidden bg-maroon py-20 md:py-24">
-        <Image
-          src="/images/law-library-generic.png"
-          alt=""
-          aria-hidden="true"
-          fill
-          sizes="100vw"
-          className="object-cover opacity-15 mix-blend-luminosity"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-maroon via-maroon/90 to-maroon/60" />
-        <Container className="relative grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
-          <div>
-            <Kicker text={home.cta.kicker} onDark />
-            <h2 className="mt-4 font-heading text-3xl md:text-[2.6rem] font-semibold text-cream leading-tight">
-              {home.cta.title}
-            </h2>
-            <p className="mt-4 max-w-xl text-cream/80">{home.cta.body}</p>
-            <Link
-              href={l(home.cta.href)}
-              className="group mt-8 inline-flex items-center gap-2 bg-gold px-6 py-4 text-xs font-semibold uppercase tracking-[0.14em] text-ink-black hover:bg-gold-light transition-colors"
-            >
-              {home.cta.button}
-              <Arrow />
-            </Link>
-          </div>
-
-          <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-1 lg:border-l lg:border-cream/15 lg:pl-12">
-            <li className="flex gap-4">
-              <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/50 text-gold-light">
-                <Icon name="phone" className="h-5 w-5" />
-              </span>
-              <div>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-gold-light">
-                  {contact.phonesTitle}
-                </p>
-                {contact.phones.map((phone) => (
-                  <p key={phone} className="mt-1 text-sm text-cream">
-                    {phone}
-                  </p>
-                ))}
-              </div>
-            </li>
-            <li className="flex gap-4">
-              <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/50 text-gold-light">
-                <Icon name="location" className="h-5 w-5" />
-              </span>
-              <div>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-gold-light">
-                  {contact.officeTitle}
-                </p>
-                <p className="mt-1 text-sm text-cream">{contact.address.line2}</p>
-                <p className="text-sm text-cream">{contact.address.line3}</p>
-              </div>
-            </li>
-          </ul>
-        </Container>
-      </section>
+      <ContactBand locale={locale} />
     </>
   );
 }
